@@ -20,3 +20,10 @@ function kleo_parent_theme_enqueue_styles() {
 	);
 
 }
+
+add_action( 'wp_enqueue_scripts', 'bb_custom_enqueue_scripts', 99 );
+function bb_custom_enqueue_scripts(){  
+    if ( class_exists( 'FLBuilderModel' ) && FLBuilderModel::is_builder_active() ) {
+        wp_deregister_script( 'app' );
+    }
+}
