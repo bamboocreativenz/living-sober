@@ -17,6 +17,7 @@ Version:        0.1.0
   position: relative;
   margin: 0.5em;
   padding: 0.5em 2em 0.5em 3em;
+  border-left: none;
 }
 /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
 .ls-quote blockquote:before {
@@ -36,7 +37,7 @@ Version:        0.1.0
   font-size:6em;
   line-height: 1;
   right:0;
-  bottom:-0.5em;
+  bottom:0.1em;
   content: "\201D";
 }
 .ls-quote blockquote footer {
