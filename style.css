@@ -12,14 +12,14 @@ Version:        0.1.0
   background-color: #EBE0D6!important;
 }
 
-blockquote {
+.ls-quote blockquote {
   font-family: Georgia, serif;
   position: relative;
   margin: 0.5em;
   padding: 0.5em 2em 0.5em 3em;
 }
 /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
-blockquote:before {
+.ls-quote blockquote:before {
   font-family: Georgia, serif;
   position: absolute;
   font-size: 6em;
@@ -28,7 +28,7 @@ blockquote:before {
   left: 0;
   content: "\201C";
 }
-blockquote:after {
+.ls-quote blockquote:after {
   font-family: Georgia, serif;
   position: absolute;
  /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
@@ -39,10 +39,10 @@ blockquote:after {
   bottom:-0.5em;
   content: "\201D";
 }
-blockquote footer {
+.ls-quote blockquote footer {
   padding: 0 2em 0 0;
   text-align:right;
 }
-blockquote cite:before {
-  content: "\2013";
+.ls-quote blockquote cite:before {
+  content: "\2015";
 }
