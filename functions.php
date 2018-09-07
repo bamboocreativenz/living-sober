@@ -29,11 +29,13 @@ function bb_custom_enqueue_scripts(){
 }
 
 //
-// Remove wordpress black bar for non admins or editors
-// 
-add_action('after_setup_theme', 'remove_admin_bar');
-function remove_admin_bar() {
-  if (!current_user_can('administrator') && !current_user_can('editor') && !is_admin()) {
-    show_admin_bar(false);
-  }
+// Show admin bar only for admins and editors
+// https://digwp.com/2011/04/admin-bar-tricks/
+if (!current_user_can('edit_posts')) {
+	add_filter('show_admin_bar', '__return_false');
 }
+
+add_action('admin_print_scripts-profile.php', 'hideAdminBar');
+function hideAdminBar() { ?>
+  <style type="text/css">.show-admin-bar { display: none; }</style>
+  <?php }
