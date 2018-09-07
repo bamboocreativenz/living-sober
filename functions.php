@@ -23,7 +23,17 @@ function kleo_parent_theme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'bb_custom_enqueue_scripts', 99 );
 function bb_custom_enqueue_scripts(){  
-    if ( class_exists( 'FLBuilderModel' ) && FLBuilderModel::is_builder_active() ) {
-        wp_deregister_script( 'app' );
-    }
+  if ( class_exists( 'FLBuilderModel' ) && FLBuilderModel::is_builder_active() ) {
+    wp_deregister_script( 'app' );
+  }
+}
+
+//
+// Remove wordpress black bar for non admins or editors
+// 
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+  if (!current_user_can('administrator') && !current_user_can('editor') && !is_admin()) {
+    show_admin_bar(false);
+  }
 }
