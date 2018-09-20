@@ -24,7 +24,7 @@ if ( post_password_required() ) {
 	<?php comment_form(); ?>
 	<?php endif; ?>
 
-  <?php comment_form(); ?>
+  <?php kleo_comment_form(); ?>
 
 	<?php if ( have_comments() ) : ?>
 
