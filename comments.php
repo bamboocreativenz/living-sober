@@ -19,8 +19,8 @@ if ( post_password_required() ) {
 ?>
 
 <div id="comments" class="comments-area">
-	
-	<?php if ( get_page_template_slug()  == 'page-templates/sobertools-single.php' ) : ?>
+
+	<?php if ( strpos(get_page_template_slug(), 'sobertools-single' ) !== false ) : ?>
 	<?php comment_form(); ?>
 	<?php endif; ?>
 
@@ -83,7 +83,7 @@ if ( post_password_required() ) {
 	<?php endif; ?>
 
 	<?php endif; // have_comments() ?>
-	<?php if ( get_page_template_slug()  != 'page-templates/sobertools-single.php' ) : ?>
+	<?php if ( strpos(get_page_template_slug(), 'sobertools-single' )) : ?>
 	<?php comment_form(); ?>
 	<?php endif; ?>
 </div><!-- #comments -->
