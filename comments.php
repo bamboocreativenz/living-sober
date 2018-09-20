@@ -24,6 +24,10 @@ if ( post_password_required() ) {
 	<?php comment_form(); ?>
 	<?php endif; ?>
 
+  <script>
+    console.log(<?= json_encode(get_page_template_slug()); ?>);
+</script>
+
 	<?php if ( have_comments() ) : ?>
 
 	<h2 class="comments-title">
