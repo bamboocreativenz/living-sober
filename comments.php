@@ -4,9 +4,8 @@
  *
  * The area of the page that contains comments and the comment form.
  *
- * @package WordPress
- * @subpackage Living Sober
- * @since July 2014
+ * @package kleo-ls
+ * @since September 2018
  */
 
 /*

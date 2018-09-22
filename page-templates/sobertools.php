@@ -2,9 +2,8 @@
 /**
  * Template Name: Sober Tools
  *
- * @package WordPress
- * @subpackage Living Sober
- * @since July 2014
+ * @package kleo-ls
+ * @since September 2018
  */
 
 get_header(); ?>

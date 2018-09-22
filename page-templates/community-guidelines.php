@@ -2,8 +2,7 @@
 /**
  * Template Name: Community guidelines
  *
- * @package WordPress
- * @subpackage Living Sober
+ * @package kleo-ls
  * @since August 2017
  */
 

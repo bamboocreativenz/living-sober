@@ -3,9 +3,8 @@
 /**
  * The template for displaying featured content
  *
- * @package WordPress
- * @subpackage Living Sober
- * @since July 2014
+ * @package kleo-ls
+ * @since September 2018
  */
 ?>
 
@@ -15,7 +14,7 @@
 /**
  * Fires before the Living Sober featured content.
  *
- * @since July 2014
+ * @since September 2018
  */
 do_action('livingsober_featured_posts_before');
 
@@ -40,7 +39,7 @@ endforeach;
 /**
  * Fires after the Living Sober featured content.
  *
- * @since July 2014
+ * @since September 2018
  */
 do_action('livingsober_featured_posts_after');
 

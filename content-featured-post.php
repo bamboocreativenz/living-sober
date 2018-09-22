@@ -2,9 +2,8 @@
 /**
  * The template for displaying featured posts on the front page
  *
- * @package WordPress
- * @subpackage Living Sober
- * @since July 2014
+ * @package kleo-ls
+ * @since September 2018
  */
 ?>
 

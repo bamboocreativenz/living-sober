@@ -2,9 +2,8 @@
 /**
  * The template for displaying posts in the Video post format
  *
- * @package WordPress
- * @subpackage Living Sober
- * @since July 2014
+ * @package kleo-ls
+ * @since September 2018
  */
 ?>
 

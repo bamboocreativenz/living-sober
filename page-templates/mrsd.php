@@ -2,9 +2,8 @@
 /**
  * Template Name: Mrs D's blog
  *
- * @package WordPress
- * @subpackage Living Sober
- * @since July 2014
+ * @package kleo-ls
+ * @since September 2018
  */
 //Potentially  no longer used at all
 get_header(); ?>

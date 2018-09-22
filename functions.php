@@ -1,6 +1,6 @@
 <?php
 /**
- * Kleo-ls Theme functions and definitions
+ * kleo-ls Theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *

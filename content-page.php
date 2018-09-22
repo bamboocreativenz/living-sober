@@ -2,9 +2,8 @@
 /**
  * The template used for displaying page content
  *
- * @package WordPress
- * @subpackage Living Sober
- * @since July 2014
+ * @package kleo-ls
+ * @since September 2018
  */
  
 ?>
