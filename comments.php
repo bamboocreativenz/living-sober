@@ -50,8 +50,6 @@ if ( post_password_required() ) {
         <?php kleo_comment_form(); ?>
       <?php endif; ?>
 
-      <h1>hello dan</h1>
-
 			<div id="comments" class="comments-area">
 
 				<div class="hr-title hr-long"><abbr><?php comments_number( esc_html__( '0 Comments', 'kleo_framework' ), esc_html__( '1 Comment', 'kleo_framework' ), __( '% Comments', 'kleo_framework' ) ); ?></abbr></div>
@@ -61,7 +59,9 @@ if ( post_password_required() ) {
 				<?php endif; ?>
 
 				<?php if ( have_comments() ) : ?>
-					<div id="comments-list">
+					<div id="comments-list test">
+          <h1>hello dan</h1>
+
 
             <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
             
