@@ -14,7 +14,7 @@ get_header(); ?>
 	<div id="primary">
 		<div class="container" role="main">
 			<div class="row">
-			<div class="col-sm-3 col-md-2  blogMenu testitest">
+			<div class="col-sm-3 col-md-2  blogMenu">
 			<?php dynamic_sidebar( 'sidebar-4' ); ?>
 			</div>
 			
@@ -28,7 +28,7 @@ get_header(); ?>
 					get_template_part( 'content', 'page' );
 					// If comments are open or we have at least one comment, load up the comment template.
           if ( comments_open() || get_comments_number() ) {
-						comments_template(get_stylesheet_directory().'/comments.php', true);
+            comments_template(get_stylesheet_directory() . '/comments.php', true);
 					}
 				endwhile;
 			?>
