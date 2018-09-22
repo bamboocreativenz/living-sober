@@ -59,9 +59,7 @@ if ( post_password_required() ) {
 				<?php endif; ?>
 
 				<?php if ( have_comments() ) : ?>
-					<div id="comments-list test">
-          <h1>hello dan</h1>
-
+					<div id="comments-list">
 
             <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
             
