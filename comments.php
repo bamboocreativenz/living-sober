@@ -17,7 +17,6 @@ if ( post_password_required() ) {
 }
 ?>
 
-?>
 <?php if ( sq_option( 'replace_wp_comments_with_fb_comments' ) == 1 ) { ?>
 
 	<section class="container-wrap">
