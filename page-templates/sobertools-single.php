@@ -21,14 +21,14 @@ get_header(); ?>
 			
 			<section class="col-sm-6 col-md-7 col-lg-8 contentPage detail">
 		
-			<?php
+      <?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
 					// Include the page content template.
 					get_template_part( 'content', 'page' );
 					// If comments are open or we have at least one comment, load up the comment template.
           if ( comments_open() || get_comments_number() ) {
-            comments_template(get_stylesheet_directory() . '/comments.php', true);
+            include_once(get_stylesheet_directory() . '/comments.php');
 					}
 				endwhile;
 			?>
