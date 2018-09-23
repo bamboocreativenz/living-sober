@@ -83,14 +83,8 @@ if ( post_password_required() ) {
 							</div><!-- #comments-nav-above -->
 						<?php endif; // Check for comment navigation. ?>
 						<ol>
-              <?php hmn_cp_the_comment_upvote_form(); ?>
-              <?php hmn_cp_the_comment_author_karma(); ?>
               <?php 
-                if ( function_exists( 'hmn_cp_the_sorted_comments' ) ) {
-                    hmn_cp_the_sorted_comments( $args );
-                } else {
-                  wp_list_comments( 'type=all&callback=kleo_custom_comments' );
-                } 
+                wp_list_comments( 'type=all&callback=kleo_custom_comments' ); 
               ?>
 						</ol>
 
