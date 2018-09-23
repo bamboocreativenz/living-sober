@@ -84,16 +84,20 @@ if ( post_password_required() ) {
 						<?php endif; // Check for comment navigation. ?>
 						<ol>
               <?php 
+                global $post;
+
+                $page_id = $post->ID;
+			  
                 //Gather comments for a specific page/post 
                 $comments = get_comments(array(
-                  'post_id' => get_the_ID(),
+                  'post_id' => $page_id,
                   'status' => 'approve' //Change this to the type of comments to be displayed
                 ));
 
                   //Display the list of comments
                 wp_list_comments(array(
-                  'per_page' => 30, //Allow comment pagination
-                  'reverse_top_level' => true, //Show the oldest comments at the top of the list
+                  'per_page' => 50,
+                  'reverse_top_level' => false,
                   'type' => 'all',
                   'callback' => 'kleo_custom_comments'
                 ), $comments);
