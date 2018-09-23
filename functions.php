@@ -59,7 +59,7 @@ function hideAdminBar() { ?>
 function sort_by_reverse($comments) {
   return array_reverse($comments);
 }
-// add_filter ('comments_array', 'sort_by_reverse');
+//add_filter ('comments_array', 'sort_by_reverse');
 
 /**
 * custom sorting method by karma
