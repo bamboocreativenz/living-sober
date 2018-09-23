@@ -87,6 +87,18 @@ if($_GET['comments_sort'] == 'recent') {
  add_filter ('comments_array', 'sort_by_karma');	
 }
 
+/**
+ * Add querystring to comment links
+ */
+function add_sorting_querystring($link) {
+	// print_r($link);
+	if($_GET['comments_sort'] == 'recent') {
+		$link = str_replace('#comments', '?comments_sort=recent#comments', $link);
+	}
+	return $link;
+}
+add_filter('paginate_links', 'add_sorting_querystring');
+
 //disable default sorting provided by the Comment Popularity plugin
 add_filter( 'hmn_cp_sort_comments_by_weight', '__return_false' );
 
