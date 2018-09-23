@@ -99,6 +99,19 @@ function add_sorting_querystring($link) {
 }
 add_filter('paginate_links', 'add_sorting_querystring');
 
+/**
+ * Remove template added by plugin
+ */
+if ( is_plugin_active( 'comment-popularity/comment-popularity.php' ) ) {
+  add_action( 'plugins_loaded', function() {
+    remove_filter( 'comments_template', array( 'HMN_Comment_Popularity', 'custom_comments_template' ) );
+  }, 100 );
+}
+
+add_action( 'plugins_loaded', function() {
+  remove_filter( 'comments_template', array( 'HMN_Comment_Popularity', 'custom_comments_template' ) );
+}, 100 );
+
 //disable default sorting provided by the Comment Popularity plugin
 add_filter( 'hmn_cp_sort_comments_by_weight', '__return_false' );
 
