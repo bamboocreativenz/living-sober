@@ -1,11 +1,15 @@
 <?php
 /**
- * kleo-ls Theme functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package kleo-ls
+ * @package WordPress
+ * @subpackage Kleo
+ * @author Daniel Lewis & Bamboo Creative NZ
+ * @since Kleo 1.0
  */
+
+/**
+ * Kleo Child Theme Functions
+ * Add custom code below
+*/ 
 
 add_action( 'wp_enqueue_scripts', 'kleo_parent_theme_enqueue_styles' );
 
