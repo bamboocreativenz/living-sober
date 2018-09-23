@@ -22,7 +22,9 @@ get_header(); ?>
 			<section class="col-sm-6 col-md-7 col-lg-8 contentPage detail">
 		
       <?php
-				// Start the Loop.
+        // Reorder comments
+        add_filter( 'comments_array', 'array_reverse' );
+    		// Start the Loop.
 				while ( have_posts() ) : the_post();
 					// Include the page content template.
 					get_template_part( 'content', 'page' );
