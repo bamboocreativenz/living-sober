@@ -49,3 +49,14 @@ License URI: license.txt
 .ls-quote blockquote cite:before {
   content: "\2015";
 }
+
+.paginated-comments-links {
+  display: flex;
+  justify-content: center;
+}
+
+.page-numbers {
+  width: 20em;
+  display: flex;
+  justify-content: space-between;
+}
