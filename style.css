@@ -68,3 +68,7 @@ License URI: license.txt
   display: inline-flex;
   justify-content: space-between;
 }
+
+a.fl-button {
+  color: #AAD2FF;
+}
