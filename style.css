@@ -70,5 +70,6 @@ License URI: license.txt
 }
 
 #main a.fl-button {
-  color: #AAD2FF;
+  background: #AAD2FF;
+  font-weight: 700;
 }
