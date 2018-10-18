@@ -10,6 +10,10 @@ License: GNU General Public License
 License URI: license.txt
 */
 
+.hr-title abbr {
+  top: -20px;
+}
+
 .kleo-main-header{
   background-color: #EBE0D6!important;
 }
