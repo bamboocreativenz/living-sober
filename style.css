@@ -10,7 +10,7 @@ License: GNU General Public License
 License URI: license.txt
 */
 
-.hr-title abbr {
+#comments .hr-title abbr {
   top: -20px;
 }
 
