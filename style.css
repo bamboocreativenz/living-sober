@@ -73,3 +73,40 @@ License URI: license.txt
   background: #AAD2FF;
   font-weight: 700;
 }
+
+#main h1 {
+  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-style: italic;
+  font-size: 36px;
+  color: #161650
+}
+#main h2 {
+  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #FFBE55
+}
+#main h3 {
+  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-style: initial;
+  font-size: 22px;
+  color: #161650
+}
+#main h4 {
+  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #161650
+}
+#main h5 {
+  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #4E4E4E
+}
+#main body {
+  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-style: inherit;
+  font-size: 14px;
+  color: #4E4E4E
+}
