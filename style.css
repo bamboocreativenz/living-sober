@@ -69,6 +69,6 @@ License URI: license.txt
   justify-content: space-between;
 }
 
-a.fl-button {
+#main a.fl-button {
   color: #AAD2FF;
 }
