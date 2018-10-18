@@ -60,10 +60,11 @@ License URI: license.txt
 }
 
 .paginated-comments-links {
-  width: 4em;
+  width: 20em;
 }
 
 .page-numbers {
+  width: 100%;
   display: inline-flex;
   justify-content: space-between;
 }
