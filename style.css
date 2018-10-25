@@ -31,7 +31,7 @@ License URI: license.txt
 }
 /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
 .ls-quote blockquote:before {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-family: Georgia, serif;	
   position: absolute;
   font-size: 6em;
   line-height: 1;
@@ -40,7 +40,7 @@ License URI: license.txt
   content: "\201C";
 }
 .ls-quote blockquote:after {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-family: Georgia, serif;	
   position: absolute;
  /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
   float:right;
@@ -48,6 +48,7 @@ License URI: license.txt
   line-height: 1;
   right:0;
   bottom:0.1em;
+  content: "\201D";
 }
 .ls-quote blockquote footer {
   padding: 0 2em 0 0;
@@ -57,11 +58,8 @@ License URI: license.txt
   font-family: open-sans, sans-serif;
   font-size: 14px;
   color: #4E4E4E;
+  text-transform: unset;
 }
-.ls-quote blockquote cite:before {
-  content: "\2015";
-}
-
 .comments-navigation {
   display: flex;
   justify-content: center;
