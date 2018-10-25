@@ -36,7 +36,7 @@ License URI: license.txt
   font-size: 6em;
   line-height: 1;
   top: 0;
-  left: 0;
+  left: -5px;
   content: "\201C";
 }
 .ls-quote blockquote:after {
@@ -47,7 +47,7 @@ License URI: license.txt
   font-size:6em;
   line-height: 1;
   right:0;
-  bottom:0.1em;
+  bottom:-8px;
   content: "\201D";
 }
 .ls-quote blockquote footer {
