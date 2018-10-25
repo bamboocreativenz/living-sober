@@ -19,7 +19,11 @@ License URI: license.txt
 }
 
 .ls-quote blockquote {
-  font-family: Georgia, serif;
+  font-family: ff-tisa-sans-web-pro, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4E4E4E;
   position: relative;
   margin: 0.5em;
   padding: 0.5em 2em 0.5em 3em;
@@ -27,7 +31,7 @@ License URI: license.txt
 }
 /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
 .ls-quote blockquote:before {
-  font-family: Georgia, serif;
+  font-family: ff-tisa-sans-web-pro, sans-serif;
   position: absolute;
   font-size: 6em;
   line-height: 1;
@@ -36,7 +40,7 @@ License URI: license.txt
   content: "\201C";
 }
 .ls-quote blockquote:after {
-  font-family: Georgia, serif;
+  font-family: ff-tisa-sans-web-pro, sans-serif;
   position: absolute;
  /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
   float:right;
@@ -44,11 +48,15 @@ License URI: license.txt
   line-height: 1;
   right:0;
   bottom:0.1em;
-  content: "\201D";
 }
 .ls-quote blockquote footer {
   padding: 0 2em 0 0;
   text-align:right;
+}
+.ls-quote blockquote cite {
+  font-family: open-sans, sans-serif;
+  font-size: 14px;
+  color: #4E4E4E;
 }
 .ls-quote blockquote cite:before {
   content: "\2015";
@@ -63,7 +71,7 @@ License URI: license.txt
   width: 22em;
 }
 
-.page-numbers {
+  .page-numbers {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
@@ -89,6 +97,7 @@ License URI: license.txt
 #main h3 {
   font-family: ff-tisa-sans-web-pro, sans-serif;
   font-style: initial;
+  font-weight: 500;
   font-size: 22px;
   color: #161650
 }
@@ -101,12 +110,13 @@ License URI: license.txt
 #main h5 {
   font-family: ff-tisa-sans-web-pro, sans-serif;
   font-style: italic;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 20px;
   color: #4E4E4E
 }
-#main p {
+#main h6 {
   font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-style: inherit;
-  font-size: 14px;
+  font-style: italic;
+  font-size: 16px;
   color: #4E4E4E
 }
