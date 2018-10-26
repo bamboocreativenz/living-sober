@@ -10,15 +10,26 @@ License: GNU General Public License
 License URI: license.txt
 */
 
-.logo {
-  height: 50%!important;
+#header .logo {
+  height: 50%;
 }
+
+/* overide beaver builder default button border */
+
+#header .fl-builder-content a.fl-button {
+  border: none;
+} 
+
+
+#main .fl-builder-content a.fl-button {
+  border: none;
+} 
 
 #comments .hr-title abbr {
   top: -20px;
 }
 
-.kleo-main-header{
+#header .kleo-main-header{
   background-color: #EBE0D6!important;
 }
 
