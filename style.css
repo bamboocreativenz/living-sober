@@ -11,7 +11,7 @@ License URI: license.txt
 */
 
 .logo {
-  height: 50%;
+  height: 50%!important;
 }
 
 #comments .hr-title abbr {
