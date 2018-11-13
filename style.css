@@ -139,3 +139,6 @@ License URI: license.txt
     font-weight: 700;
   }
 }
+#main .main-color .form-control, #main input[type=text], #main input[type=password] {
+  background-color: #F6F1F1;
+}
