@@ -14,12 +14,7 @@ get_header(); ?>
 	<div id="primary">
 		<div class="container" role="main">
 			<div class="row">
-			<div class="col-sm-3 col-md-2  blogMenu">
-			<?php dynamic_sidebar( 'sidebar-4' ); ?>
-			</div>
-			
-			
-			<section class="col-sm-9 col-md-8 col-lg-10 contentPage detail">
+			<section class="col-sm-12 col-md-12 col-lg-12 contentPage detail">
 		
       <?php
         // Reorder comments
