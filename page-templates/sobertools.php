@@ -8,36 +8,48 @@
 
 get_header(); ?>
 
+<?php
+//create full width template
+kleo_switch_layout('sobertools');
+?>
+
 <?php get_template_part('page-parts/general-title-section'); ?>
 
 <?php get_template_part('page-parts/general-before-wrap'); ?>
 
-<div id="main-content" class="main-content">
-
-	<div id="primary">
-		<div class="container" role="main">
-			<div class="row">
-			<section class="col-sm-12 col-md-12 col-lg-12 contentPage detail">
-		
-      <?php
-        // Reorder comments
-        add_filter( 'comments_array', 'array_reverse' );
-    		// Start the Loop.
-				while ( have_posts() ) : the_post();
-					// Include the page content template.
-					get_template_part( 'content', 'page' );
-					// If comments are open or we have at least one comment, load up the comment template.
-          if ( comments_open() || get_comments_number() ) {
-            comments_template();
-					}
-				endwhile;
-			?>
-			</section>
-			
-			</div><!-- /row -->
-		</div><!-- /container -->
-	</div><!-- #primary -->
-</div><!-- #main-content -->	
-
 <?php
-get_footer();
+if ( have_posts() ) :
+	// Reorder comments
+	add_filter( 'comments_array', 'array_reverse' );
+	// Start the Loop.
+	while ( have_posts() ) : the_post();
+
+		/*
+		 * Include the post format-specific template for the content. If you want to
+		 * use this in a child theme, then include a file called called content-___.php
+		 * (where ___ is the post format) and that will be used instead.
+		 */
+		get_template_part( 'content', 'page' );
+        ?>
+
+        <?php get_template_part( 'page-parts/posts-social-share' ); ?>
+
+		<?php if ( sq_option( 'page_comments', 0 ) == 1 ): ?>
+
+			<!-- Begin Comments -->
+			<?php
+			if ( comments_open() || get_comments_number() ) {
+				comments_template( '', true );
+			} ?>
+			<!-- End Comments -->
+
+		<?php endif; ?>
+
+	<?php endwhile;
+
+endif;
+?>
+
+<?php get_template_part('page-parts/general-after-wrap'); ?>
+
+<?php get_footer(); ?>

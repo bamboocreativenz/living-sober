@@ -45,7 +45,7 @@ if ( post_password_required() ) {
 	<section class="container-wrap">
 		<div class="container">
 
-      <?php if ( strpos(get_page_template_slug(), 'sobertools-single') ) : ?>
+      <?php if ( strpos(get_page_template_slug(), 'sobertools') ) : ?>
         <?php kleo_comment_form(); ?>
       <?php endif; ?>
 
@@ -123,7 +123,7 @@ if ( post_password_required() ) {
 
 				<?php endif; // have_comments() ?>
 
-				<?php if ( strpos(get_page_template_slug(), 'sobertools-single' ) === false) : ?>
+				<?php if ( strpos(get_page_template_slug(), 'sobertools' ) === false) : ?>
           <?php kleo_comment_form(); ?>
         <?php endif; ?>
 
