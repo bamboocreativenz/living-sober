@@ -158,7 +158,7 @@ License URI: license.txt
 }
 
 @media (min-width: 603) {
-  #main #comments-list ul.children {
+  #comments-list ul.children {
     margin-left: 135px;
   }
 }
