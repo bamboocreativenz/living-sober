@@ -147,7 +147,7 @@ License URI: license.txt
 #main #comments .comment-respond, #comments-list .comment-respond {
   margin-left: 0;
 }
-@media (min-width: 704px) {
+@media (min-width: 991) {
   #main #comments .comment-respond, #comments-list .comment-respond, .akismet_comment_form_privacy_notice {
     margin-left: 90px;
   }
