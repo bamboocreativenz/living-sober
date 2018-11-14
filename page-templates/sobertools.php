@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Sober Tools Single
+ * Template Name: Sober Tools
  *
  * @package kleo-ls
  * @since September 2018
