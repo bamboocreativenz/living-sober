@@ -8,6 +8,14 @@
 
 get_header(); ?>
 
+<?php
+//create sobertools template
+kleo_switch_layout('sobertools');
+?>
+
+<?php get_template_part('page-parts/general-title-section'); ?>
+
+<?php get_template_part('page-parts/general-before-wrap'); ?>
 
 <div id="main-content" class="main-content">
 
