@@ -10,7 +10,7 @@ get_header(); ?>
 
 <?php
 //create full width template
-kleo_switch_layout('sobertools');
+kleo_switch_layout('no');
 ?>
 
 <?php get_template_part('page-parts/general-title-section'); ?>
