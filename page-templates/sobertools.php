@@ -9,7 +9,7 @@
 get_header(); ?>
 
 <?php
-//create full width template
+//create full width base template from Kleo - ie do you want widget areas?
 kleo_switch_layout('no');
 ?>
 
@@ -23,12 +23,7 @@ if ( have_posts() ) :
 	add_filter( 'comments_array', 'array_reverse' );
 	// Start the Loop.
 	while ( have_posts() ) : the_post();
-
-		/*
-		 * Include the post format-specific template for the content. If you want to
-		 * use this in a child theme, then include a file called called content-___.php
-		 * (where ___ is the post format) and that will be used instead.
-		 */
+	
 		get_template_part( 'content', 'page' );
         ?>
 
