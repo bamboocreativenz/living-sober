@@ -152,3 +152,7 @@ License URI: license.txt
     margin-left: 90px;
   }
 }
+
+#main #buddypress div.pagination .pagination-links {
+  display: flex;
+}
