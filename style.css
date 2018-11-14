@@ -147,7 +147,7 @@ License URI: license.txt
 #main #comments .comment-respond, #comments-list .comment-respond {
   margin-left: 0;
 }
-@media (min-width: 991) {
+@media (min-width: 991px) {
   #main #comments .comment-respond, #comments-list .comment-respond, .akismet_comment_form_privacy_notice {
     margin-left: 90px;
   }
@@ -157,6 +157,8 @@ License URI: license.txt
   display: flex;
 }
 
-  .children {
-    margin-left: 135px!important;
+@media (min-width: 603px) {
+  #main #comments-list ul.children {
+    margin-left: 135px;
   }
+}
