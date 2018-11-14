@@ -156,3 +156,9 @@ License URI: license.txt
 #main #buddypress div.pagination .pagination-links {
   display: flex;
 }
+
+@media (min-width: 603) {
+  #main #comments-list ul.children {
+    margin-left: 135px;
+  }
+}
