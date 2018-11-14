@@ -12,22 +12,36 @@ get_header(); ?>
 
 <?php get_template_part('page-parts/general-before-wrap'); ?>
 
-<section>
-	<?php
-		// Reorder comments
-		add_filter( 'comments_array', 'array_reverse' );
-		// Start the Loop.
-		while ( have_posts() ) : the_post();
-			// Include the page content template.
-			get_template_part( 'content', 'page' );
-			// If comments are open or we have at least one comment, load up the comment template.
+<?php if ( have_posts() ) : ?>
+		<?php
+	// Reorder comments
+	add_filter( 'comments_array', 'array_reverse' );
+	// Start the Loop.
+	while ( have_posts() ) : the_post();
+    ?>
+
+  	<?php
+		get_template_part( 'content', 'page' );
+        ?>
+
+        <?php get_template_part( 'page-parts/posts-social-share' ); ?>
+
+        <?php if ( sq_option( 'page_comments', 0 ) == 1 ): ?>
+
+            <!-- Begin Comments -->
+            <?php
 			if ( comments_open() || get_comments_number() ) {
-				kleo_comment_form();
-			}
-		endwhile;
-	?>
-</section>
+				comments_template( '', true );
+			} ?>
+            <!-- End Comments -->
+
+        <?php endif; ?>
+
+
+	<?php endwhile; ?>
+
+<?php endif; ?>
+
+<?php get_template_part('page-parts/general-after-wrap'); ?>
 
 <?php get_footer(); ?>
-
-
