@@ -157,8 +157,6 @@ License URI: license.txt
   display: flex;
 }
 
-@media (min-width: 603) {
   .children {
     margin-left: 135px!important;
   }
-}
