@@ -1,0 +1,127 @@
+<style>
+.overlay-container {
+  position: relative;
+}
+.overlay-background {
+  background: url('http://www.clipular.com/posts/4892511475335168?k=pXkSBjSIOOPfOVNQL4-Y5XDTjpI') no-repeat cover;
+}
+
+.overlay-content {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.overlay-content-text {
+  width: 40%;
+  padding-left:10%;
+}
+.overlay-content-start {
+  width: 50%;
+  top:28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 414px) {
+  .start-video-container {
+    top: 44.5%;
+  }
+}
+
+.start-video {
+  width: 60px;
+  opacity: .3;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.start-video:hover
+{
+  opacity: 1;
+  -webkit-filter: brightness (1);
+}
+
+@media (min-width: 414px) {
+  .start-video-container {
+    top: 44.5%;
+  }
+  .start-video {
+    width: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .start-video {
+    width: 130px;
+  }
+}
+</style>
+
+<div id="player"></div>
+<div id="overlay-container" class="overlay-container">
+  <div class="overlay-background"></div>
+  <div class="overlay-content">
+    <div class="overlay-content-text">
+      <div class="fl-cta-text-content">
+          <h1>The friendliest place to talk honestly with others about your relationship with alcohol.</h1>
+      </div>
+      <div class="fl-cta-button">
+        <div class="fl-button-wrap fl-button-width-auto">
+          <a href="/join-the-community" target="_self" class="fl-button" role="button"><span class="fl-button-text">Join the Community</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-content-start">
+        <a class="start-video"><img width="100%" src="http://image.flaticon.com/icons/png/512/0/375.png" style="filter: invert(100%); -webkit-filter: invert(100%);"></a>   
+    </div>
+  </div>
+</div>
+
+<script>
+
+//youtube script
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+  var player;
+
+  onYouTubeIframeAPIReady = function () {
+      player = new YT.Player('player', {
+          height: 'auto',
+          width: '100%',
+          videoId: 'YN-eHffKkLc',  // youtube video id
+          playerVars: {
+              'autoplay': 0,
+              'rel': 0,
+              'controls': 0,
+              'showinfo': 0,
+              'accelerometer': 1,
+              'encrypted-media': 1
+          },
+          events: {
+              'onStateChange': onPlayerStateChange
+          }
+      });
+  }
+  
+  var p = document.getElementById ("player");
+  $(p).hide();
+  
+  onPlayerStateChange = function (event) {
+      if (event.data == YT.PlayerState.ENDED) {
+          $('.start-video').fadeIn('normal');
+      }
+  }
+  
+  $(document).on('click', '.start-video', function () {
+      $(this).hide();
+      $("#player").show();
+      $("#overlay-container").hide();
+      player.playVideo();
+  });
+  </script>
