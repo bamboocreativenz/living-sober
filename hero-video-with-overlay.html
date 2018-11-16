@@ -1,22 +1,26 @@
 <style>
-.overlay-container {
+.video-container {
   position: relative;
 }
-.overlay-background {
-  background: url('http://www.clipular.com/posts/4892511475335168?k=pXkSBjSIOOPfOVNQL4-Y5XDTjpI') no-repeat cover;
+.overlay-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.clipular.com/c/4892511475335168.png?k=pXkSBjSIOOPfOVNQL4-Y5XDTjpI') no-repeat;
+  background-size: cover;
 }
 
 .overlay-content {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100%;
 }
 .overlay-content-text {
-  width: 40%;
+  width: 50%;
   padding-left:10%;
 }
 .overlay-content-start {
@@ -59,69 +63,70 @@
   }
 }
 </style>
+<div class="video-container">
+  <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/YN-eHffKkLc?controls=0&listType=playlist&list=PLGVsjzyaWFtybOK3eBK5etQBerlCc0uZ3&enablejsapi=1&origin=https://livingsober.colony.nz" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<div id="player"></div>
-<div id="overlay-container" class="overlay-container">
-  <div class="overlay-background"></div>
-  <div class="overlay-content">
-    <div class="overlay-content-text">
-      <div class="fl-cta-text-content">
-          <h1>The friendliest place to talk honestly with others about your relationship with alcohol.</h1>
-      </div>
-      <div class="fl-cta-button">
-        <div class="fl-button-wrap fl-button-width-auto">
-          <a href="/join-the-community" target="_self" class="fl-button" role="button"><span class="fl-button-text">Join the Community</span></a>
+  <div id="overlay-container" class="overlay-container">
+    <div class="overlay-content">
+      <div class="overlay-content-text">
+        <div class="fl-cta-text-content">
+            <h1>The friendliest place to talk honestly with others about your relationship with alcohol.</h1>
+        </div>
+        <div class="fl-cta-button">
+          <div class="fl-button-wrap fl-button-width-auto">
+            <a href="/join-the-community" target="_self" class="fl-button" role="button"><span class="fl-button-text">Join the Community</span></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="overlay-content-start">
-        <a class="start-video"><img width="100%" src="http://image.flaticon.com/icons/png/512/0/375.png" style="filter: invert(100%); -webkit-filter: invert(100%);"></a>   
+      <div class="overlay-content-start">
+          <a class="start-video"><img width="100%" src="http://image.flaticon.com/icons/png/512/0/375.png" style="filter: invert(100%); -webkit-filter: invert(100%);"></a>   
+      </div>
     </div>
   </div>
 </div>
 
-<script>
+<!--Note this will break beaver builder if uploaded
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-->
 
-//youtube script
+<script>  
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  
-  var player;
 
+  var player;
   onYouTubeIframeAPIReady = function () {
-      player = new YT.Player('player', {
-          height: 'auto',
-          width: '100%',
-          videoId: 'YN-eHffKkLc',  // youtube video id
-          playerVars: {
-              'autoplay': 0,
-              'rel': 0,
-              'controls': 0,
-              'showinfo': 0,
-              'accelerometer': 1,
-              'encrypted-media': 1
-          },
-          events: {
-              'onStateChange': onPlayerStateChange
-          }
-      });
+    player = new window.YT.Player('player', {
+      playerVars: {
+        'autoplay': 0,
+        'controls': 0,
+        'showinfo': 0,
+        'modestbranding': 0
+     },
+      events: {
+        'onStateChange': onPlayerStateChange
+      }
+    });
   }
   
   var p = document.getElementById ("player");
   $(p).hide();
   
   onPlayerStateChange = function (event) {
-      if (event.data == YT.PlayerState.ENDED) {
-          $('.start-video').fadeIn('normal');
-      }
+    if(event.data === 0) {          
+      $("#overlay-container").show();
+      $("#player").hide("1000");
+    }
+    if (event.data == YT.PlayerState.ENDED) {
+      $('.start-video').fadeIn('normal');
+    }
   }
   
   $(document).on('click', '.start-video', function () {
-      $(this).hide();
-      $("#player").show();
-      $("#overlay-container").hide();
-      player.playVideo();
+    $(this).hide();
+    $("#player").show();
+    $("#overlay-container").hide();
+    player.playVideo();
   });
   </script>
