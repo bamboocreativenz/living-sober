@@ -178,7 +178,7 @@ if ( have_posts() ) :
 				) : ?>
 					<h1 class="page-title text-center" style="font-size:20px;"><?php echo $title; ?></h1>
 				<?php endif; ?>
-				<div style="margin: 5px 0 20px 0;">
+				<div style="margin: 5px 0 50px 0;">
 					<h2>Our ethos is one of non-judgemental support and kindness. Please read our community guidelines before posting. Lurkers are also very welcome!</h2>
 					<hr/>
 				</div>
