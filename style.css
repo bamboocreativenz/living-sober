@@ -160,7 +160,7 @@ License URI: license.txt
 }
 
 @media (min-width: 603px) {
-  #main #comments-list ul.children {
+  #main #comments-list ul.children, #main #buddypress div.activity-comments {
     margin-left: 135px;
   }
 }
