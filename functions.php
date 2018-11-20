@@ -73,6 +73,29 @@ function comment_comparator($a, $b) {
  return $compared;
 }
 
+// Protect pages
+
+/**
+ * Make the members/community pages protected if you aren't logged in.
+ * 
+ * @global <BuddyPress> $bp
+ * @return <void>
+ */
+function protectMembersPage() {
+	global $bp;
+	
+	# Allow access to the register/activation page
+	if( bp_is_register_page() || bp_is_activation_page() || bp_is_page( BP_FORUMS_SLUG ) || bp_is_page( BP_GROUPS_SLUG ) ) {
+			return;
+	}
+	
+	# Restrict any community pages
+	if( ! bp_is_blog_page() && ! is_user_logged_in() ) {
+			bp_core_redirect( $bp->root_domain .'/'. BP_REGISTER_SLUG );
+	}
+}
+add_action( 'get_header', 'protectMembersPage' );
+
 // Overide the Archive for category line in Kleo
 
 if ( ! function_exists( 'kleo_title' ) ):
@@ -143,3 +166,14 @@ if ( ! function_exists( 'kleo_title' ) ):
 		return $output;
 	}
 endif;
+
+// Overide url redirect when comment on blog is posted to show the first page not the last
+
+function custom_comment_redirect( $location ) {
+	if ( strpos(get_page_template_slug(), 'sobertools' ) === true)
+			$location = '#';
+	}
+	return $location;
+}
+
+add_filter( 'comment_post_redirect', 'custom_comment_redirect' );
