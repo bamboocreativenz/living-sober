@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url('https://www.clipular.com/c/4892511475335168.png?k=pXkSBjSIOOPfOVNQL4-Y5XDTjpI') no-repeat;
+  background: url('https://livingsober.colony.nz/wp-content/uploads/2018/11/LS_video_still_v4.png') no-repeat;
   background-size: cover;
 }
 
@@ -20,29 +20,24 @@
   align-items: center;
 }
 .overlay-content-text {
+  display: none;
   width: 50%;
   padding-left:10%;
 }
-.overlay-content-text > div > h1 {
+#main .text-wrapper h1 {
   color: white;
+  font-size: 28px;
 }
-
 .overlay-content-start {
-  width: 50%;
+  width: 100%;
   top:28%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 414px) {
-  .start-video-container {
-    top: 44.5%;
-  }
-}
-
 .start-video {
   width: 60px;
-  opacity: .3;
+  opacity: .5;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -61,6 +56,19 @@
     width: 80px;
   }
 }
+@media (min-width: 768px) {
+  .overlay-content-text{
+    display: initial;
+  }
+  .overlay-content-start {
+    width: 50%;
+  }
+}
+@media (min-width: 992px){
+  #main .text-wrapper h1 {
+    font-size: 32px;
+  } 
+}
 @media (min-width: 1200px) {
   .start-video {
     width: 130px;
@@ -73,7 +81,7 @@
   <div id="overlay-container" class="overlay-container">
     <div class="overlay-content">
       <div class="overlay-content-text">
-        <div class="fl-cta-text-content">
+        <div class="text-wrapper">
             <h1>Welcome to our friendly community where you can talk safely and honestly with others about your relationship with alcohol.</h1>
         </div>
         <div class="fl-cta-button">
