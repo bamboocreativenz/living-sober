@@ -170,7 +170,7 @@ endif;
 // Overide url redirect when comment on blog is posted to show the first page not the last
 
 function custom_comment_redirect( $location ) {
-	if ( strpos(get_page_template_slug(), 'sobertools' ) === true)
+	if ( strpos(get_page_template_slug(), 'sobertools' ) === true){
 			$location = '#';
 	}
 	return $location;
