@@ -88,7 +88,7 @@ if ( ! function_exists( 'kleo_title' ) ):
 			$term   = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 			$output = $term->name;
 		} elseif ( is_category() ) {
-			$output = __( 'Archive for category:', 'kleo_framework' ) . " " . single_cat_title( '', false );
+			$output = single_cat_title( '', false );
 		} elseif ( is_day() ) {
 			$output = __( 'Archive for date:', 'kleo_framework' ) . " " . get_the_time( 'F jS, Y' );
 		} elseif ( is_month() ) {
