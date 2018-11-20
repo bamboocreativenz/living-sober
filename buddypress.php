@@ -176,7 +176,7 @@ if ( have_posts() ) :
 				<?php if ( sq_option( 'title_status', 1 ) == 1 && ( sq_option( 'bp_title_location', 'breadcrumb' ) == 'main'
                             || ( sq_option( 'bp_title_location', 'breadcrumb' ) == 'default' && sq_option( 'title_location', 'breadcrumb' ) == 'main' ) )
 				) : ?>
-					<h1 class="page-title text-center" style="font-size:20px;"><?php echo $title; ?></h1>
+					<h1 class="page-title"><?php echo $title; ?></h1>
 				<?php endif; ?>
 				<div style="margin: 5px 0 50px 0;">
 					<h2>Our ethos is one of non-judgemental support and kindness. Please read our community guidelines before posting. Lurkers are also very welcome!</h2>
