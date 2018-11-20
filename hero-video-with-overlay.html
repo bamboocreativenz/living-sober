@@ -23,6 +23,10 @@
   width: 50%;
   padding-left:10%;
 }
+.overlay-content-text > div > h1 {
+  color: white;
+}
+
 .overlay-content-start {
   width: 50%;
   top:28%;
@@ -70,7 +74,7 @@
     <div class="overlay-content">
       <div class="overlay-content-text">
         <div class="fl-cta-text-content">
-            <h1>The friendliest place to talk honestly with others about your relationship with alcohol.</h1>
+            <h1>Welcome to our friendly community where you can talk safely and honestly with others about your relationship with alcohol.</h1>
         </div>
         <div class="fl-cta-button">
           <div class="fl-button-wrap fl-button-width-auto">
@@ -117,6 +121,7 @@
     if(event.data === 0) {          
       $("#overlay-container").show();
       $("#player").hide("1000");
+      player.stopVideo();
     }
     if (event.data == YT.PlayerState.ENDED) {
       $('.start-video').fadeIn('normal');
