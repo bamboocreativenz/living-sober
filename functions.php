@@ -33,12 +33,16 @@ function bb_custom_enqueue_scripts(){
 }
 
 // Load Custom JavaScript via Child Theme
-function my_custom_javascript() {
-    wp_enqueue_style('myscript', get_stylesheet_directory_uri().'/js/livingsober.js', array('jquery'), '1.0', 'screen, projection');
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+function my_scripts_method() {
+	wp_enqueue_script(
+			'custom-script',
+			get_stylesheet_directory_uri() . '/js/livingsober.js',
+			array( 'jquery' )
+	);
 }
-add_filter('child_add_javascripts','my_custom_javascript');
 
-//
+
 // Show admin bar only for admins and editors
 // https://digwp.com/2011/04/admin-bar-tricks/
 if (!current_user_can('edit_posts')) {
