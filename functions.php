@@ -37,7 +37,7 @@ function my_scripts_method() {
 	wp_enqueue_script(
 			'custom-script',
 			get_stylesheet_directory_uri() . '/js/livingsober.js',
-			array( 'kleo-scripts' )
+			array( 'app' )
 	);
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
