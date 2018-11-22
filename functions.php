@@ -39,7 +39,7 @@ function my_scripts_method() {
 			get_stylesheet_directory_uri() . '/js/livingsober.js',
 			array( 'app' )
 	);
-	wp_register_script( 'validate-js', '://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js', array('jquery'), NULL, true );
+	wp_register_script( 'validate-js', 'https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js', array('jquery'), NULL, true );
   wp_enqueue_script( 'validate-js' );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
