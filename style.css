@@ -142,7 +142,7 @@ License URI: license.txt
 
 /* Hide the profile name field */
 
-.input#field_1 {
+.field_1 {
   opacity: 0;
   position: absolute;
   z-index: -100;
