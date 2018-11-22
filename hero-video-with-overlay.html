@@ -76,7 +76,7 @@
 }
 </style>
 <div class="video-container">
-  <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/YN-eHffKkLc?controls=0&listType=playlist&list=PLGVsjzyaWFtybOK3eBK5etQBerlCc0uZ3&enablejsapi=1&origin=https://livingsober.colony.nz" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/YN-eHffKkLc?enablejsapi=1&autoplay=0&loop=;1&controls=0&showinfo=0&modestbranding=1&origin=https://livingsober.colony.nz" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   <div id="overlay-container" class="overlay-container">
     <div class="overlay-content">
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="overlay-content-start">
-          <a class="start-video"><img width="100%" src="http://image.flaticon.com/icons/png/512/0/375.png" style="filter: invert(100%); -webkit-filter: invert(100%);"></a>   
+          <a class="start-video"><img width="100%" src="https://image.flaticon.com/icons/png/512/0/375.png" style="filter: invert(100%); -webkit-filter: invert(100%);"></a>   
       </div>
     </div>
   </div>
@@ -110,12 +110,6 @@
   var player;
   onYouTubeIframeAPIReady = function () {
     player = new window.YT.Player('player', {
-      playerVars: {
-        'autoplay': 0,
-        'controls': 0,
-        'showinfo': 0,
-        'modestbranding': 0
-     },
       events: {
         'onStateChange': onPlayerStateChange
       }
@@ -127,9 +121,9 @@
   
   onPlayerStateChange = function (event) {
     if(event.data === 0) {          
-      $("#overlay-container").show();
-      $("#player").hide("1000");
-      player.stopVideo();
+      $("#overlay-container").fadeIn(800);
+      $("#player").fadeOut(400);
+      player.pauseVideo();
     }
     if (event.data == YT.PlayerState.ENDED) {
       $('.start-video').fadeIn('normal');
@@ -137,9 +131,8 @@
   }
   
   $(document).on('click', '.start-video', function () {
-    $(this).hide();
-    $("#player").show();
-    $("#overlay-container").hide();
     player.playVideo();
+    $("#player").fadeIn();
+    $("#overlay-container").fadeOut(1200);
   });
   </script>
