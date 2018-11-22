@@ -39,6 +39,8 @@ function my_scripts_method() {
 			get_stylesheet_directory_uri() . '/js/livingsober.js',
 			array( 'app' )
 	);
+	wp_register_script( 'validate-js', '://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js', array('jquery'), NULL, true );
+  wp_enqueue_script( 'validate-js' );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
@@ -52,7 +54,6 @@ add_action('admin_print_scripts-profile.php', 'hideAdminBar');
 function hideAdminBar() { ?>
   <style type="text/css">.show-admin-bar { display: none; }</style>
   <?php }
-
 
 /**
  * Comments
