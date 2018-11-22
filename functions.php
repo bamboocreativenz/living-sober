@@ -32,6 +32,12 @@ function bb_custom_enqueue_scripts(){
   }
 }
 
+// Load Custom JavaScript via Child Theme
+function my_custom_javascript() {
+    wp_enqueue_style('myscript', get_stylesheet_directory_uri().'/js/livingsober.js', array('jquery'), '1.0', 'screen, projection');
+}
+add_filter('child_add_javascripts','my_custom_javascript');
+
 //
 // Show admin bar only for admins and editors
 // https://digwp.com/2011/04/admin-bar-tricks/
