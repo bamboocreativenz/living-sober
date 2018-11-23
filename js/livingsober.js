@@ -149,13 +149,13 @@ jQuery(document).ready(function() {
             // daysSoberMoney.val("");
         });
     }); 
-    $("a.reset").click(function(e) {
+    $("#cancel").click(function(e) {
         e.preventDefault();
         daysSoberForm.fadeOut(300, function() {
             $(".daysSoberAction").css('display', 'none');
             recalcButton.fadeIn(300);
         });
-    }); 
+    });
 });
 
 /**
