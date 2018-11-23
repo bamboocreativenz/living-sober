@@ -191,13 +191,6 @@ li {
 }
 
 /* Style the embedded ethos message at the top of the members page */
-
-.ethosContainer {
-  display: flex;
-}
-.ethosMessage, .ethosButton {
-  width: 50%;
-}
 #main .ethosMessage h2 {
   font-size: 20px;
 }
@@ -220,4 +213,12 @@ li {
 }
 .ethosButton .fl-button-text {
   color: #333;
+}
+@media (min-width: 603px) {
+  .ethosContainer {
+    display: flex;
+  }
+  .ethosMessage, .ethosButton {
+    width: 50%;
+  }
 }
