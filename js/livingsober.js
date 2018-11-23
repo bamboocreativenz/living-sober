@@ -116,7 +116,7 @@ jQuery(document).ready(function() {
                 $(".daysSoberAction").css('display', 'none');
             } else {
                 $(".saved").css('display', 'none');
-                $(".daysSoberAction").css('display', 'block');
+                $(".daysSoberAction").css('display', 'flex');
             }
 
             daysSoberResult.fadeIn(300);
