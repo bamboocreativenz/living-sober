@@ -189,3 +189,20 @@ li {
 #main #comments-nav-above {
   display: none;
 }
+
+/* Style the embedded ethos message at the top of the members page */
+
+.ethosContainer {
+  display: flex;
+}
+.ethosMessage .ethosButton {
+  width: 50%;
+}
+.ethosMessage > h2 {
+  font-size: 20px;
+}
+.ethosButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

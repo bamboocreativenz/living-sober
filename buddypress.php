@@ -185,12 +185,13 @@ if ( have_posts() ) :
 							<h2>Our ethos is one of non-judgemental support and kindness. Please read our community guidelines before posting. Lurkers are also very welcome!</h2>
 						</div>
 						<div class="ethosButton">
+						<div class="fl-button-wrap fl-button-width-auto">          
 							<a href="/members/community-guidelines/" target="_self" class="fl-button" role="button">
 									<span class="fl-button-text">Community Guidelines</span>
 							</a>
+							</div>
 						</div>
 					</div>
-					<hr/>
 				</div>
 
 				<div class="article-content">
