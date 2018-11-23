@@ -18,8 +18,11 @@ add_action( 'wp_enqueue_scripts', 'kleo_parent_theme_enqueue_styles' );
  */
 function kleo_parent_theme_enqueue_styles() {
 	wp_enqueue_style( 'kleo-style', get_stylesheet_directory_uri() . '/css/jquery-ui.structure.min.css');
-	wp_enqueue_style( 'kleo-style', get_stylesheet_directory_uri() . '/css/jquery-ui.theme.min.css');
 	wp_enqueue_style( 'kleo-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'kleo-ls-style', 
+		get_stylesheet_directory_uri() . '/css/jquery-ui.theme.min.css',
+		array( 'kleo-style')
+	);
 	wp_enqueue_style( 'kleo-ls-style',
 		get_stylesheet_directory_uri() . '/style.css',
 		array( 'kleo-style' )
