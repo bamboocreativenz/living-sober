@@ -49,6 +49,7 @@ jQuery(document).ready(function() {
     daysSoberForm = $("#daysSoberPre");
     daysSoberResult = $("#daysSoberResult");
     moneyResult = $("#moneyResult");
+    recalcButton = $("#recalcButton")
     
     // Cookie settings are here as they need to be the same for create/deleting of the cookie
     cookieSettings = { path: '/', expires: 365 * 10 };
@@ -139,13 +140,20 @@ jQuery(document).ready(function() {
         // $.removeCookie("moneySavedCookie", cookieSettings);
         
         // Clear any user entered or calculated text
-        daysSoberResult.fadeOut(300, function() {
+        recalcButton.fadeOut(300, function() {
             $(".daysSoberAction").css('display', 'block');
             daysSoberForm.fadeIn(300);
             //$(".result", daysSoberResult).text("");
             //$(".savings", moneyResult).text("");
             // datePicker.val("");
             // daysSoberMoney.val("");
+        });
+    }); 
+    $("a.reset").click(function(e) {
+        e.preventDefault();
+        daysSoberForm.fadeOut(300, function() {
+            $(".daysSoberAction").css('display', 'none');
+            recalcButton.fadeIn(300);
         });
     }); 
 });
