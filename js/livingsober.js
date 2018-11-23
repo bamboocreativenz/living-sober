@@ -120,6 +120,7 @@ jQuery(document).ready(function() {
             }
 
             daysSoberResult.fadeIn(300);
+            recalcButton.fadeIn(300);
         });
         
         // Store the result in a session length cookie
