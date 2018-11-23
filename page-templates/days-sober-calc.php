@@ -40,7 +40,7 @@
     <div class="resultsWrapper">
       <!-- days sober -->
       <div id="daysSoberResult" class="resultsContainer">
-        <h2 class="result">0</h2>
+        <h2 class="result">0 days</h2>
       </div>
     </div>
       <div class="resultsWrapper">

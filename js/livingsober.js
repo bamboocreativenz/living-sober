@@ -65,7 +65,7 @@ jQuery(document).ready(function() {
     if (typeof $.cookie("daysSinceCookie") !== "undefined") {
         daysSoberForm.hide();
         var daysSince = daydiff(parseDate($.cookie("daysSinceCookie")), dateToday);
-        $(".result", daysSoberResult).text(daysSince);
+        $(".result", daysSoberResult).text(daysSince + ' days');
 
         datePicker.val($.cookie("draysSinceCookie"));
         
@@ -106,7 +106,7 @@ jQuery(document).ready(function() {
         
         // Update and display the days sober result
         daysSoberForm.fadeOut(300, function() {
-            $(".result", daysSoberResult).text(daysSince);
+            $(".result", daysSoberResult).text(daysSince + ' days');
 
             if(moneySaved) {
                 $(".savings", moneyResult).text('$' + moneySaved.toFixed(2));
