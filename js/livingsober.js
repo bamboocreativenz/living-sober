@@ -67,7 +67,7 @@ jQuery(document).ready(function() {
         var daysSince = daydiff(parseDate($.cookie("daysSinceCookie")), dateToday);
         $(".result", daysSoberResult).text(daysSince);
 
-        datePicker.val($.cookie("daysSinceCookie"));
+        datePicker.val($.cookie("draysSinceCookie"));
         
         daysSoberResult.show();
 
