@@ -25,6 +25,7 @@
           <p class="halfCalc">Want to see how much money you've saved? Enter your average weekly booze spend.</p>
           <input type="text" name="daysSoberMoney" id="daysSoberMoney" value="" class="text" />
           <button class="btn btn-primary btn-red">Calculate</button>
+          <div id="cancel" class="btn btn-secondary btn-red">Cancel</div>
         </div>
     
       </form>  
