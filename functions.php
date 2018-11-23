@@ -26,7 +26,7 @@ function kleo_parent_theme_enqueue_styles() {
 }
 
 function jquery_ui_enqueue_styles() {
-	wp_enqueue_style( 'kleo-style', get_stylesheet_directory_uri() . '/css/jquery-ui.theme.min.css');
+	wp_enqueue_style( 'jquery-style', get_stylesheet_directory_uri() . '/css/jquery-ui.theme.min.css');
 }
 
 add_action( 'wp_enqueue_scripts', 'bb_custom_enqueue_scripts', 99 );;
