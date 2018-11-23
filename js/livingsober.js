@@ -45,7 +45,7 @@ jQuery(document).ready(function() {
 
     dateToday = new Date();
     datePicker = $("input#daysSoberDatepicker");
-    daysSoberMoney = $("input#daysSoberMoney");
+    daysSoberMoney = $("#daysSoberMoney");
     daysSoberForm = $("#daysSoberPre");
     daysSoberResult = $("#daysSoberResult");
     
