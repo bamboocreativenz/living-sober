@@ -48,6 +48,7 @@ jQuery(document).ready(function() {
     daysSoberMoney = $("#daysSoberMoney");
     daysSoberForm = $("#daysSoberPre");
     daysSoberResult = $("#daysSoberResult");
+    moneyResult = $("#moneyResult");
     
     // Cookie settings are here as they need to be the same for create/deleting of the cookie
     cookieSettings = { path: '/', expires: 365 * 10 };
@@ -71,7 +72,7 @@ jQuery(document).ready(function() {
 
         if (typeof $.cookie("moneySavedCookie") !== "undefined" && $.cookie("moneySavedCookie") > 0) {
             var moneySaved = $.cookie("moneySavedCookie") / 7 * daysSince;
-            $(".savings", daysSoberResult).text('$' + moneySaved.toFixed(2));
+            $(".savings", moneyResult).text('$' + moneySaved.toFixed(2));
             $(".daysSoberAction").css('display', 'none');
             
             daysSoberMoney.val($.cookie("moneySavedCookie"));
@@ -88,7 +89,8 @@ jQuery(document).ready(function() {
         
         // Clear the previous result (if there is one)
         $(".result", daysSoberResult).text("");
-        
+        $(".savings", moneyResult).text("");
+
         // No date entered. Show an error
         if (datePicker.val() === "") {
             return false;
@@ -106,7 +108,7 @@ jQuery(document).ready(function() {
             $(".result", daysSoberResult).text(daysSince);
 
             if(moneySaved) {
-                $(".savings", daysSoberResult).text('$' + moneySaved.toFixed(2));
+                $(".savings", moneyResult).text('$' + moneySaved.toFixed(2));
                 
                 // $(".saved").css('display', 'block');
                 $(".saved").fadeIn(300);
