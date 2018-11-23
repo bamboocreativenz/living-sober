@@ -146,8 +146,8 @@ jQuery(document).ready(function() {
             daysSoberForm.fadeIn(300);
             //$(".result", daysSoberResult).text("");
             //$(".savings", moneyResult).text("");
-            // datePicker.val("");
-            // daysSoberMoney.val("");
+            datePicker.val("");
+            daysSoberMoney.val("");
         });
     }); 
     $("#cancel").click(function(e) {
