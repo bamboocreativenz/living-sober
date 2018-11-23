@@ -142,7 +142,7 @@ jQuery(document).ready(function() {
         
         // Clear any user entered or calculated text
         recalcButton.fadeOut(300, function() {
-            $(".daysSoberAction").css('display', 'block');
+            $(".daysSoberAction").css('display', 'flex');
             daysSoberForm.fadeIn(300);
             //$(".result", daysSoberResult).text("");
             //$(".savings", moneyResult).text("");
