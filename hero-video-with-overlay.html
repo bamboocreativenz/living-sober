@@ -76,7 +76,7 @@
 }
 </style>
 <div class="video-container">
-  <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/YN-eHffKkLc?enablejsapi=1&autoplay=0&loop=;1&controls=0&showinfo=0&modestbranding=1&origin=https://livingsober.colony.nz" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/YN-eHffKkLc?enablejsapi=1&autoplay=0&loop=1&controls=0&showinfo=0&modestbranding=1&origin=https://livingsober.colony.nz" allowfullscreen></iframe>
 
   <div id="overlay-container" class="overlay-container">
     <div class="overlay-content">
@@ -110,6 +110,14 @@
   var player;
   onYouTubeIframeAPIReady = function () {
     player = new window.YT.Player('player', {
+      playerVars: {
+        'origin': 'https://livingsober.colony.nz',
+        'autoplay': 0,
+        'loop': 1,
+        'controls': 0,
+        'showinfo': 0,
+        'modestbranding': 1
+     },
       events: {
         'onStateChange': onPlayerStateChange
       }
