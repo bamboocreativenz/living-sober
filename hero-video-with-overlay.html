@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url('https://livingsober.colony.nz/wp-content/uploads/2018/11/LS_video_still_v4.png') no-repeat;
+  background: url('https://livingsober.flywheelsites.com/wp-content/uploads/2018/11/LS_video_still_v4-1-min-e1542993791593.png') no-repeat;
   background-size: cover;
 }
 
@@ -70,13 +70,16 @@
   } 
 }
 @media (min-width: 1200px) {
+  .video-container {
+    min-height: 600px;
+  }
   .start-video {
     width: 130px;
   }
 }
 </style>
-<div class="video-container">
-  <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/YN-eHffKkLc?enablejsapi=1&autoplay=0&loop=1&controls=0&showinfo=0&modestbranding=1&origin=https://livingsober.colony.nz" allowfullscreen></iframe>
+<div class="video-container" style="min-height:500px;">
+  <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/YN-eHffKkLc?enablejsapi=1&loop=1&controls=0&showinfo=0&origin=https://livingsober.flywheelsites.com"></iframe>
 
   <div id="overlay-container" class="overlay-container">
     <div class="overlay-content">
@@ -111,7 +114,7 @@
   onYouTubeIframeAPIReady = function () {
     player = new window.YT.Player('player', {
       playerVars: {
-        'origin': 'https://livingsober.colony.nz',
+        'origin': 'https://livingsober.flywheelsites.com',
         'autoplay': 0,
         'loop': 1,
         'controls': 0,
