@@ -198,7 +198,7 @@ li {
 .ethosMessage, .ethosButton {
   width: 50%;
 }
-.ethosMessage > h2 {
+#main .ethosMessage h2 {
   font-size: 20px;
 }
 .ethosButton {
