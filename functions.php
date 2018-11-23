@@ -20,6 +20,8 @@ function kleo_parent_theme_enqueue_styles() {
 	wp_enqueue_style( 'kleo-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'kleo-ls-style',
 		get_stylesheet_directory_uri() . '/style.css',
+		get_stylesheet_directory_uri() . '/css/jquery-ui.structure.min.css',
+		get_stylesheet_directory_uri() . '/css/jquery-ui.theme.min.css',
 		array( 'kleo-style' )
 	);
 
