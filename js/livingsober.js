@@ -142,7 +142,8 @@ jQuery(document).ready(function() {
         daysSoberResult.fadeOut(300, function() {
             $(".daysSoberAction").css('display', 'block');
             daysSoberForm.fadeIn(300);
-            $(".result", daysSoberResult).text("");
+            //$(".result", daysSoberResult).text("");
+            //$(".savings", moneyResult).text("");
             // datePicker.val("");
             // daysSoberMoney.val("");
         });
