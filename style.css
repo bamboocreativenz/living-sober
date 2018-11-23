@@ -218,3 +218,6 @@ li {
   text-decoration: none;
   text-shadow: none;
 }
+.ethosButton .fl-button-text {
+  color: #333;
+}
