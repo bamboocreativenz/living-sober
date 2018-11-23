@@ -22,13 +22,13 @@
     background-size: contain;
   }
   .formWrapper {
-    min-height: 120px;
+    min-height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .daysSoberAction {
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
   }
