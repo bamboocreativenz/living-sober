@@ -180,10 +180,17 @@ li {
 
 #main #buddypress a.button.fav, #main #buddypress a.button.unfav {
   position: absolute;
-  top: 58px;
-  left: -67px;
+  top: -4px;
+  left: auto;
   z-index: 100;
-  right: auto;
+  right: 0;
+}
+@media (min-width: 480px) {
+  #main #buddypress a.button.fav, #main #buddypress a.button.unfav {
+    top: 58px;
+    left: -67px;
+    right: auto;
+  }
 }
 
 #main #comments-nav-above {
