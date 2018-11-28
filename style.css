@@ -153,7 +153,7 @@ li {
 
 /* Overide buddy press and regular form fields */
 
-#main #search-members-form, #main .kleo-masonry-item, #main #whats-new-textarea{
+#main #search-members-form, #main .member-inner-list, #main #whats-new-textarea{
   background-color: #f7f7f7;
 }
 
