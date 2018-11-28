@@ -42,7 +42,7 @@ function my_scripts_method() {
 	wp_enqueue_script(
 			'custom-script',
 			get_stylesheet_directory_uri() . '/js/livingsober.js',
-			array( 'app' )
+			array( 'jquery' )
 	);
 	wp_register_script( 'validate-js', 'https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js', array('jquery'), NULL, true );
 	wp_enqueue_script( 'validate-js' );
