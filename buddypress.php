@@ -8,11 +8,6 @@
  * @since Kleo 1.0
  */
 
-/* DL: Tell buddy press to use WP mail smtp
- * This will mean that mail wont work in dev/staging unless wp mail is set up as well
- */
-add_filter( 'bp_email_use_wp_mail', '__return_true' );
-
 /* Change page display based on current Page settings */
 add_action( 'wp_head', 'kleo_bp_page_options' );
 
