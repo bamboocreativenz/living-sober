@@ -174,3 +174,8 @@ add_filter( 'comment_post_redirect', 'custom_comment_redirect' );
 
 // Remove DNS Prefetch will solve this issue https://stackoverflow.com/a/51918472
 remove_action( 'wp_head', 'wp_resource_hints', 2 );
+
+/* DL: Tell buddy press to use WP mail smtp
+ * This will mean that mail wont work in dev/staging unless wp mail is set up as well
+ */
+add_filter( 'bp_email_use_wp_mail', '__return_true' );
