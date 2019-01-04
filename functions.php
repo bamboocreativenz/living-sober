@@ -161,6 +161,21 @@ if ( ! function_exists( 'kleo_title' ) ):
 	}
 endif;
 
+add_filter( 'bp_activity_maybe_load_mentions_scripts', 'buddydev_enable_mention_autosuggestions', 10, 2 );
+ 
+function buddydev_enable_mention_autosuggestions( $load, $mentions_enabled ) {
+    
+    if( ! $mentions_enabled ) {
+        return $load;//activity mention is  not enabled, so no need to bother
+    }
+    //modify this condition to suit yours
+    if( is_user_logged_in() && is_page_template( 'page-templates/sobertools.php' ) ) {
+        $load = true;
+    }
+    
+    return $load;
+}
+
 // Remove DNS Prefetch will solve this issue https://stackoverflow.com/a/51918472
 remove_action( 'wp_head', 'wp_resource_hints', 2 );
 
