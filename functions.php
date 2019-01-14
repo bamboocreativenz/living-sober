@@ -183,3 +183,14 @@ remove_action( 'wp_head', 'wp_resource_hints', 2 );
  * This will mean that mail wont work in dev/staging unless wp mail is set up as well
  */
 add_filter( 'bp_email_use_wp_mail', '__return_true' );
+
+// Change the profile link to point to buddypress
+// https://www.designwall.com/question/dwqa-author-link-redirect-to-buddypress-profile/
+
+add_filter('dwqa_get_author_link', 'dwqa_buddypress_profile_link', 10, 3);
+	function dwqa_buddypress_profile_link($url, $user_id, $user){
+		if(function_exists('bp_core_get_user_domain')){
+			return bp_core_get_user_domain($user_id);
+		}
+	return $url;
+} 
