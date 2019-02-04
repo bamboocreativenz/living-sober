@@ -38,19 +38,6 @@ jQuery(document).ready(function() {
   copyUserNameToProfileName();
   $("#signup_username").keyup(copyUserNameToProfileName);
 
-      // IE warning message
-      var ieMessage = jQuery("#ieMessage");
-      if (bowser.msie && bowser.version < 9) {
-          if (typeof jQuery.cookie("ieMessage") == "undefined") {
-              ieMessage.slideDown(500);
-          }
-      }
-      jQuery("a.close", ieMessage).click(function(e) {
-          e.preventDefault();
-          jQuery.cookie('ieMessage', true, { expires: 7, path: '/' });
-          ieMessage.slideUp(500);
-      });
-
   ////////////////////////////////////////////////////////////////////////////
     /**
      * Living Sober Calculator
