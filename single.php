@@ -43,14 +43,6 @@ if ( get_cfield( 'related_posts' ) != '' ) {
 
 	<?php get_template_part( 'content', get_post_format() ); ?>
 
-	<?php get_template_part( 'page-parts/posts-social-share' ); ?>
-
-	<?php
-	if ( $related == 1 ) {
-		get_template_part( 'page-parts/posts-related' );
-	}
-	?>
-
 	<?php
 	if ( sq_option( 'post_navigation', 1 ) == 1 ) :
 		// Previous/next post navigation.
@@ -65,6 +57,14 @@ if ( get_cfield( 'related_posts' ) != '' ) {
 	}
 	?>
 	<!-- End Comments -->
+
+  <?php get_template_part( 'page-parts/posts-social-share' ); ?>
+
+  <?php
+  if ( $related == 1 ) {
+    get_template_part( 'page-parts/posts-related' );
+  }
+  ?>
 
 <?php endwhile; ?>
 
