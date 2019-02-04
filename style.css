@@ -14,6 +14,11 @@ License URI: license.txt
   height: 50%;
 }
 
+#main .main-title.breadcrumbs-container {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
 /* overide beaver builder default button border */
 
 #header .fl-builder-content a.fl-button {
