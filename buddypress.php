@@ -177,21 +177,6 @@ if ( have_posts() ) :
 				) : ?>
 					<h1 class="page-title"><?php echo $title; ?></h1>
 				<?php endif; ?>
-				<div style="margin: 5px 0 50px 0;">
-					<div class="ethosContainer">
-						
-						<div class="ethosMessage">
-							<h2>Our ethos is one of non-judgemental support and kindness. Please read our community guidelines before posting. Lurkers are also very welcome!</h2>
-						</div>
-						<div class="ethosButton">
-						<div class="fl-button-wrap fl-button-width-auto">          
-							<a href="/members/community-guidelines/" target="_self" class="fl-button" role="button">
-									<span class="fl-button-text">Community Guidelines</span>
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
 
 				<div class="article-content">
 					<?php the_content(); ?>

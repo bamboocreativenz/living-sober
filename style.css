@@ -146,9 +146,7 @@ li {
 /* Hide the profile name field */
 
 .field_1 {
-  opacity: 0;
-  position: absolute;
-  z-index: -100;
+  display: none;
 }
 
 /* Overide buddy press and regular form fields */
