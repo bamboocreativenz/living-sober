@@ -34,8 +34,6 @@ if ( have_posts() ) :
         get_template_part( 'content', 'page' );
         ?>
 
-        <?php get_template_part( 'page-parts/posts-social-share' ); ?>
-
         <?php if ( sq_option( 'page_comments', 0 ) == 1 ): ?>
 
             <!-- Begin Comments -->
@@ -46,6 +44,8 @@ if ( have_posts() ) :
             <!-- End Comments -->
 
         <?php endif; ?>
+
+        <?php get_template_part( 'page-parts/posts-social-share' ); ?>
 
     <?php endwhile;
 
