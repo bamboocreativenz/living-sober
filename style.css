@@ -233,6 +233,6 @@ li {
   }
 }
 
-.kleo-go-top {
+.kleo-go-top.on {
   bottom: 87px;
 }
