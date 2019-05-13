@@ -6,7 +6,7 @@
 			<?php do_action( 'kleo_before_login_form' ); ?>
 
             <div class="kleo-pop-title-wrap main-color">
-                <h3 class="kleo-pop-title"><?php esc_html_e( "Log in with your credentials", "kleo_framework" ); ?></h3>
+                <h3 class="kleo-pop-title"><?php esc_html_e( "Sign in", "kleo_framework" ); ?></h3>
 
 				<?php if ( get_option( 'users_can_register' ) ) : ?>
 
