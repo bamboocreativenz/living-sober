@@ -1729,6 +1729,7 @@ KLEO.main = {
             data.security = dataContainer.find('#post-security').val();
             data.paged = $(this).attr('data-paged');
             data.itemsWrap = $(this).parent().siblings('.posts-listing');
+            data.perPage = 100;
 
             KLEO.main.ajaxPostsMore(data);
             return false;
@@ -1743,7 +1744,8 @@ KLEO.main = {
                 pitem: data.pItem,
                 post_id: data.postId,
                 security: data.security,
-                paged: data.paged
+                paged: data.paged,
+                per_page: data.perPage
             },
             beforeSend: function() {
                 data.itemsWrap.siblings('.posts-load-more').find('a').html('').addClass('kleo-loading-icon disabled');
