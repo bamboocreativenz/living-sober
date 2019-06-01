@@ -1059,7 +1059,7 @@ function bp_legacy_theme_new_activity_comment() {
 	}
 
 	// Load the new activity item into the $activities_template global.
-	bp_has_activities( 'display_comments=stream&hide_spam=false&show_hidden=true&include=' . $comment_id );
+	bp_has_activities( 'display_comments=stream&per_page=100&hide_spam=false&show_hidden=true&include=' . $comment_id );
 
 	// Swap the current comment with the activity item we just loaded.
 	if ( isset( $activities_template->activities[0] ) ) {
