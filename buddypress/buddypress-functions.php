@@ -738,6 +738,9 @@ function bp_legacy_theme_ajax_querystring( $query_string, $object ) {
 	// Now pass the querystring to override default values.
 	$query_string = empty( $qs ) ? '' : join( '&', (array) $qs );
 
+	// DL: Add per page 100 to show 100 posts at a time
+	$query_string .= empty( $qs ) ? 'per_page=100' : '&per_page=100' ;
+
 	$object_filter = '';
 	if ( isset( $_BP_COOKIE[ 'bp-' . $object . '-filter' ] ) ) {
 		$object_filter = $_BP_COOKIE[ 'bp-' . $object . '-filter' ];
