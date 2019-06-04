@@ -196,4 +196,6 @@ add_filter('dwqa_get_author_link', 'dwqa_buddypress_profile_link', 10, 3);
 } 
 
 // Disable the "Activity > Following" subnav item on a user's profile page
+// note we are running this modified version of the plugin. this code is actually redundant but its here as a reference for not doing what we wanted.
+// see https://github.com/agentlewis/buddypress-followers
 add_filter( 'bp_follow_show_activity_subnav', '__return_false' );
