@@ -194,3 +194,6 @@ add_filter('dwqa_get_author_link', 'dwqa_buddypress_profile_link', 10, 3);
 		}
 	return $url;
 } 
+
+// Disable the "Activity > Following" subnav item on a user's profile page
+add_filter( 'bp_follow_show_activity_subnav', '__return_false' );
