@@ -381,6 +381,7 @@ f(function () {
 * Credit to Thierry Koblentz - http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
 * Released under the WTFPL license - http://sam.zoy.org/wtfpl/
 */
+/*
 (function (a) {
 a.fn.fitVids = function (b) {
     var c = {customSelector: null};
@@ -418,7 +419,7 @@ a.fn.fitVids = function (b) {
     })
 }
 })(window.jQuery);
-
+*/
 
 /* ======================= jQuery Easing Plugin =============================== */
 /* jQuery Easing Plugin, v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/ */
