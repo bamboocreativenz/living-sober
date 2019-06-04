@@ -484,7 +484,8 @@ jq(document).ready( function() {
 			load_more_args = {
 				action: 'activity_get_older_updates',
 				'cookie': bp_get_cookies(),
-				'page': oldest_page,
+                'page': oldest_page,
+                'per_page': '100',
 				'exclude_just_posted': just_posted.join(',')
 			};
 
