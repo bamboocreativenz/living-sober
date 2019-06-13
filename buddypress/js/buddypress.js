@@ -560,7 +560,7 @@ jq(document).ready( function() {
 			'activity_id': a_id
 		},
 		function(response) {
-			jq(a_inner).slideUp(300).html(response).slideDown(300);
+			jq(a_inner).html(response).slideDown(300);
 		});
 
 		return false;
