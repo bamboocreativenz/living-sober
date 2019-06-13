@@ -739,7 +739,7 @@ function bp_legacy_theme_ajax_querystring( $query_string, $object ) {
 	$query_string = empty( $qs ) ? '' : join( '&', (array) $qs );
 
 	// DL: Add per page 100 to show 100 posts at a time
-	$query_string .= empty( $qs ) ? 'per_page=50' : '&per_page=50' ;
+	$query_string .= empty( $qs ) ? 'per_page=80' : '&per_page=80' ;
 
 	$object_filter = '';
 	if ( isset( $_BP_COOKIE[ 'bp-' . $object . '-filter' ] ) ) {
