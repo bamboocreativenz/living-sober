@@ -236,3 +236,11 @@ li {
 .kleo-go-top.on {
   bottom: 87px;
 }
+
+div#latest-update {
+  height: 200px;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+  }

@@ -205,3 +205,11 @@ function my_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
 }
 add_action( 'wp_footer', 'my_deregister_scripts' );
+
+// DL make posts longer in activity feed
+function bpfr_custom_length( $excerpt_length) {
+	$excerpt_length = '2000'; // change value to your need
+	return $excerpt_length;
+
+}
+add_filter( 'bp_activity_excerpt_length', 'bpfr_custom_length', 10, 1);
