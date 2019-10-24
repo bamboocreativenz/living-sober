@@ -21,12 +21,19 @@
 <?php do_action( 'dwqa_before_question_submit_form' ); ?>
 <?php if ( dwqa_current_user_can( 'post_question' ) ) : ?>
 	<form method="post" class="dwqa-content-ask-form" enctype="multipart/form-data">
-		<p class="dwqa-search">
-			<label for="question_title"><?php _e( 'What site problem are you having?', 'dwqa' ) ?></label>
+    <div style="margin:20px 0px">
+    <label for="question-category">Post something now...</label>
+     <p><input type="radio" name="question-category" id="Issues" value="20851"> Issues</p>
+  <p> <input type="radio" name="question-category" id="Suggestions" value="20852"> Suggestions</p>
+  <p> <input type="radio" name="question-category" id="Guides" value="20853"> Guides</p>
+</div>
+        
+        <p class="dwqa-search">
+			<label for="question_title"><?php _e( 'What is your post about?', 'dwqa' ) ?></label>
 			<?php $title = isset( $_POST['question-title'] ) ? $_POST['question-title'] : ''; ?>
 			<input type="text" data-nonce="<?php echo wp_create_nonce( '_dwqa_filter_nonce' ) ?>" id="question-title" name="question-title" value="<?php echo esc_attr( $title ) ?>" tabindex="1">
 		</p>
-<label for="question_title">Tell us more about the problem</label>
+<label for="question_title">Details</label>
 		<?php $content = isset( $_POST['question-content'] ) ? $_POST['question-content'] : ''; ?>
 		<p><?php dwqa_init_tinymce_editor( array( 'content' => $content, 'textarea_name' => 'question-content', 'id' => 'question-content' ) ) ?></p>
 		<?php global $dwqa_general_settings; ?>
@@ -48,25 +55,7 @@ if( current_user_can('editor') || current_user_can('administrator') ) {
      echo "<p style='display:none'>";
 }
 ?>
-			<label for="question-category"><?php _e( 'Category', 'dwqa' ) ?></label>
-			<?php
-
-				if(isset($dwqa_category) && isset($dwqa_category->term_id) && $dwqa_category->term_id>0){
-					echo '<span>'. $dwqa_category->name .'</span>';
-					echo '<input type="hidden" name="question-category" value="'. $dwqa_category->term_id .'">';
-				}else{
-					wp_dropdown_categories( array(
-						'name'          => 'question-category',
-						'id'            => 'question-category',
-						'taxonomy'      => 'dwqa-question_category',
-						// 'show_option_none' => __( 'Select question category', 'dwqa' ),
-						'hide_empty'    => 0,
-						'quicktags'     => array( 'buttons' => 'strong,em,link,block,del,ins,img,ul,ol,li,code,spell,close' ),
-						'selected'      => isset( $_POST['question-category'] ) ? esc_attr( $_POST['question-category'] ) : false,
-					) );
-				}
-			?>
-		</p>
+			
 		<?php
 if( current_user_can('editor') || current_user_can('administrator') ) {
      echo "<p style='display:block !important'>";
@@ -95,7 +84,7 @@ if( current_user_can('editor') || current_user_can('administrator') ) {
 		<?php wp_nonce_field( '_dwqa_submit_question' ) ?>
 		<?php dwqa_load_template( 'captcha', 'form' ); ?>
 		<?php do_action('dwqa_show_captcha_question')?>
-		<input type="submit" name="dwqa-question-submit" class="dwqa-btn dwqa-btn-primary" value="<?php _e( 'Submit', 'dwqa' ) ?>" >
+		<input type="submit" name="dwqa-question-submit" class="dwqa-btn dwqa-btn-primary" value="<?php _e( 'New Post', 'dwqa' ) ?>" >
 		<?php do_action( 'dwqa_after_question_submit_button' ) ?>
 	</form>
 <?php else : ?>
