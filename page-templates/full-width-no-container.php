@@ -56,3 +56,50 @@ endif;
 <?php get_template_part('page-parts/general-after-wrap'); ?>
 
 <?php get_footer(); ?>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>  
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+  onYouTubeIframeAPIReady = function () {
+    player = new window.YT.Player('player', {
+      playerVars: {
+        'origin': 'https://livingsober.org.nz',
+        'autoplay': 0,
+        'loop': 1,
+        'controls': 0,
+        'showinfo': 0,
+        'modestbranding': 1
+     },
+      events: {
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+  
+  var p = document.getElementById ("player");
+  $(p).hide();
+  
+  onPlayerStateChange = function (event) {
+    if(event.data === 0) {          
+      $("#overlay-container").fadeIn(800);
+      $("#player").fadeOut(400);
+      player.pauseVideo();
+    }
+    if (event.data == YT.PlayerState.ENDED) {
+      $('.start-video').fadeIn('normal');
+    }
+  }
+  
+  $(document).on('click', '.start-video', function () {
+    player.playVideo();
+    $("#player").fadeIn();
+    $("#overlay-container").fadeOut(1200);
+  });
+  </script>
