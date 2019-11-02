@@ -38,16 +38,21 @@ function bb_custom_enqueue_scripts(){
 }
 
 // Load Custom JavaScript via Child Theme
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
 function my_scripts_method() {
 	wp_enqueue_script(
 			'custom-script',
 			get_stylesheet_directory_uri() . '/js/livingsober.js',
 			array( 'jquery' )
 	);
-	wp_register_script( 'validate-js', 'https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js', array('jquery'), NULL, true );
+	wp_register_script( 'jquery-js', 'https://code.jquery.com/jquery-3.4.1.min.js', array('jquery'), NULL, true );
+	wp_enqueue_script( 'jquery-js' );
+	wp_register_script( 'validate-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js', array('jquery'), NULL, true );
 	wp_enqueue_script( 'validate-js' );
 	wp_register_script( 'jquery-ui-js', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js?integrity=sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=&crossorigin=anonymous', array('jquery'), NULL, true );
 	wp_enqueue_script( 'jquery-ui-js' );
+	wp_register_script( 'jquery-cookie-js', 'https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js', array('jquery'), NULL, true );
+	wp_enqueue_script( 'jquery-cookie-js' );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
