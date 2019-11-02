@@ -38,7 +38,6 @@ function bb_custom_enqueue_scripts(){
 }
 
 // Load Custom JavaScript via Child Theme
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
 function my_scripts_method() {
 	wp_enqueue_script(
 			'custom-script',
