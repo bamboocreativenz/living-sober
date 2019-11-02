@@ -44,11 +44,8 @@ function my_scripts_method() {
 			get_stylesheet_directory_uri() . '/js/livingsober.js',
 			array( 'jquery' )
 	);
-	if ( !is_admin() ) {
-		wp_deregister_script('jquery');
-		wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.4.1.min.js', array('jquery'), NULL, true );
-		wp_enqueue_script( 'jquery' );
-	}
+	wp_register_script( 'jquery-js', 'https://code.jquery.com/jquery-3.4.1.min.js', array('jquery'), NULL, true );
+	wp_enqueue_script( 'jquery-js' );
 	wp_register_script( 'jquery-migrate-js', 'https://code.jquery.com/jquery-migrate-1.4.1.min.js', array('jquery'), NULL, true );
 	wp_enqueue_script( 'jquery-migrate-js' );
 	wp_register_script( 'validate-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js', array('jquery'), NULL, true );
