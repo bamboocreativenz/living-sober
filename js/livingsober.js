@@ -16,7 +16,8 @@ player = new window.YT.Player('player', {
 	'loop': 1,
 	'controls': 0,
 	'showinfo': 0,
-	'modestbranding': 1
+	'modestbranding': 1,
+	'videoId': 'YN-eHffKkLc',
  },
   events: {
 	'onReady': onPlayerReady,
