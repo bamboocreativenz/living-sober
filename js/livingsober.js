@@ -25,6 +25,7 @@ player = new window.YT.Player('player', {
 });
 }
 
+var p = document.getElementById ("player");
 $(p).hide();
 
 function onPlayerStateChange(event) {
@@ -46,8 +47,6 @@ function onPlayerReady(event) {
 	$("#overlay-container").fadeOut(1200);
   });
 }	
-
-var p = document.getElementById ("player");
 
 jQuery(document).ready(function() {
   $ = jQuery;
