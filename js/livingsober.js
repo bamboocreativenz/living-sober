@@ -9,8 +9,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
-player = new window.YT.Player('player', {
-  playerVars: {
+	player = new window.YT.Player('player', {
 	'origin': 'https://livingsober.org.nz',
 	'width': '560',
 	'height: '315',
@@ -21,11 +20,10 @@ player = new window.YT.Player('player', {
 	'showinfo': 0,
 	'modestbranding': 1,
 	'videoId': 'YN-eHffKkLc',
- },
-  events: {
-	'onReady': onPlayerReady,
-	'onStateChange': onPlayerStateChange
-  }
+	'events': {
+		'onReady': onPlayerReady,
+		'onStateChange': onPlayerStateChange
+	 }
 });
 }
 
