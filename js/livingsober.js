@@ -12,6 +12,9 @@ function onYouTubeIframeAPIReady() {
 player = new window.YT.Player('player', {
   playerVars: {
 	'origin': 'https://livingsober.org.nz',
+	'width': '560',
+	'height: '315',
+	'enablejsapi': 1,
 	'autoplay': 0,
 	'loop': 1,
 	'controls': 0,
