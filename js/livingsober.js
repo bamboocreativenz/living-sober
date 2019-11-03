@@ -20,6 +20,7 @@ jQuery(document).ready(function() {
         'modestbranding': 1
      },
       events: {
+        'onReady': onPlayerReady,
         'onStateChange': onPlayerStateChange
       }
     });
@@ -38,12 +39,14 @@ jQuery(document).ready(function() {
       $('.start-video').fadeIn('normal');
     }
   }
-  
-  $(document).on('click', '.start-video', function () {
-    player.playVideo();
-    $("#player").fadeIn();
-    $("#overlay-container").fadeOut(1200);
-  });
+
+  onPlayerReady = function (event) {
+	  $(document).on('click', '.start-video', function () {
+		player.playVideo();
+		$("#player").fadeIn();
+		$("#overlay-container").fadeOut(1200);
+	  });
+  }
   
   // Do not allow spaces on the username field on the register page.
   jQuery.validator.addMethod("noSpace", function(value, element) { 
