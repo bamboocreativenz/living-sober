@@ -24,30 +24,31 @@ player = new window.YT.Player('player', {
 }
 
 var p = document.getElementById ("player");
-$(p).hide();
-
-function onPlayerStateChange(event) {
-if(event.data === 0) {          
-  $("#overlay-container").fadeIn(800);
-  $("#player").fadeOut(400);
-  player.pauseVideo();
-}
-if (event.data == YT.PlayerState.ENDED) {
-  $('.start-video').fadeIn('normal');
-}
-}
-
-function onPlayerReady(event) {
-  console.log("Ready: ", event)
-  $(document).on('click', '.start-video', function () {
-	event.target.playVideo();
-	$("#player").fadeIn();
-	$("#overlay-container").fadeOut(1200);
-  });
-}
 
 jQuery(document).ready(function() {
   $ = jQuery;
+	
+  	$(p).hide();
+
+	function onPlayerStateChange(event) {
+	if(event.data === 0) {          
+	  $("#overlay-container").fadeIn(800);
+	  $("#player").fadeOut(400);
+	  player.pauseVideo();
+	}
+	if (event.data == YT.PlayerState.ENDED) {
+	  $('.start-video').fadeIn('normal');
+	}
+	}
+
+	function onPlayerReady(event) {
+	  console.log("Ready: ", event)
+	  $(document).on('click', '.start-video', function () {
+		event.target.playVideo();
+		$("#player").fadeIn();
+		$("#overlay-container").fadeOut(1200);
+	  });
+	}
   
   // Do not allow spaces on the username field on the register page.
   jQuery.validator.addMethod("noSpace", function(value, element) { 
