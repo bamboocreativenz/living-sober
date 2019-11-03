@@ -41,8 +41,9 @@ jQuery(document).ready(function() {
   }
 
   onPlayerReady = function (event) {
+	  console.log("Ready: ", event)
 	  $(document).on('click', '.start-video', function () {
-		player.playVideo();
+		event.target.playVideo();
 		$("#player").fadeIn();
 		$("#overlay-container").fadeOut(1200);
 	  });
