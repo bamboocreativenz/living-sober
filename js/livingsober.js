@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   var player;
-  onYouTubeIframeAPIReady = function () {
+  function onYouTubeIframeAPIReady() {
     player = new window.YT.Player('player', {
       playerVars: {
         'origin': 'https://livingsober.org.nz',
@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
   var p = document.getElementById ("player");
   $(p).hide();
   
-  onPlayerStateChange = function (event) {
+  function onPlayerStateChange(event) {
     if(event.data === 0) {          
       $("#overlay-container").fadeIn(800);
       $("#player").fadeOut(400);
@@ -40,7 +40,7 @@ jQuery(document).ready(function() {
     }
   }
 
-  onPlayerReady = function (event) {
+ function onPlayerReady(event) {
 	  console.log("Ready: ", event)
 	  $(document).on('click', '.start-video', function () {
 		event.target.playVideo();
