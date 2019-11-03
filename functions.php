@@ -39,8 +39,8 @@ function bb_custom_enqueue_scripts(){
 
 // Load Custom JavaScript via Child Theme
 function my_scripts_method() {
-	wp_register_script( 'jquery-js', 'https://code.jquery.com/jquery-2.2.4.min.js', array('jquery'), NULL, true );
-	wp_enqueue_script( 'jquery-js' );
+	// wp_register_script( 'jquery-js', 'https://code.jquery.com/jquery-2.2.4.min.js', array('jquery'), NULL, true );
+	// wp_enqueue_script( 'jquery-js' );
 	wp_register_script( 'jquery-migrate-js', 'https://code.jquery.com/jquery-migrate-3.1.0.min.js', array('jquery'), NULL, true );
 	wp_enqueue_script( 'jquery-migrate-js' );
 	wp_register_script( 'validate-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js', array('jquery'), NULL, true );
