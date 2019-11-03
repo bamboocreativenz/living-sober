@@ -1,6 +1,6 @@
 /**
 * Landing Page video function
-*/
+
 $ = jQuery;
 
 var tag = document.createElement('script');
@@ -47,7 +47,8 @@ function onPlayerReady(event) {
 	$("#player").fadeIn();
 	$("#overlay-container").fadeOut(1200);
   });
-}	
+}
+*/
 
 jQuery(document).ready(function() {
   $ = jQuery;
