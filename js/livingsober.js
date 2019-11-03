@@ -3,7 +3,6 @@ jQuery(document).ready(function() {
 	
 	/**
 	* Landing Page video function
-	*/
 	var tag = document.createElement('script');
 	tag.src = "https://www.youtube.com/iframe_api";
 	var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -49,6 +48,7 @@ jQuery(document).ready(function() {
 		$("#overlay-container").fadeOut(1200);
 	  });
 	}
+*/
   
   // Do not allow spaces on the username field on the register page.
   jQuery.validator.addMethod("noSpace", function(value, element) { 
