@@ -1,6 +1,8 @@
 /**
 * Landing Page video function
 */
+$ = jQuery;
+
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -23,32 +25,32 @@ player = new window.YT.Player('player', {
 });
 }
 
+$(p).hide();
+
+function onPlayerStateChange(event) {
+if(event.data === 0) {          
+  $("#overlay-container").fadeIn(800);
+  $("#player").fadeOut(400);
+  player.pauseVideo();
+}
+if (event.data == YT.PlayerState.ENDED) {
+  $('.start-video').fadeIn('normal');
+}
+}
+
+function onPlayerReady(event) {
+  console.log("Ready: ", event)
+  $(document).on('click', '.start-video', function () {
+	event.target.playVideo();
+	$("#player").fadeIn();
+	$("#overlay-container").fadeOut(1200);
+  });
+}	
+
 var p = document.getElementById ("player");
 
 jQuery(document).ready(function() {
   $ = jQuery;
-	
-  	$(p).hide();
-
-	function onPlayerStateChange(event) {
-	if(event.data === 0) {          
-	  $("#overlay-container").fadeIn(800);
-	  $("#player").fadeOut(400);
-	  player.pauseVideo();
-	}
-	if (event.data == YT.PlayerState.ENDED) {
-	  $('.start-video').fadeIn('normal');
-	}
-	}
-
-	function onPlayerReady(event) {
-	  console.log("Ready: ", event)
-	  $(document).on('click', '.start-video', function () {
-		event.target.playVideo();
-		$("#player").fadeIn();
-		$("#overlay-container").fadeOut(1200);
-	  });
-	}
   
   // Do not allow spaces on the username field on the register page.
   jQuery.validator.addMethod("noSpace", function(value, element) { 
