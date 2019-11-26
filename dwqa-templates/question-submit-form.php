@@ -1,6 +1,7 @@
 <style>
 .editor-toolbar {
     display: none;
+	visibility: hidden;
 }
 </style>
 
