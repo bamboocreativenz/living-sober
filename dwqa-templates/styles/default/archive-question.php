@@ -6,6 +6,11 @@
 }
 	
 	.dwqa-questions-list .dwqa-question-item .dwqa-question-stats span {border:none !important}
+	
+	#dwqa-search {
+    display: none;
+    visibility: hidden;
+}
 </style>
 
 <?php
