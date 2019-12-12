@@ -1,3 +1,11 @@
+<style>
+.dwqa-questions-list .dwqa-question-item {
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+</style>
+
 <?php
 /**
  * The template for displaying question archive pages
