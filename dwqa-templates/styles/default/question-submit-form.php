@@ -1,3 +1,19 @@
+<style>
+	.wp-block-spacer {
+    height: 0px !important;
+}
+
+.editor-toolbar {
+    display: none;
+	visibility: hidden;
+}
+	
+	.editor-statusbar {
+    display: none;
+    visibility: hidden;
+}
+	</style>
+
 <?php
 /**
  * The template for displaying single answers
