@@ -1,10 +1,3 @@
-<style>
-.editor-toolbar {
-    display: none;
-	visibility: hidden;
-}
-</style>
-
 <?php
 /**
  * The template for displaying single answers
