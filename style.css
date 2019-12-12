@@ -11,20 +11,6 @@ License URI: license.txt
 */
 
 
-.wp-block-spacer {
-    height: 0px !important;
-}
-
-.editor-toolbar {
-    display: none;
-	visibility: hidden;
-}
-	
-	.editor-statusbar {
-    display: none;
-    visibility: hidden;
-}
-
 #header .logo img {
   height: 50%;
 }
