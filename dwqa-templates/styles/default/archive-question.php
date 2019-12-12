@@ -4,6 +4,8 @@
     border-left: none !important;
     border-right: none !important;
 }
+	
+	.dwqa-questions-list .dwqa-question-item .dwqa-question-stats span {border:none !important}
 </style>
 
 <?php
