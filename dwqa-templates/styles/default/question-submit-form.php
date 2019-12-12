@@ -15,8 +15,7 @@
 <?php do_action( 'dwqa_before_question_submit_form' ); ?>
 <?php if ( dwqa_current_user_can( 'post_question' ) ) : ?>
 	<form method="post" class="dwqa-content-ask-form" enctype="multipart/form-data">
-    <div style="margin:20px 0px">
-    <label for="question-category">Post something now...</label>
+    <div style="margin:10px 0px 20p 0px">
      <p><input type="radio" name="question-category" id="Issues" value="20851"> Issues</p>
   <p> <input type="radio" name="question-category" id="Suggestions" value="20852"> Suggestions</p>
   <p> <input type="radio" name="question-category" id="Guides" value="20853"> Guides</p>
