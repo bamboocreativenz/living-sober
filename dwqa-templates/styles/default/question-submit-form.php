@@ -93,7 +93,7 @@ if( current_user_can('editor') || current_user_can('administrator') ) {
 		<?php wp_nonce_field( '_dwqa_submit_question' ) ?>
 		<?php dwqa_load_template( 'captcha', 'form' ); ?>
 		<?php do_action('dwqa_show_captcha_question')?>
-		<input style="margin-top:20px;width:250px;padding:10px" type="submit" name="dwqa-question-submit" class="dwqa-btn dwqa-btn-primary" value="<?php _e( 'Submit', 'dwqa' ) ?>" >
+		<input style="margin-top:20px;width:250px;padding:10px" type="submit" name="dwqa-question-submit" class="dwqa-btn dwqa-btn-primary" value="<?php _e( 'New Post', 'dwqa' ) ?>" >
 		<?php do_action( 'dwqa_after_question_submit_button' ) ?>
 	</form>
 <?php else : ?>
