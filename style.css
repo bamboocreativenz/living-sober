@@ -10,6 +10,103 @@ License: GNU General Public License
 License URI: license.txt
 */
 
+.page-id-4842 #comments {
+    display: none !important;
+}
+
+.home-page #comments {
+    display: none !important;
+}
+
+#header .logo img {
+    height: 65% !important;
+    margin-top: 6px !important;
+    
+}
+
+.kleo-pop-title {
+    display: none;
+}
+
+.kleo-pop-title-wrap.main-color::before {
+    content: url(https://livingsober.org.nz/wp-content/uploads/2019/12/ls-logo.png);
+}
+
+.new-account {
+    display: none;
+}
+
+template-page.col-sm-12.tpl-no {
+    padding-top: 20px;
+}
+
+h1 {margin-bottom: 0px; !important}
+
+#whats-new-form {
+    margin-top: -40px !important;
+}
+
+@media only screen and (max-width: 600px) {
+ #ajax_search_container {
+    width: 100% !important;
+    left: 0px !important;
+}
+    
+   #ajax_searchform {
+    padding: 10px 10px !important;
+    background: 
+    #EBE0D6 !important;
+}
+}
+
+.user-nicename.hover-tip.click-tip {
+
+    font-size: 36px !important;
+
+}
+
+.activity .page-title {
+
+    display: none !important;
+
+}
+
+body.bp-user .ethosContainer {
+
+    display: none !important;
+
+}
+
+#public-personal-li {
+
+    display: none !important;
+
+}
+
+.buddypress div#message {
+   margin: 70px 0px !important;
+}
+
+#activity-filter-select {
+    display: none !important;
+}
+
+.dwqa-ask-question {
+    display: none !important;
+}
+
+#main .ethosMessage h2 {
+    font-size: 19px !important;
+}
+
+.template-page.col-sm-12.tpl-no {
+    padding-top: 10px !important;
+}
+
+#whats-new {
+    height: 150px !important;
+}
+
 
 #header .logo img {
   height: 50%;
