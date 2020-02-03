@@ -12,6 +12,9 @@
 </script>
 
 <style>
+	
+	h1 {margin-bottom:0px !important}
+	
 #dwqa-search {
     display: none !important;
 }
