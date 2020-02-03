@@ -34,6 +34,11 @@
     display: none;
 	visibility: hidden;
 }
+	
+	#qt_question-content_toolbar {
+    display: none;
+}
+	
 </style>
 
 <?php
