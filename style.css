@@ -10,6 +10,10 @@ License: GNU General Public License
 License URI: license.txt
 */
 
+.customize-support .kleo_framework.breadcrumb::after {
+    content: " > Site Support";
+}
+
 .page-id-4842 #comments {
     display: none !important;
 }
