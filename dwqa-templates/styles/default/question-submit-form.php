@@ -1,18 +1,40 @@
 <style>
-	.wp-block-spacer {
-    height: 0px !important;
+#comments {
+    display: none;
 }
+.dwqa-btn.dwqa-btn-primary {
 
+    width: 300px;
+    padding: 10px;
+
+}
+.CodeMirror, .CodeMirror-scroll {
+    min-height: 150px !important;
+}
+.dwqa-attachments-description {
+
+    display: none;
+
+}
+#question-title {
+    height: 60px;
+}
+.wp-block-spacer {
+
+    display: none;
+
+}
+.editor-statusbar {
+    display: none;
+}
+#dwqa-attachments-wrap-button-upload {
+    display: none !important;
+}
 .editor-toolbar {
     display: none;
 	visibility: hidden;
 }
-	
-	.editor-statusbar {
-    display: none;
-    visibility: hidden;
-}
-	</style>
+</style>
 
 <?php
 /**
@@ -30,19 +52,37 @@
 
 <?php do_action( 'dwqa_before_question_submit_form' ); ?>
 <?php if ( dwqa_current_user_can( 'post_question' ) ) : ?>
+<p>Select category</p>
 	<form method="post" class="dwqa-content-ask-form" enctype="multipart/form-data">
-    <div style="margin:10px 0px 20p 0px">
-     <p><input type="radio" name="question-category" id="Issues" value="20851"> Issues</p>
-  <p> <input type="radio" name="question-category" id="Suggestions" value="20852"> Suggestions</p>
-  <p> <input type="radio" name="question-category" id="Guides" value="20853"> Guides</p>
+    <div style="margin:0px 0px 20px 0px">
+    <table width="100%">
+    <tr>
+    <td width="30%">
+     <p><input type="radio" name="question-category" id="Site Help" value="21082"> <span style="font-size:18px;font-weight:bold">Site Help</span></p>
+     <p style="font-size: 14px;font-style: italic;">For collecting errors related to the members page.</p>
+    </td>
+    <td width="5%">
+    </td>
+    <td width="30%">
+     <p> <input type="radio" name="question-category" id="Feature Suggestions" value="21080"> <span style="font-size:18px;font-weight:bold">Feature Suggestions</span></p>
+     <p style="font-size: 14px;font-style: italic;">For all your feature suggestions.</p>
+    </td>
+     <td width="5%">
+    </td>
+    <td width="30%">
+     <p> <input type="radio" name="question-category" id="Technical Issues" value="21081"> <span style="font-size:18px;font-weight:bold">Technical Issues</span></p>
+     <p style="font-size: 14px;font-style: italic;">For any problem other then those on the members feed.</p>
+    </td>
+    </tr>
+    </table>
 </div>
         
         <p class="dwqa-search">
-			<label for="question_title"><?php _e( 'What is your post about?', 'dwqa' ) ?></label>
+			<label for="question_title"><?php _e( 'Description', 'dwqa' ) ?></label>
 			<?php $title = isset( $_POST['question-title'] ) ? $_POST['question-title'] : ''; ?>
 			<input type="text" data-nonce="<?php echo wp_create_nonce( '_dwqa_filter_nonce' ) ?>" id="question-title" name="question-title" value="<?php echo esc_attr( $title ) ?>" tabindex="1">
 		</p>
-<label for="question_title">Details</label>
+<label for="question_title">Details (optional)</label>
 		<?php $content = isset( $_POST['question-content'] ) ? $_POST['question-content'] : ''; ?>
 		<p><?php dwqa_init_tinymce_editor( array( 'content' => $content, 'textarea_name' => 'question-content', 'id' => 'question-content' ) ) ?></p>
 		<?php global $dwqa_general_settings; ?>
@@ -88,12 +128,11 @@ if( current_user_can('editor') || current_user_can('administrator') ) {
 			<input type="text" class="dwqa-question-anonymous-name" name="_dwqa_anonymous_name" value="<?php echo esc_attr( $name ) ?>" >
 		</p>
 		<?php endif; ?>
-<label>Attach Screenshot</label>
 		<?php do_action( 'dwqa_before_question_submit_button' ) ?>
 		<?php wp_nonce_field( '_dwqa_submit_question' ) ?>
 		<?php dwqa_load_template( 'captcha', 'form' ); ?>
 		<?php do_action('dwqa_show_captcha_question')?>
-		<input style="margin-top:20px;width:250px;padding:10px" type="submit" name="dwqa-question-submit" class="dwqa-btn dwqa-btn-primary" value="<?php _e( 'New Post', 'dwqa' ) ?>" >
+		<input type="submit" name="dwqa-question-submit" class="dwqa-btn dwqa-btn-primary" value="<?php _e( 'Post', 'dwqa' ) ?>" >
 		<?php do_action( 'dwqa_after_question_submit_button' ) ?>
 	</form>
 <?php else : ?>
