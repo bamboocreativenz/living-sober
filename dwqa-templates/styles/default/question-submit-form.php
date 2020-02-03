@@ -1,4 +1,8 @@
 <style>
+	#wp-question-content-editor-tools {
+    display: none !important;
+}
+	
 #comments {
     display: none;
 }
