@@ -51,9 +51,9 @@ if( current_user_can('editor') || current_user_can('administrator') ) {
 			<a href="<?php echo esc_url( add_query_arg( array( 'filter' => 'closed' ) ) ) ?>" class="closed <?php echo 'closed' == $filter ? 'active' : '' ?>"><?php _e( 'Closed', 'dwqa' ); ?></a>
 		<?php endif; ?>
 		<?php if ( is_user_logged_in() ) : ?>
-            <a hre="https://livingsober.org.nz/dwqa-question_category/help-request/">SITE HELP</a>
-            <a hre="https://livingsober.org.nz/dwqa-question_category/feature-suggestion/">FEATURE SUGGESTIONS</a>
-            <a hre="https://livingsober.org.nz/dwqa-question_category/technical-issue/">TECHNICAL ISSUES</a>
+            <a href="https://livingsober.org.nz/dwqa-question_category/help-request/">SITE HELP</a>
+            <a href="https://livingsober.org.nz/dwqa-question_category/feature-suggestion/">FEATURE SUGGESTIONS</a>
+            <a href="https://livingsober.org.nz/dwqa-question_category/technical-issue/">TECHNICAL ISSUES</a>
 		<?php endif; ?>
 	<?php else : ?>
 		<a href="<?php echo esc_url( add_query_arg( array( 'filter' => 'all' ) ) ) ?>" class="all <?php echo 'all' == $filter ? 'active' : '' ?>"><?php _e( 'Questions', 'dwqa' ); ?></a>
