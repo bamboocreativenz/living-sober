@@ -10,8 +10,37 @@ License: GNU General Public License
 License URI: license.txt
 */
 
-.customize-support .kleo_framework.breadcrumb::after {
+.page-template-single-dwqa-question .kleo_framework.breadcrumb::after {
     content: " > Site Support";
+}
+
+.kleo_framework.breadcrumb {
+    display: block;
+}
+
+.page-template-single-dwqa-question .kleo_framework.breadcrumb {
+    display: none;
+}
+
+.dwqa-question-item.dwqa-status-answered {
+    margin-top: 0px !important;
+}
+
+.dwqa-question-item.dwqa-status-open {
+    margin-top: 0px !important;
+}
+
+.dwqa-question-item.dwqa-status-resolved {
+    margin-top: 0px !important;
+}
+
+.dwqa-breadcrumbs {
+    margin-top: -104px;
+    margin-left: -130px;
+}
+
+.dwqa-question-item {
+    margin-top: 120px;
 }
 
 .page-id-4842 #comments {
