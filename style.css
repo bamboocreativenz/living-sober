@@ -73,7 +73,7 @@ template-page.col-sm-12.tpl-no {
     padding-top: 20px;
 }
 
-h1 {margin-bottom: 0px; !important}
+h1 {margin-bottom: 0px !important;}
 
 #whats-new-form {
     margin-top: -40px !important;
