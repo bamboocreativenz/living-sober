@@ -47,7 +47,7 @@
                     <input class="sq-rememberme" name="rememberme" type="checkbox"
                            value="forever"> <?php esc_html_e( "Remember me", "kleo_framework" ); ?>
                 </label>
-                <a href="/wp-login.php?action=lostpassword"
+                <a href="/sign-in?action=lostpassword"
                    class="kleo-other-action pull-right"><?php esc_html_e( 'Forgot password?' ); ?></a>
 				
 				 <button class="btn btn-lg btn-default btn-block"
