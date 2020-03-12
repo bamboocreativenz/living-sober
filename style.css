@@ -10,6 +10,11 @@ License: GNU General Public License
 License URI: license.txt
 */
 
+
+.dwqa-question-item.dwqa-status-closed {
+    margin-top: 0px;
+}
+
 .page-template-single-dwqa-question .kleo_framework.breadcrumb::after {
     content: " > Site Support";
 }
