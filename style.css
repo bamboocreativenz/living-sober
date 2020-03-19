@@ -10,6 +10,13 @@ License: GNU General Public License
 License URI: license.txt
 */
 
+.fluid-width-video-wrapper {
+    padding-top: 28% !important;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto !important;
+}
+
 .edit-link {
     display: none;
 }
