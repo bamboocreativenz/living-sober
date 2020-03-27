@@ -10,6 +10,15 @@ License: GNU General Public License
 License URI: license.txt
 */
 
+@media(min-width:992px)
+{
+.container {
+    max-width: 1185px;
+padding-right: 5px;
+padding-left: 5px;
+}
+}
+
 #activity-stream iframe {
     width: 50%;
     height: 400px;
