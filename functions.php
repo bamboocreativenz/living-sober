@@ -11,7 +11,6 @@
  * Add custom code below
 */ 
 
-add_filter( 'user_can_richedit' , '__return_false', 50 );
 
 add_action( 'wp_enqueue_scripts', 'kleo_parent_theme_enqueue_styles' );
 
