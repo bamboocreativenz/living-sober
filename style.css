@@ -25,6 +25,12 @@ padding-left: 5px;
     margin-left: 25%;
 }
 
+.fluid-width-video-wrapper {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto !important;
+}
+
 
 
 .edit-link {
