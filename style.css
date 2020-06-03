@@ -27,7 +27,7 @@ License URI: license.txt
     filter: alpha(opacity=80);
 }
 
-mfp-container::before {
+.mfp-container::before {
     content: '';
     display: inline-block;
     height: 100%;
