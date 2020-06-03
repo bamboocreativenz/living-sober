@@ -153,8 +153,13 @@ padding-left: 5px;
     margin-top: 0px !important;
 }
 
+
+.has-text-align-left a {
+    float: right;
+}
+
 .dwqa-breadcrumbs {
-    margin-top: -161px;
+    margin-top: -165px;
     font-size: 12px;
     padding-left:40px;
 }
