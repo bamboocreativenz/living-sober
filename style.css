@@ -154,11 +154,12 @@ padding-left: 5px;
 }
 
 .dwqa-breadcrumbs {
-    margin-top: -95px;
-    margin-left: -130px;
-}
+    margin-top: -161px;
+    font-size: 12px;
+    padding-left:40px;
 
-.dwqa-question-item {
+.dwqa-question-filter {
+    margin-bottom: 20px;
     margin-top: 120px;
 }
 
