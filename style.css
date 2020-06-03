@@ -23,8 +23,9 @@ License URI: license.txt
     overflow: hidden;
     position: fixed;
     background: #0b0b0b;
-    opacity: 0.8;
+    opacity: 0.8 !important;
     filter: alpha(opacity=80);
+	transition: opacity 200ms ease-out 0s;
 }
 
 .mfp-container::before {
@@ -49,11 +50,6 @@ License URI: license.txt
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-.mfp-bg {
-    opacity: 0;
-    transition: opacity 200ms ease-out 0s;
 }
 
 .mfp-wrap {
