@@ -42,19 +42,21 @@
                 <input type="password" required spellcheck="false" autocomplete="off" value="" name="pwd" class="sq-password form-control"
                        placeholder="<?php esc_html_e( "Password", 'kleo_framework' ); ?>">
                 <div id="kleo-login-result"></div>
-               
+
                 <label class="checkbox pull-left">
                     <input class="sq-rememberme" name="rememberme" type="checkbox"
                            value="forever"> <?php esc_html_e( "Remember me", "kleo_framework" ); ?>
                 </label>
                 <a href="/sign-in?action=lostpassword"
                    class="kleo-other-action pull-right"><?php esc_html_e( 'Forgot password?' ); ?></a>
-				
+
 				 <button class="btn btn-lg btn-default btn-block"
                         type="submit"><?php esc_html_e( "Sign in", "kleo_framework" ); ?></button>
-				<!-- Added by Allan for popup edits requested by Nathan -->
+
+				<!-- DL: Add custom message to signup -->
 				<p>New to Living Sober? <a href="https://livingsober.org.nz/join-the-community/">JOIN</a></p>
-				
+				<p>Having trouble signing in? Contact <a href="mail:admin@livingsober.org.nz">admin@livingsober.org.nz</a></p>
+
                 <span class="clearfix"></span>
 
                 <?php
