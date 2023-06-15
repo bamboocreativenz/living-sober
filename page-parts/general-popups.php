@@ -55,7 +55,7 @@
 
 				<!-- DL: Add custom message to signup -->
 				<p>New to Living Sober? <a href="https://livingsober.org.nz/join-the-community/">JOIN</a></p>
-				<p>Having trouble signing in? Contact <a href="mailto:admin@livingsober.org.nz">admin@livingsober.org.nz</a></p>
+				<p>Having trouble signing in? Try the <a href="https://livingsober.org.nz/sign-in">default wordpress login</a> or contact <a href="mailto:admin@livingsober.org.nz">admin@livingsober.org.nz</a></p>
 
                 <span class="clearfix"></span>
 
