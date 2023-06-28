@@ -24,7 +24,8 @@ do_action( 'bp_before_member_header' ); ?>
 			<?php bp_displayed_user_avatar( 'type=full' ); ?>
 
 		</a>
-		<?php do_action( 'bp_member_online_status', bp_displayed_user_id() ); ?>
+		<!-- DL Not sure what this did -->
+		<!-- <?php do_action( 'bp_member_online_status', bp_displayed_user_id() ); ?> -->
 	</div><!-- #item-header-avatar -->
 
 	<div id="item-header-content">
@@ -43,13 +44,16 @@ do_action( 'bp_before_member_header' ); ?>
 
 				<div id="latest-update">
 
-				<?php 
-					$args = array(
-						'field'     => 2,
-						'user_id'   => bp_displayed_user_id()
-					);
-			  	bp_profile_field_data( $args );
-			  ?>
+					<?php bp_activity_latest_update( bp_displayed_user_id() ); ?>
+					 <!-- DL Not sure if we still need the below
+						<?php
+							$args = array(
+								'field'     => 2,
+								'user_id'   => bp_displayed_user_id()
+							);
+							bp_profile_field_data( $args );
+						?>
+					-->
 
 				</div>
 
@@ -77,11 +81,11 @@ do_action( 'bp_before_member_header' ); ?>
 <div id="item-nav">
 	<div class="item-list-tabs no-ajax" id="object-nav" aria-label="<?php esc_attr_e( 'Member primary navigation', 'buddypress' ); ?>" role="navigation">
 		<ul class="responsive-tabs">
-			
+
 			<?php bp_get_displayed_user_nav(); ?>
-			
+
 			<?php
-			
+
 			/**
 			 * Fires after the display of member options navigation.
 			 *
@@ -97,7 +101,8 @@ do_action( 'bp_before_member_header' ); ?>
 
 <?php do_action( 'template_notices' ); ?>
 
-<script>
+<!-- DL Not sure if we need the below -->
+<!-- <script>
 	(function($) {
 		$(document).ready(function () {
 			$(document).ajaxComplete(function (event, xhr, settings) {
@@ -114,4 +119,4 @@ do_action( 'bp_before_member_header' ); ?>
 			}
 		});
 	})(jQuery);
-</script>
+</script> -->
