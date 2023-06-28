@@ -6,18 +6,18 @@
 			<?php do_action( 'kleo_before_login_form' ); ?>
 
             <div class="kleo-pop-title-wrap main-color">
-                <h3 class="kleo-pop-title"><?php esc_html_e( "Sign in", "kleo_framework" ); ?></h3>
+                <h3 class="kleo-pop-title"><?php esc_html_e( "Log in with your credentials", 'kleo' ); ?></h3>
 
 				<?php if ( get_option( 'users_can_register' ) ) : ?>
 
                     <p>
-                        <!-- <em><?php esc_html_e( "or", 'kleo_framework' ); ?></em>&nbsp;&nbsp;&nbsp;&nbsp; -->
+                        <em><?php esc_html_e( "or", 'kleo' ); ?></em>&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="<?php if ( function_exists( 'bp_is_active' ) ) {
 							bp_signup_page();
 						} else {
 							echo wp_registration_url();
 						} ?>" class="new-account">
-							<?php esc_html_e( "Create an account", "kleo_framework" ); ?>
+							<?php esc_html_e( "Create an account", 'kleo' ); ?>
                         </a>
                     </p>
 
@@ -38,25 +38,22 @@
                   class="kleo-form-signin sq-login-form">
 				<?php wp_nonce_field( 'kleo-ajax-login-nonce', 'sq-login-security' ); ?>
                 <input type="text" required name="log" class="form-control sq-username" value=""
-                       placeholder="<?php esc_html_e( "Username", 'kleo_framework' ); ?>">
+                       placeholder="<?php esc_html_e( "Username", 'kleo' ); ?>">
                 <input type="password" required spellcheck="false" autocomplete="off" value="" name="pwd" class="sq-password form-control"
-                       placeholder="<?php esc_html_e( "Password", 'kleo_framework' ); ?>">
+                       placeholder="<?php esc_html_e( "Password", 'kleo' ); ?>">
                 <div id="kleo-login-result"></div>
-
+                <button class="btn btn-lg btn-default btn-block"
+                        type="submit"><?php esc_html_e( "Sign in", 'kleo' ); ?></button>
                 <label class="checkbox pull-left">
                     <input class="sq-rememberme" name="rememberme" type="checkbox"
-                           value="forever"> <?php esc_html_e( "Remember me", "kleo_framework" ); ?>
+                           value="forever"> <?php esc_html_e( "Remember me", 'kleo' ); ?>
                 </label>
-                <a href="/sign-in?action=lostpassword"
-                   class="kleo-other-action pull-right"><?php esc_html_e( 'Forgot password?' ); ?></a>
-
-				 <button class="btn btn-lg btn-default btn-block"
-                        type="submit"><?php esc_html_e( "Sign in", "kleo_framework" ); ?></button>
+                <a href="#kleo-lostpass-modal"
+                   class="kleo-show-lostpass kleo-other-action pull-right"><?php esc_html_e( 'Lost your password?', 'kleo' ); ?></a>
 
 				<!-- DL: Add custom message to signup -->
 				<p>New to Living Sober? <a href="https://livingsober.org.nz/join-the-community/">JOIN</a></p>
 				<p>Having trouble signing in? Contact <a href="mailto:admin@livingsober.org.nz">admin@livingsober.org.nz</a></p>
-
                 <span class="clearfix"></span>
 
                 <?php
@@ -80,7 +77,7 @@
     <div class="row">
         <div class="col-sm-12 text-center">
             <div class="kleo-pop-title-wrap alternate-color">
-                <h3 class="kleo-pop-title"><?php esc_html_e( "Forgot your details?", "kleo_framework" ); ?></h3>
+                <h3 class="kleo-pop-title"><?php esc_html_e( "Forgot your details?", 'kleo' ); ?></h3>
             </div>
 
 			<?php do_action( 'kleo_before_lostpass_form' ); ?>
@@ -88,12 +85,12 @@
             <form name="forgot_form" action="" method="post" class="sq-forgot-form kleo-form-signin">
 				<?php wp_nonce_field( 'kleo-ajax-login-nonce', 'security-pass' ); ?>
                 <input type="text" required name="user_login" class="sq-forgot-email form-control"
-                       placeholder="<?php esc_html_e( "Username or Email", 'kleo_framework' ); ?>">
+                       placeholder="<?php esc_html_e( "Username or Email", 'kleo' ); ?>">
                 <div id="kleo-lost-result"></div>
                 <button class="btn btn-lg btn-default btn-block"
-                        type="submit"><?php esc_html_e( "Reset Password", "kleo_framework" ); ?></button>
+                        type="submit"><?php esc_html_e( "Reset Password", 'kleo' ); ?></button>
                 <a href="#kleo-login-modal"
-                   class="kleo-show-login kleo-other-action pull-right"><?php esc_html_e( 'I remember my details', "kleo_framework" ); ?></a>
+                   class="kleo-show-login kleo-other-action pull-right"><?php esc_html_e( 'I remember my details', 'kleo' ); ?></a>
                 <span class="clearfix"></span>
             </form>
 
@@ -111,7 +108,7 @@
 				<?php do_action( 'kleo_before_register_form_modal' ); ?>
 
                 <div class="kleo-pop-title-wrap main-color">
-                    <h3 class="kleo-pop-title"><?php esc_html_e( "Create Account", "kleo_framework" ); ?></h3>
+                    <h3 class="kleo-pop-title"><?php esc_html_e( "Create Account", 'kleo' ); ?></h3>
                 </div>
 
                 <form id="register_form" class="kleo-form-register"
@@ -124,43 +121,44 @@
 						<?php if ( function_exists( 'bp_is_active' ) ) { ?>
                             <div class="col-sm-6">
                                 <input type="text" id="reg-username" name="signup_username" class="form-control"
-                                       required placeholder="<?php _e( "Username", 'kleo_framework' ); ?>">
+                                       required placeholder="<?php esc_html_e( "Username", 'kleo' ); ?>">
                             </div>
                             <div class="col-sm-6">
                                 <input type="text" id="full-name" name="field_1" class="form-control" required
-                                       placeholder="<?php _e( "Your full name", 'kleo_framework' ); ?>">
+                                       placeholder="<?php esc_html_e( "Your full name", 'kleo' ); ?>">
                             </div>
                             <div class="clear"></div>
                             <div class="col-sm-12">
                                 <input type="text" id="reg-email" name="signup_email" class="form-control" required
-                                       placeholder="<?php _e( "Your email", 'kleo_framework' ); ?>">
+                                       placeholder="<?php esc_html_e( "Your email", 'kleo' ); ?>">
                             </div>
                             <div class="clear"></div>
                             <div class="col-sm-6">
                                 <input type="password" id="reg-password" name="signup_password" class="form-control"
-                                       required placeholder="<?php _e( "Desired password", 'kleo_framework' ); ?>">
+                                       required placeholder="<?php esc_html_e( "Desired password", 'kleo' ); ?>">
                             </div>
                             <div class="col-sm-6">
                                 <input type="password" id="confirm_password" name="signup_password_confirm"
                                        class="form-control" required
-                                       placeholder="<?php _e( "Confirm password", 'kleo_framework' ); ?>">
+                                       placeholder="<?php esc_html_e( "Confirm password", 'kleo' ); ?>">
                             </div>
                             <input type="hidden" name="signup_profile_field_ids" id="signup_profile_field_ids"
                                    value="1"/>
 							<?php wp_nonce_field( 'bp_new_signup' ); ?>
+							<?php do_action( 'register_form' ); ?>
 						<?php } else { ?>
                             <div class="col-sm-12">
                                 <input type="text" id="reg-username" name="user_login" class="form-control" required
-                                       placeholder="<?php _e( "Username", 'kleo_framework' ); ?>">
+                                       placeholder="<?php esc_html_e( "Username", 'kleo' ); ?>">
                             </div>
                             <div class="col-sm-12">
                                 <input type="text" id="reg-email" name="user_email" class="form-control" required
-                                       placeholder="<?php _e( "Your email", 'kleo_framework' ); ?>">
+                                       placeholder="<?php esc_html_e( "Your email", 'kleo' ); ?>">
                             </div>
 						<?php } ?>
                     </div>
                     <button class="btn btn-lg btn-default btn-block" name="signup_submit"
-                            type="submit"><?php esc_html_e( "Register", "kleo_framework" ); ?></button>
+                            type="submit"><?php esc_html_e( "Register", 'kleo' ); ?></button>
                     <span class="clearfix"></span>
                 </form>
 
