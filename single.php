@@ -58,6 +58,8 @@ if ( get_cfield( 'related_posts' ) != '' ) {
 	?>
 	<!-- End Comments -->
 
+  <!-- DL the below two functions were moved further down the page -->
+
   <?php get_template_part( 'page-parts/posts-social-share' ); ?>
 
   <?php

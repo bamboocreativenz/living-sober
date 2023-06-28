@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kleo v3.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: Mon Jul 27 2015 16:58:28 GMT+0300 (EEST)\n"
-"Last-Translator: admin user <abe@seventhqueen.com>\n"
-"Language-Team: \n"
-"Language: English\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"POT-Creation-Date: 2019-11-13 10:36+0000\n"
+"PO-Revision-Date: 2019-11-13 10:45+0000\n"
+"Last-Translator: Gabriel Fratica <gabriel@seventhqueen.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Loco - https://localise.biz/\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Language: English\n"
 "X-Poedit-Country: UNITED STATES\n"
 "X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
@@ -24,422 +24,415 @@ msgstr ""
 "X-Poedit-Bookmarks: \n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes\n"
-"X-Loco-Target-Locale: en_US"
+"X-Loco-Target-Locale: en_US\n"
+"X-Loco-Version: 2.3.1; wp-5.2.3"
 
-#: 404.php:31
-#: page-templates/404-page.php:29
-msgid "This is somewhat embarrassing, isn&rsquo;t it?"
-msgstr ""
-
-#: 404.php:33
-#: page-templates/404-page.php:31
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr ""
-
-#: comments.php:24
-msgid "0 Comments"
-msgstr ""
-
-#: comments.php:24
-msgid "1 Comment"
-msgstr ""
-
-#: comments.php:24
-msgid "% Comments"
-msgstr ""
-
-#: comments.php:33
-#: comments.php:43
-msgid "Previous"
-msgstr ""
-
-#: comments.php:34
-#: comments.php:44
-msgid "Next"
-msgstr ""
-
-#: comments.php:49
-msgid "Comments are closed."
-msgstr ""
-
-#: bbpress/user-details.php:65
-#: content-aside.php:32
-#: content-audio.php:30
-#: content-gallery.php:30
-#: content-image.php:30
-#: content-link.php:24
-#: content-quote.php:31
-#: content-video.php:30
-#: content.php:32
-#: functions.php:702
-#: kleo-framework/lib/function-breadcrumb.php:1184
-#: kleo-framework/lib/function-breadcrumb.php:1216
-#: kleo-framework/lib/function-breadcrumb.php:1231
-#: kleo-framework/lib/function-breadcrumb.php:1258
-#: woocommerce/myaccount/my-address.php:46
-#: woocommerce/myaccount/my-address.php:48
-msgid "Edit"
-msgstr ""
-
-#: content-aside.php:40
-#: content-audio.php:50
-#: content-gallery.php:59
-#: content-image.php:47
-#: content-video.php:91
-#: content.php:49
-msgid "Continue reading"
-msgstr ""
-
-#: content-aside.php:44
-#: content-audio.php:54
-#: content-gallery.php:63
-#: content-image.php:51
-#: content-link.php:29
-#: content-quote.php:36
-#: content-video.php:95
-#: content.php:53
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: content-aside.php:45
-#: content-audio.php:55
-#: content-gallery.php:64
-#: content-image.php:52
-#: content-link.php:30
-#: content-page.php:112
-#: content-quote.php:37
-#: content-video.php:96
-#: content.php:54
-#: image.php:51
-msgid "Pages:"
-msgstr ""
-
-#: content-none.php:14
-#, php-format
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: content-none.php:18
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: content-none.php:23
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#: content-video.php:21
-#: content.php:23
-#, php-format
-msgid "Permalink to %s"
-msgstr ""
-
-#: functions.php:66
+#: functions.php:80 dist/functions.php:80
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:67
+#: functions.php:81 dist/functions.php:81
+msgid "Secondary Menu"
+msgstr ""
+
+#: functions.php:82 dist/functions.php:82
 msgid "Top Menu"
 msgstr ""
 
-#: functions.php:68
-#: lib/options.php:742
+#: functions.php:83 dist/functions.php:83
 msgid "Side Menu"
 msgstr ""
 
 #. Translators: %s is the page number.
-#: functions.php:144
-#: kleo-framework/lib/function-breadcrumb.php:212
+#: functions.php:193 dist/functions.php:193
+#: kleo-framework/lib/function-breadcrumb.php:222
+#: dist/kleo-framework/lib/function-breadcrumb.php:222
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: functions.php:458
+#: functions.php:266 dist/functions.php:266
 msgid "Main Sidebar"
 msgstr ""
 
-#: functions.php:460
+#: functions.php:268 dist/functions.php:268
 msgid "Default sidebar"
 msgstr ""
 
-#: functions.php:539
-#: functions.php:544
+#. used between list items, there is a space after the comma.
+#: functions.php:346 dist/functions.php:346
+msgctxt "Categories separator"
 msgid ", "
 msgstr ""
 
-#: functions.php:568
+#. used between list items, there is a space after the comma.
+#: functions.php:351 dist/functions.php:351
+msgctxt "Tags separator"
+msgid ", "
+msgstr ""
+
+#: functions.php:372 dist/functions.php:372
 #, php-format
 msgid "View %s's profile"
 msgstr ""
 
-#: functions.php:571
+#: functions.php:375 dist/functions.php:375
 #, php-format
 msgid "View all POSTS by %s"
 msgstr ""
 
-#: functions.php:588
+#: functions.php:392 dist/functions.php:392
 msgid "View profile"
 msgstr ""
 
-#: functions.php:598
+#: functions.php:402 dist/functions.php:402
 #, php-format
 msgid "Contact %s"
 msgstr ""
 
-#: functions.php:609
+#: functions.php:413 dist/functions.php:413
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
 
-#: functions.php:642
+#: functions.php:445 dist/functions.php:445
 #, php-format
 msgid "This article has one comment"
 msgid_plural "This article has %1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: bbpress/loop-search.php:18
-#: bbpress/loop-search.php:40
-#: functions.php:684
+#: functions.php:490 dist/functions.php:490
 msgid "Author"
 msgstr ""
 
-#: functions.php:692
+#: functions.php:498 dist/functions.php:498
 msgid "ago"
 msgstr ""
 
-#: functions.php:696
-msgid "<span class='unapproved'>Your comment is awaiting moderation.</span>\n"
+#: functions.php:504 dist/functions.php:504
+msgid ""
+"<span class='unapproved'>Your comment is awaiting moderation.</span>\n"
 msgstr ""
 
-#: buddypress/activity/comment.php:37
-#: buddypress/groups/single/forum/edit.php:10
-#: functions.php:706
+#: functions.php:512 content-gallery.php:46 content.php:48 content-aside.php:36
+#: content-audio.php:46 content-video.php:47 content-quote.php:31
+#: content-link.php:26 content-image.php:44 dist/functions.php:512
+#: dist/content-gallery.php:46 dist/content.php:48 dist/content-aside.php:36
+#: dist/content-audio.php:46 dist/content-video.php:47
+#: dist/content-quote.php:31 dist/content-link.php:26 dist/content-image.php:44
+#: kleo-framework/lib/function-breadcrumb.php:1229
+#: kleo-framework/lib/function-breadcrumb.php:1261
+#: kleo-framework/lib/function-breadcrumb.php:1277
+#: kleo-framework/lib/function-breadcrumb.php:1307
+#: dist/kleo-framework/lib/function-breadcrumb.php:1229
+#: dist/kleo-framework/lib/function-breadcrumb.php:1261
+#: dist/kleo-framework/lib/function-breadcrumb.php:1277
+#: dist/kleo-framework/lib/function-breadcrumb.php:1307
+msgid "Edit"
+msgstr ""
+
+#: functions.php:516 dist/functions.php:516
 msgid "Reply"
 msgstr ""
 
-#: functions.php:707
+#: functions.php:517 dist/functions.php:517
 msgid "Log in to reply."
 msgstr ""
 
-#: bbpress/form-user-edit.php:14
-#: bbpress/form-user-edit.php:19
-#: buddypress/members/single/profile/profile-wp.php:15
-#: functions.php:756
-#: kleo-framework/options/inc/welcome/views/status_report.php:582
+#: functions.php:569 dist/functions.php:569
 msgid "Name"
 msgstr ""
 
-#: bbpress/form-user-edit.php:103
-#: bbpress/form-user-register.php:28
-#: functions.php:757
-#: paid-memberships-pro/pages/account.php:56
+#: functions.php:575 dist/functions.php:575
 msgid "Email"
 msgstr ""
 
-#: bbpress/form-user-edit.php:57
-#: buddypress/members/single/profile/profile-wp.php:33
-#: functions.php:758
+#: functions.php:581 dist/functions.php:581
 msgid "Website"
 msgstr ""
 
-#: functions.php:770
-#, php-format
+#: functions.php:589 dist/functions.php:589
 msgid ""
-"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this "
-"account\">Log out?</a>"
+"Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 
-#: functions.php:771
+#: functions.php:603 dist/functions.php:603
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: functions.php:609 dist/functions.php:609
 msgid "Leave a reply"
 msgstr ""
 
-#: functions.php:772
+#: functions.php:610 dist/functions.php:610
 #, php-format
 msgid "Leave a reply to %s"
 msgstr ""
 
-#: functions.php:773
+#: functions.php:611 dist/functions.php:611
 msgid "Click here to cancel the reply"
 msgstr ""
 
-#: functions.php:774
+#: functions.php:612 dist/functions.php:612
 msgid "Post comment"
 msgstr ""
 
-#: functions.php:775
+#: functions.php:613 dist/functions.php:613
 msgid "Comment"
 msgstr ""
 
-#: functions.php:776
+#: functions.php:615 dist/functions.php:615
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: functions.php:1193
-#: functions.php:1196
-#: lib/options.php:65
-#: lib/options.php:69
-msgid "Theme options"
-msgstr ""
-
-#: functions.php:1278
+#: functions.php:1270 dist/functions.php:1270
 msgid "Sending info, please wait..."
 msgstr ""
 
-#: functions.php:1481
+#: functions.php:1273 dist/functions.php:1273
+msgid "Sorry, an error occurred"
+msgstr ""
+
+#: content-gallery.php:104 content-page.php:111 content.php:78
+#: content-aside.php:55 content-audio.php:74 content-video.php:121
+#: content-quote.php:41 content-link.php:36 content-image.php:75 image.php:51
+#: dist/content-gallery.php:104 dist/content-page.php:111 dist/content.php:78
+#: dist/content-aside.php:55 dist/content-audio.php:74
+#: dist/content-video.php:121 dist/content-quote.php:41
+#: dist/content-link.php:36 dist/content-image.php:75 dist/image.php:51
+msgid "Pages:"
+msgstr ""
+
+#: 404.php:37 dist/404.php:37 page-templates/404-page.php:32
+#: dist/page-templates/404-page.php:32
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: 404.php:39 dist/404.php:39 page-templates/404-page.php:34
+#: dist/page-templates/404-page.php:34
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: content-none.php:14 dist/content-none.php:14
 #, php-format
-msgid "You are already logged in. Please <a href=\"#\" onclick=\"%s\">refresh</a> page"
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: functions.php:1535
-#: kleo-framework/lib/function-facebook-login.php:332
-msgid "Login successful, redirecting..."
+#: content-none.php:18 dist/content-none.php:18
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 msgstr ""
 
-#: functions.php:1682
-msgid "Failure!"
+#: content-none.php:23 dist/content-none.php:23
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-#: functions.php:1687
-msgid "Email successfully sent!"
+#: comments.php:50 dist/comments.php:50
+msgid "0 Comments"
 msgstr ""
 
-#: image.php:58
-msgid "Previous Image"
+#: comments.php:50 dist/comments.php:50
+msgid "1 Comment"
 msgstr ""
 
-#: image.php:59
-msgid "Next Image"
+#: comments.php:50 dist/comments.php:50
+msgid "% Comments"
 msgstr ""
 
-#: single-portfolio.php:168
+#: comments.php:53 dist/comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:67 comments.php:85 dist/comments.php:67 dist/comments.php:85
+#: kleo-framework/lib/function-core.php:312
+#: dist/kleo-framework/lib/function-core.php:312
+msgid "&laquo;"
+msgstr ""
+
+#: comments.php:68 comments.php:86 dist/comments.php:68 dist/comments.php:86
+#: kleo-framework/lib/function-core.php:313
+#: dist/kleo-framework/lib/function-core.php:313
+msgid "&raquo;"
+msgstr ""
+
+#: single-portfolio.php:172 dist/single-portfolio.php:172
 #, php-format
 msgid "Back to %s"
 msgstr ""
 
-#: bbpress/content-statistics.php:22
-#: lib/theme-functions.php:805
-msgid "Forums"
+#: content.php:34 content-video.php:32 dist/content.php:34
+#: dist/content-video.php:32
+#, php-format
+msgid "Permalink to %s"
 msgstr ""
 
-#: bbpress/feedback-logged-in.php:13
-#: kleo-framework/lib/function-facebook-login.php:179
-msgid "You are already logged in."
+#: image.php:58 dist/image.php:58
+msgid "Previous Image"
 msgstr ""
 
-#: bbpress/feedback-no-search.php:12
-msgid "No search results were found here!"
+#: image.php:59 dist/image.php:59
+msgid "Next Image"
 msgstr ""
 
-#: bbpress/feedback-no-search.php:14
-msgid "Go back"
+#: page-parts/post-content-masonry.php:212
+#: page-parts/post-content-masonry.php:216 page-parts/posts-layout-kb.php:85
+#: page-parts/post-content-small.php:208 page-parts/post-content-small.php:212
+#: dist/page-parts/post-content-masonry.php:212
+#: dist/page-parts/post-content-masonry.php:216
+#: dist/page-parts/posts-layout-kb.php:85
+#: dist/page-parts/post-content-small.php:208
+#: dist/page-parts/post-content-small.php:212
+msgid "Read more"
 msgstr ""
 
-#: bbpress/form-topic-tag.php:59
-#: bbpress/form-topic-tag.php:73
-#: kleo-framework/lib/function-breadcrumb.php:1212
-msgid "Merge"
+#: page-parts/posts-related.php:15 dist/page-parts/posts-related.php:15
+msgid "Related Articles"
 msgstr ""
 
-#: bbpress/form-user-edit.php:90
-#: bbpress/form-user-edit.php:93
-#: lib/plugin-woocommerce/config.php:1558
-#: paid-memberships-pro/pages/confirmation.php:46
-#: paid-memberships-pro/pages/confirmation.php:104
-msgid "Account"
+#: page-parts/posts-related.php:32 dist/page-parts/posts-related.php:32
+msgid "Related"
 msgstr ""
 
-#: bbpress/form-user-edit.php:98
-#: bbpress/form-user-login.php:17
-#: bbpress/form-user-register.php:23
-#: buddypress/members/register.php:37
-#: kleo-framework/options/inc/fields/password/field_password.php:63
-#: page-parts/general-popups.php:22
-#: paid-memberships-pro/pages/account.php:55
-#: paid-memberships-pro/pages/checkout.php:171
+#: page-parts/posts-layout-kb.php:59 dist/page-parts/posts-layout-kb.php:59
+msgid "+ More from"
+msgstr ""
+
+#: page-parts/posts-layout-kb.php:91 dist/page-parts/posts-layout-kb.php:91
+msgid "Sorry, there are no articles here yet."
+msgstr ""
+
+#: page-parts/general-popups.php:9 dist/page-parts/general-popups.php:9
+msgid "New to Living Sober? JOIN"
+msgstr ""
+
+#: page-parts/general-popups.php:14 dist/page-parts/general-popups.php:14
+#: lib/inc/strings.php:21 lib/inc/strings.php:23 dist/lib/inc/strings.php:21
+#: dist/lib/inc/strings.php:23
+msgid "or"
+msgstr ""
+
+#: page-parts/general-popups.php:20 dist/page-parts/general-popups.php:20
+msgid "Create an account"
+msgstr ""
+
+#: page-parts/general-popups.php:41 page-parts/general-popups.php:120
+#: page-parts/general-popups.php:147 dist/page-parts/general-popups.php:41
+#: dist/page-parts/general-popups.php:120
+#: dist/page-parts/general-popups.php:147
 msgid "Username"
 msgstr ""
 
-#: bbpress/form-user-login.php:22
-#: kleo-framework/options/inc/fields/password/field_password.php:62
-#: page-parts/general-popups.php:23
-#: paid-memberships-pro/pages/checkout.php:180
+#: page-parts/general-popups.php:43 dist/page-parts/general-popups.php:43
 msgid "Password"
 msgstr ""
 
-#: bbpress/form-user-lost-pass.php:18
-#: page-parts/general-popups.php:54
+#: page-parts/general-popups.php:46 dist/page-parts/general-popups.php:46
+msgid "Sign in"
+msgstr ""
+
+#: page-parts/general-popups.php:49 dist/page-parts/general-popups.php:49
+msgid "Remember me"
+msgstr ""
+
+#: page-parts/general-popups.php:52 dist/page-parts/general-popups.php:52
+msgid "Lost your password?"
+msgstr ""
+
+#: page-parts/general-popups.php:76 dist/page-parts/general-popups.php:76
+msgid "Forgot your details?"
+msgstr ""
+
+#: page-parts/general-popups.php:84 dist/page-parts/general-popups.php:84
 msgid "Username or Email"
 msgstr ""
 
-#: bbpress/form-user-register.php:36
-#: lib/menu-items.php:49
+#: page-parts/general-popups.php:87 dist/page-parts/general-popups.php:87
+msgid "Reset Password"
+msgstr ""
+
+#: page-parts/general-popups.php:89 dist/page-parts/general-popups.php:89
+msgid "I remember my details"
+msgstr ""
+
+#: page-parts/general-popups.php:107 dist/page-parts/general-popups.php:107
+msgid "Create Account"
+msgstr ""
+
+#: page-parts/general-popups.php:124 dist/page-parts/general-popups.php:124
+msgid "Your full name"
+msgstr ""
+
+#: page-parts/general-popups.php:129 page-parts/general-popups.php:151
+#: dist/page-parts/general-popups.php:129
+#: dist/page-parts/general-popups.php:151
+msgid "Your email"
+msgstr ""
+
+#: page-parts/general-popups.php:134 dist/page-parts/general-popups.php:134
+msgid "Desired password"
+msgstr ""
+
+#: page-parts/general-popups.php:139 dist/page-parts/general-popups.php:139
+msgid "Confirm password"
+msgstr ""
+
+#: page-parts/general-popups.php:156 lib/menu-items.php:47
+#: dist/page-parts/general-popups.php:156 dist/lib/menu-items.php:47
 msgid "Register"
 msgstr ""
 
-#: buddypress/buddypress-functions.php:1858
-msgid "show less"
+#: page-parts/posts-social-share.php:52
+#: dist/page-parts/posts-social-share.php:52 lib/inc/strings.php:47
+#: dist/lib/inc/strings.php:47
+msgid "Share this"
 msgstr ""
 
-#: buddypress/buddypress-functions.php:1859
-msgid "show more"
+#: page-parts/general-header-section.php:130
+#: dist/page-parts/general-header-section.php:131
+msgid "Toggle navigation"
 msgstr ""
 
-#: buddypress/forums/index.php:86
-#: buddypress/groups/single/forum/edit.php:47
-#: buddypress/groups/single/forum.php:75
-#: lib/item-likes.php:239
-#: lib/widgets/recent_posts.php:160
-msgid "Title:"
-msgstr ""
-
-#: buddypress/groups/single/admin.php:291
-#: lib/theme-functions.php:691
-msgid "Members"
-msgstr ""
-
-#: kleo-framework/kleo.php:177
-#: kleo-framework/lib/class-tgm-plugin-activation.php:305
+#: kleo-framework/kleo.php:292 dist/kleo-framework/kleo.php:292
 msgid "Install Required Plugins"
 msgstr ""
 
-#: kleo-framework/kleo.php:178
-#: kleo-framework/lib/class-tgm-plugin-activation.php:306
+#: kleo-framework/kleo.php:293 dist/kleo-framework/kleo.php:293
 msgid "Install Plugins"
 msgstr ""
 
-#: kleo-framework/kleo.php:179
-#: kleo-framework/lib/class-tgm-plugin-activation.php:307
+#: kleo-framework/kleo.php:294 dist/kleo-framework/kleo.php:294
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: kleo-framework/kleo.php:180
-#: kleo-framework/lib/class-tgm-plugin-activation.php:308
+#: kleo-framework/kleo.php:296 dist/kleo-framework/kleo.php:296
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: kleo-framework/kleo.php:181
-#: kleo-framework/lib/class-tgm-plugin-activation.php:310
+#: kleo-framework/kleo.php:297 dist/kleo-framework/kleo.php:297
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:182
-#: kleo-framework/lib/class-tgm-plugin-activation.php:315
+#: kleo-framework/kleo.php:299 dist/kleo-framework/kleo.php:299
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:183
+#: kleo-framework/kleo.php:301 dist/kleo-framework/kleo.php:301
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -452,23 +445,21 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:184
-#: kleo-framework/lib/class-tgm-plugin-activation.php:340
+#: kleo-framework/kleo.php:303 dist/kleo-framework/kleo.php:303
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:185
-#: kleo-framework/lib/class-tgm-plugin-activation.php:345
+#: kleo-framework/kleo.php:305 dist/kleo-framework/kleo.php:305
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:186
+#: kleo-framework/kleo.php:307 dist/kleo-framework/kleo.php:307
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s plugin."
@@ -481,8 +472,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:187
-#: kleo-framework/lib/class-tgm-plugin-activation.php:325
+#: kleo-framework/kleo.php:309 dist/kleo-framework/kleo.php:309
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -493,7 +483,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:188
+#: kleo-framework/kleo.php:311 dist/kleo-framework/kleo.php:311
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -506,1911 +496,1546 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:189
-#: kleo-framework/lib/class-tgm-plugin-activation.php:355
+#: kleo-framework/kleo.php:313 dist/kleo-framework/kleo.php:313
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:190
+#: kleo-framework/kleo.php:314 dist/kleo-framework/kleo.php:314
 msgid "Activate installed plugin"
 msgid_plural "Activate installed plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: kleo-framework/kleo.php:191
-#: kleo-framework/lib/class-tgm-plugin-activation.php:370
+#: kleo-framework/kleo.php:315 dist/kleo-framework/kleo.php:315
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: kleo-framework/kleo.php:192
-#: kleo-framework/lib/class-tgm-plugin-activation.php:372
-#: kleo-framework/lib/class-tgm-plugin-activation.php:3104
+#: kleo-framework/kleo.php:316 dist/kleo-framework/kleo.php:316
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: kleo-framework/kleo.php:193
+#: kleo-framework/kleo.php:317 dist/kleo-framework/kleo.php:317
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
-#: kleo-framework/lib/class-tgm-plugin-activation.php:320
-#, php-format
-msgid ""
-"Sorry, but you do not have the correct permissions to install the %1$s "
-"plugin."
-msgid_plural ""
-"Sorry, but you do not have the correct permissions to install the %1$s "
-"plugins."
-msgstr[0] ""
-msgstr[1] ""
-
-#: kleo-framework/lib/class-tgm-plugin-activation.php:330
-#, php-format
-msgid "There is an update available for: %1$s."
-msgid_plural "There are updates available for the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: kleo-framework/lib/class-tgm-plugin-activation.php:335
-#, php-format
-msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
-msgid_plural ""
-"Sorry, but you do not have the correct permissions to update the %1$s "
-"plugins."
-msgstr[0] ""
-msgstr[1] ""
-
-#: kleo-framework/lib/class-tgm-plugin-activation.php:350
-#, php-format
-msgid ""
-"Sorry, but you do not have the correct permissions to activate the %1$s "
-"plugin."
-msgid_plural ""
-"Sorry, but you do not have the correct permissions to activate the %1$s "
-"plugins."
-msgstr[0] ""
-msgstr[1] ""
-
-#: kleo-framework/lib/class-tgm-plugin-activation.php:360
-msgid "Begin updating plugin"
-msgid_plural "Begin updating plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kleo-framework/lib/class-tgm-plugin-activation.php:365
-msgid "Begin activating plugin"
-msgid_plural "Begin activating plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kleo-framework/lib/function-breadcrumb.php:205
-msgid "Browse:"
+#: buddypress/buddypress-functions.php:1985
+#: dist/buddypress/buddypress-functions.php:1985
+msgid "show less"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:206
-#: lib/plugin-sensei/config.php:56
-#: lib/theme-functions.php:364
-msgid "Home"
+#: buddypress/buddypress-functions.php:1986
+#: dist/buddypress/buddypress-functions.php:1986
+msgid "show more"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:207
-msgid "404 Not Found"
+#. Name of the template
+msgid "Full-width"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:208
-msgid "Archives"
+#. Name of the template
+msgid "Right Sidebar Page Template"
 msgstr ""
 
-#. Translators: %s is the search query. The HTML entities are opening and closing curly quotes.
-#: kleo-framework/lib/function-breadcrumb.php:210
-#, php-format
-msgid "Search results for &#8220;%s&#8221;"
+#. Name of the template
+msgid "3 Columns - Left and Right sidebars"
 msgstr ""
 
-#. Translators: Minute archive title. %s is the minute time format.
-#: kleo-framework/lib/function-breadcrumb.php:214
-#, php-format
-msgid "Minute %s"
+#. Name of the template
+msgid "3 Columns - Two Right Sidebars"
 msgstr ""
 
-#. Translators: Weekly archive title. %s is the week date format.
-#: kleo-framework/lib/function-breadcrumb.php:216
-#, php-format
-msgid "Week %s"
+#. Name of the template
+msgid "Left Sidebar Page Template"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:759
-msgctxt "minute and hour archives time format"
-msgid "g:i a"
+#. Name of the template
+msgid "3 Columns - Two Left Sidebars"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:777
-msgctxt "minute archives time format"
-msgid "i"
+#. Name of the template
+msgid "404 Page"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:795
-msgctxt "hour archives time format"
-msgid "g a"
+#. Name of the template
+msgid "Full-width No Container"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:812
-#: kleo-framework/lib/function-breadcrumb.php:842
-#: kleo-framework/lib/function-breadcrumb.php:870
-#: kleo-framework/lib/function-breadcrumb.php:898
-#: kleo-framework/lib/function-breadcrumb.php:1089
-msgctxt "yearly archives date format"
-msgid "Y"
+#: bbpress/feedback-no-search.php:12 dist/bbpress/feedback-no-search.php:12
+msgid "No search results were found here!"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:813
-#: kleo-framework/lib/function-breadcrumb.php:871
-#: kleo-framework/lib/function-breadcrumb.php:1093
-msgctxt "monthly archives date format"
-msgid "F"
+#: bbpress/feedback-no-search.php:14 dist/bbpress/feedback-no-search.php:14
+msgid "Go back"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:814
-#: kleo-framework/lib/function-breadcrumb.php:1097
-msgctxt "daily archives date format"
-msgid "j"
-msgstr ""
-
-#: kleo-framework/lib/function-breadcrumb.php:843
-msgctxt "weekly archives date format"
-msgid "W"
-msgstr ""
-
-#: kleo-framework/lib/function-breadcrumb.php:1208
-msgid "Split"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:308
-msgid "&laquo;"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:309
-msgid "&raquo;"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:352
-msgid "Tag Archive for:"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:359
-msgid "Archive for category:"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:363
-msgid "Archive for date:"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:367
-msgid "Archive for month:"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:371
-msgid "Archive for year:"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:375
-msgid "Author Archive"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:378
-msgid "for:"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:391
-msgid "search results for:"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:395
-msgid "search result for:"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:402
-msgid "Search results for:"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:406
-msgid "To search the site please enter a valid term"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:418
-#: lib/options.php:813
-msgid "Blog"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:422
-msgid "Error 404 - Page not found"
-msgstr ""
-
-#: kleo-framework/lib/function-core.php:430
-msgid "Page"
-msgstr ""
-
-#: kleo-framework/lib/function-facebook-login.php:191
-msgid "Please connect your facebook account."
-msgstr ""
-
-#: kleo-framework/lib/function-facebook-login.php:209
-msgid "Registration is not open at this time. Please come back later."
-msgstr ""
-
-#: kleo-framework/lib/function-facebook-login.php:212
-msgid ""
-"Registration using Facebook is not currently allowed. Please use our "
-"Register page"
-msgstr ""
-
-#: kleo-framework/lib/function-facebook-login.php:228
-msgid ""
-"Your facebook account is not verified. You have to verify your account "
-"before proceed login or registering on this site."
-msgstr ""
-
-#: kleo-framework/lib/function-facebook-login.php:233
-msgid ""
-"Please click again to login with Facebook and allow the application to use "
-"your email address"
-msgstr ""
-
-#: kleo-framework/lib/function-facebook-login.php:237
-msgid ""
-"We didn't find your name. Please complete your facebook account before "
-"proceeding."
-msgstr ""
-
-#: kleo-framework/lib/function-facebook-login.php:347
-msgid ""
-"Thank you for registering. Please make sure to complete your profile fields "
-"below."
-msgstr ""
-
-#: kleo-framework/lib/function-facebook-login.php:423
-#, php-format
-msgid "%s became a registered member"
-msgstr ""
-
-#: kleo-framework/metaboxes/init.php:815
-msgid "Please Try Again"
-msgstr ""
-
-#: kleo-framework/metaboxes/init.php:832
-msgid "Remove Embed"
-msgstr ""
-
-#: kleo-framework/metaboxes/init.php:838
-#, php-format
-msgid "No oEmbed Results Found for %s. View more info at"
-msgstr ""
-
-#: kleo-framework/options/inc/fields/border/field_border.php:125
-#: kleo-framework/options/inc/fields/spacing/field_spacing.php:191
-#: lib/portfolio.php:147
-msgid "All"
-msgstr ""
-
-#: kleo-framework/options/inc/fields/slides/field_slides.php:73
-#: kleo-framework/options/inc/fields/slides/field_slides.php:174
-#: lib/post-types.php:188
-#, php-format
-msgid "New %s"
-msgstr ""
-
-#: kleo-framework/options/inc/welcome/welcome.php:517
-#: lib/post-types.php:190
-#, php-format
-msgid "View %s"
-msgstr ""
-
-#: lib/item-likes.php:167
-msgid "Displays your most popular posts sorted by most liked"
-msgstr ""
-
-#: lib/item-likes.php:224
-msgid "Popular Posts"
-msgstr ""
-
-#: lib/item-likes.php:243
-msgid "Description:"
-msgstr ""
-
-#: lib/item-likes.php:247
-msgid "Posts:"
-msgstr ""
-
-#: lib/item-likes.php:252
-msgid "Display like counts"
-msgstr ""
-
-#: lib/menu-custom.php:155
-msgid "Choose icon"
-msgstr ""
-
-#: lib/menu-custom.php:160
-msgid "Before title"
-msgstr ""
-
-#: lib/menu-custom.php:161
-msgid "After title"
-msgstr ""
-
-#: lib/menu-custom.php:162
-msgid "Just the icon"
-msgstr ""
-
-#: lib/menu-custom.php:171
-#: lib/plugin-menu-items-visibility-control/config.php:40
-msgid "Enable Mega Menu for child items."
-msgstr ""
-
-#: lib/menu-items.php:14
+#: lib/menu-items.php:14 dist/lib/menu-items.php:14
 msgid "KLEO"
 msgstr ""
 
-#: lib/menu-items.php:39
+#: lib/menu-items.php:37 dist/lib/menu-items.php:37
 msgid "Login"
 msgstr ""
 
-#: lib/menu-items.php:44
+#: lib/menu-items.php:42 dist/lib/menu-items.php:42
 msgid "Logout"
 msgstr ""
 
-#: lib/menu-items.php:81
+#: lib/menu-items.php:76 dist/lib/menu-items.php:76
 msgid "No items available here for the moment"
 msgstr ""
 
-#: lib/menu-items.php:90
+#: lib/menu-items.php:84 dist/lib/menu-items.php:84
 msgid ""
 "Some links are relative to the current user, and are not visible to visitors "
 "who are not logged in."
 msgstr ""
 
-#: lib/menu-items.php:102
+#: lib/menu-items.php:102 dist/lib/menu-items.php:102
 msgid "Add to Menu"
 msgstr ""
 
-#: lib/metaboxes.php:371
-msgid "Clients - link"
+#: lib/notices.php:28 dist/lib/notices.php:28
+msgid ""
+"Kleo needs to update your translation files saved under wp-"
+"content/languages/themes to match the new translation domain. Please create "
+"a backup of your files and database first."
 msgstr ""
 
-#: lib/metaboxes.php:388
-msgid "Testimonial - Author description"
+#: lib/notices.php:33 dist/lib/notices.php:33
+msgid "Update"
 msgstr ""
 
-#: lib/options.php:80
+#: lib/notices.php:38 lib/notices.php:141 lib/notices.php:162
+#: dist/lib/notices.php:38 dist/lib/notices.php:141 dist/lib/notices.php:162
+msgid "Dismiss"
+msgstr ""
+
+#: lib/notices.php:133 dist/lib/notices.php:133
 #, php-format
 msgid ""
-"<p>Theme customisations are done here. Make sure to <a target=\"_blank\" "
-"href=\"%s\">Import Demo Content</a> first</p>"
+"K Elements plugin must be enabled to take full advantage of KLEO theme. <a "
+"href=\"%s\">Activate plugin</a>"
 msgstr ""
 
-#: lib/options.php:288
-msgid "General settings"
-msgstr ""
-
-#: lib/options.php:290
-msgid "<p class=\"description\">Here you will set your site-wide preferences.</p>"
-msgstr ""
-
-#: lib/options.php:296
-msgid "Enable maintenance mode."
-msgstr ""
-
-#: lib/options.php:297
-msgid "Site visitors will see a banner with the message you set bellow."
-msgstr ""
-
-#: lib/options.php:304
-msgid "Message to show in maintenance mode"
-msgstr ""
-
-#: lib/options.php:315
-msgid "Logo"
-msgstr ""
-
-#: lib/options.php:316
-msgid "Upload your own logo."
-msgstr ""
-
-#: lib/options.php:324
-msgid "Logo Retina"
-msgstr ""
-
-#: lib/options.php:325
+#: lib/notices.php:154 dist/lib/notices.php:154
+#, php-format
 msgid ""
-"Upload retina logo. This is optional and should be double in size than "
-"normal logo."
+"K Elements plugin must be updated to take full advantage of KLEO theme. <a "
+"href=\"%s\">Update plugin</a>"
 msgstr ""
 
-#: lib/options.php:332
-msgid "Favicon"
+#: lib/metaboxes.php:22 dist/lib/metaboxes.php:22
+msgid "Theme General settings"
 msgstr ""
 
-#: lib/options.php:333
-msgid "image that will be used as favicon (32px32px)."
-msgstr ""
-
-#: lib/options.php:341
-msgid "Apple Iphone Icon"
-msgstr ""
-
-#: lib/options.php:342
-msgid "Apple Iphone Icon (57px 57px)."
-msgstr ""
-
-#: lib/options.php:350
-msgid "Apple Iphone Retina Icon"
-msgstr ""
-
-#: lib/options.php:351
-msgid "Apple Iphone Retina Icon (114px 114px)."
-msgstr ""
-
-#: lib/options.php:359
-msgid "Apple iPad Icon"
-msgstr ""
-
-#: lib/options.php:360
-msgid "Apple Iphone Retina Icon (72px 72px)."
-msgstr ""
-
-#: lib/options.php:368
-msgid "Apple iPad Retina Icon"
-msgstr ""
-
-#: lib/options.php:369
-msgid "Apple iPad Retina Icon (144px 144px)."
-msgstr ""
-
-#: lib/options.php:376
-msgid "JavaScript code"
-msgstr ""
-
-#: lib/options.php:377
-msgid ""
-"Paste your Google Analytics, other tracking code or any script you need."
-"<br/> This will be loaded in the footer."
-msgstr ""
-
-#: lib/options.php:384
-msgid "Quick css"
-msgstr ""
-
-#: lib/options.php:385
-msgid "Place you custom css here"
-msgstr ""
-
-#: lib/options.php:392
-msgid "Enable socket text"
-msgstr ""
-
-#: lib/options.php:393
-msgid "Enable text under the footer widgets area"
-msgstr ""
-
-#: lib/options.php:401
-msgid "Footer Text"
-msgstr ""
-
-#: lib/options.php:402
-msgid "You can use shortcodes in your footer text like: [site-url] [current-year]"
-msgstr ""
-
-#: lib/options.php:412
-msgid "Layout settings"
-msgstr ""
-
-#: lib/options.php:414
-msgid "<p class=\"description\">Here you set options for the layout.</p>"
-msgstr ""
-
-#: lib/options.php:421
+#: lib/metaboxes.php:35 dist/lib/metaboxes.php:35
 msgid "Site Layout"
 msgstr ""
 
-#: lib/options.php:422
-msgid "Select between wide or boxed site layout"
+#: lib/metaboxes.php:36 dist/lib/metaboxes.php:36
+msgid "Override default site layout"
 msgstr ""
 
-#: lib/options.php:432
-msgid "Site Width"
+#: lib/metaboxes.php:47 dist/lib/metaboxes.php:47
+msgid "Centered text"
 msgstr ""
 
-#: lib/options.php:444
-msgid "- Background"
+#: lib/metaboxes.php:48 dist/lib/metaboxes.php:48
+msgid "Check to have centered text on this page"
 msgstr ""
 
-#: lib/options.php:445
-msgid "Select your boxed background"
+#: lib/metaboxes.php:54 dist/lib/metaboxes.php:54
+msgid "Top bar status"
 msgstr ""
 
-#: lib/options.php:455
-msgid "Main Layout"
+#: lib/metaboxes.php:55 dist/lib/metaboxes.php:55
+msgid "Enable/disable site top bar"
 msgstr ""
 
-#: lib/options.php:456
+#: lib/metaboxes.php:66 dist/lib/metaboxes.php:66
+#: lib/plugin-elementor/config.php:241 dist/lib/plugin-elementor/config.php:241
+msgid "Hide Header"
+msgstr ""
+
+#: lib/metaboxes.php:67 dist/lib/metaboxes.php:67
+msgid "Check to hide whole header area"
+msgstr ""
+
+#: lib/metaboxes.php:73 dist/lib/metaboxes.php:73
+msgid "Hide Footer"
+msgstr ""
+
+#: lib/metaboxes.php:74 dist/lib/metaboxes.php:74
+msgid "Check to hide whole footer area"
+msgstr ""
+
+#: lib/metaboxes.php:80 dist/lib/metaboxes.php:80
+msgid "Hide Socket area"
+msgstr ""
+
+#: lib/metaboxes.php:81 dist/lib/metaboxes.php:81
+msgid "Check to hide the area after footer that contains copyright info."
+msgstr ""
+
+#: lib/metaboxes.php:87 dist/lib/metaboxes.php:87
+msgid "Custom Logo"
+msgstr ""
+
+#: lib/metaboxes.php:88 dist/lib/metaboxes.php:88
+msgid "Use a custom logo for this page only"
+msgstr ""
+
+#: lib/metaboxes.php:93 dist/lib/metaboxes.php:93
+msgid "Custom Logo Retina"
+msgstr ""
+
+#: lib/metaboxes.php:94 dist/lib/metaboxes.php:94
+msgid "Use a custom retina logo for this page only"
+msgstr ""
+
+#: lib/metaboxes.php:99 dist/lib/metaboxes.php:99
+msgid "Custom Mobile Logo"
+msgstr ""
+
+#: lib/metaboxes.php:100 dist/lib/metaboxes.php:100
+msgid "Use a custom mobile logo for this page and mobile devices only "
+msgstr ""
+
+#: lib/metaboxes.php:104 dist/lib/metaboxes.php:104
+msgid "Custom Retina Mobile Logo"
+msgstr ""
+
+#: lib/metaboxes.php:105 dist/lib/metaboxes.php:105
+msgid "Use a custom retina mobile logo for this page and mobile devices only "
+msgstr ""
+
+#: lib/metaboxes.php:110 dist/lib/metaboxes.php:110
+msgid "Main Menu Full Width"
+msgstr ""
+
+#: lib/metaboxes.php:111 dist/lib/metaboxes.php:111
+msgid "Check to enable full browser width menu style."
+msgstr ""
+
+#: lib/metaboxes.php:117 dist/lib/metaboxes.php:117
+#: lib/plugin-elementor/config.php:256 dist/lib/plugin-elementor/config.php:256
+msgid "Transparent Header"
+msgstr ""
+
+#: lib/metaboxes.php:118 dist/lib/metaboxes.php:118
+msgid "Check to have Main Header with transparent background."
+msgstr ""
+
+#: lib/metaboxes.php:124 dist/lib/metaboxes.php:124
+msgid "Transparent Header - Menu color"
+msgstr ""
+
+#: lib/metaboxes.php:129 dist/lib/metaboxes.php:129
+msgid "White Text"
+msgstr ""
+
+#: lib/metaboxes.php:130 dist/lib/metaboxes.php:130
+msgid "Black Text"
+msgstr ""
+
+#: lib/metaboxes.php:135 dist/lib/metaboxes.php:135
+#: lib/plugin-woocommerce/config.php:753 lib/plugin-woocommerce/config.php:836
+#: dist/lib/plugin-woocommerce/config.php:753
+#: dist/lib/plugin-woocommerce/config.php:836
+msgid "Social share"
+msgstr ""
+
+#: lib/metaboxes.php:136 dist/lib/metaboxes.php:136
+msgid "Display social share at bottom of the single page."
+msgstr ""
+
+#: lib/metaboxes.php:140 lib/metaboxes.php:160 lib/metaboxes.php:186
+#: lib/metaboxes.php:245 lib/metaboxes.php:321 lib/metaboxes.php:346
+#: lib/menu-custom.php:306 dist/lib/metaboxes.php:140
+#: dist/lib/metaboxes.php:160 dist/lib/metaboxes.php:186
+#: dist/lib/metaboxes.php:245 dist/lib/metaboxes.php:321
+#: dist/lib/metaboxes.php:346 dist/lib/menu-custom.php:306
+msgid "Default"
+msgstr ""
+
+#: lib/metaboxes.php:141 lib/metaboxes.php:187 lib/metaboxes.php:322
+#: dist/lib/metaboxes.php:141 dist/lib/metaboxes.php:187
+#: dist/lib/metaboxes.php:322
+msgid "Visible"
+msgstr ""
+
+#: lib/metaboxes.php:142 lib/metaboxes.php:188 lib/metaboxes.php:323
+#: dist/lib/metaboxes.php:142 dist/lib/metaboxes.php:188
+#: dist/lib/metaboxes.php:323
+msgid "Hidden"
+msgstr ""
+
+#: lib/metaboxes.php:149 dist/lib/metaboxes.php:149
+msgid "Title section"
+msgstr ""
+
+#: lib/metaboxes.php:155 dist/lib/metaboxes.php:155
+msgid "Section Layout"
+msgstr ""
+
+#: lib/metaboxes.php:161 dist/lib/metaboxes.php:161
+msgid "Regular"
+msgstr ""
+
+#: lib/metaboxes.php:162 dist/lib/metaboxes.php:162
+msgid "Centered"
+msgstr ""
+
+#: lib/metaboxes.php:163 dist/lib/metaboxes.php:163
+msgid "Right Breadcrumb"
+msgstr ""
+
+#: lib/metaboxes.php:168 dist/lib/metaboxes.php:168
+msgid "Custom page title"
+msgstr ""
+
+#: lib/metaboxes.php:169 dist/lib/metaboxes.php:169
+msgid "Set a custom page title here if you need."
+msgstr ""
+
+#: lib/metaboxes.php:174 dist/lib/metaboxes.php:174
+msgid "Hide the title"
+msgstr ""
+
+#: lib/metaboxes.php:175 dist/lib/metaboxes.php:175
+msgid "Check to hide the title when displaying the post/page"
+msgstr ""
+
+#: lib/metaboxes.php:181 dist/lib/metaboxes.php:181
+msgid "Breadcrumb"
+msgstr ""
+
+#: lib/metaboxes.php:193 dist/lib/metaboxes.php:193
+msgid "Hide information"
+msgstr ""
+
+#: lib/metaboxes.php:194 dist/lib/metaboxes.php:194
+msgid "Check to hide contact info in title section"
+msgstr ""
+
+#: lib/metaboxes.php:200 dist/lib/metaboxes.php:200
+msgid "Top Padding"
+msgstr ""
+
+#: lib/metaboxes.php:206 dist/lib/metaboxes.php:206
+msgid "Bottom Padding"
+msgstr ""
+
+#: lib/metaboxes.php:212 dist/lib/metaboxes.php:212
+msgid "Text Color"
+msgstr ""
+
+#: lib/metaboxes.php:213 dist/lib/metaboxes.php:213
 msgid ""
-"Select main content and sidebar alignment. Choose between 1, 2 or 3 column "
-"layout."
+"Override the default text color as set in Theme options - Styling options - "
+"Title"
 msgstr ""
 
-#: lib/options.php:471
-msgid "Main content width for one sidebar templates"
+#: lib/metaboxes.php:219 dist/lib/metaboxes.php:219
+msgid "Background Image"
 msgstr ""
 
-#: lib/options.php:479
-msgid "Main content width for two sidebars templates"
+#: lib/metaboxes.php:220 dist/lib/metaboxes.php:220
+msgid "Choose a background image for the section."
 msgstr ""
 
-#: lib/options.php:488
-msgid "Enable Go Up button"
+#: lib/metaboxes.php:226 dist/lib/metaboxes.php:226
+msgid "Background Color"
 msgstr ""
 
-#: lib/options.php:489
+#: lib/metaboxes.php:227 dist/lib/metaboxes.php:227
+msgid "If an image is not set the color will be used"
+msgstr ""
+
+#: lib/metaboxes.php:234 dist/lib/metaboxes.php:234
+msgid "Media"
+msgstr ""
+
+#: lib/metaboxes.php:240 dist/lib/metaboxes.php:240
+msgid "Show media on post page"
+msgstr ""
+
+#: lib/metaboxes.php:241 dist/lib/metaboxes.php:241
 msgid ""
-"Enable or disable the button in the right down corner that takes you to the "
-"top of the screen."
+"If you want to show image/gallery/video/audio before the post on single page"
 msgstr ""
 
-#: lib/options.php:497
-#: lib/options.php:1690
-msgid "Page Title location"
+#: lib/metaboxes.php:246 dist/lib/metaboxes.php:246
+msgid "Yes"
 msgstr ""
 
-#: lib/options.php:498
-#: lib/options.php:1691
+#: lib/metaboxes.php:247 dist/lib/metaboxes.php:247 lib/inc/strings.php:63
+#: dist/lib/inc/strings.php:63
+msgid "No"
+msgstr ""
+
+#: lib/metaboxes.php:252 dist/lib/metaboxes.php:252
+msgid "Slider"
+msgstr ""
+
+#: lib/metaboxes.php:253 dist/lib/metaboxes.php:253
 msgid ""
-"Choose where to show page title. In the breadcrumb section or in the main "
-"content"
+"Used when you select the Gallery format. Upload an image or enter an URL."
 msgstr ""
 
-#: lib/options.php:506
-msgid "Enable Contact form"
+#: lib/metaboxes.php:259 dist/lib/metaboxes.php:259
+msgid "Video oEmbed URL"
 msgstr ""
 
-#: lib/options.php:507
-msgid "Enable or disable the contact form bottom screen"
+#: lib/metaboxes.php:266 dist/lib/metaboxes.php:266
+msgid "Video Self hosted(mp4)"
 msgstr ""
 
-#: lib/options.php:514
-msgid "TO email"
+#: lib/metaboxes.php:272 dist/lib/metaboxes.php:272
+msgid "Video Self hosted(ogv)"
 msgstr ""
 
-#: lib/options.php:515
-msgid "Enter a valid email address where the emails are sent to"
+#: lib/metaboxes.php:278 dist/lib/metaboxes.php:278
+msgid "Video Self hosted(webm)"
 msgstr ""
 
-#: lib/options.php:524
-msgid "Contact form title"
+#: lib/metaboxes.php:284 dist/lib/metaboxes.php:284
+msgid "Video Self hosted Poster"
 msgstr ""
 
-#: lib/options.php:533
-msgid "Contact form text"
+#: lib/metaboxes.php:291 dist/lib/metaboxes.php:291
+msgid "Audio"
 msgstr ""
 
-#: lib/options.php:562
-msgid "Header options"
+#: lib/metaboxes.php:309 dist/lib/metaboxes.php:309
+msgid "Hide post meta"
 msgstr ""
 
-#: lib/options.php:564
-msgid "<p class=\"description\">Customize header appearance</p>"
+#: lib/metaboxes.php:316 dist/lib/metaboxes.php:316
+msgid "Related posts"
 msgstr ""
 
-#: lib/options.php:569
+#: lib/metaboxes.php:333 dist/lib/metaboxes.php:333
+msgid "Post Layout"
+msgstr ""
+
+#: lib/metaboxes.php:341 dist/lib/metaboxes.php:341
+msgid "Post layout"
+msgstr ""
+
+#: lib/metaboxes.php:347 dist/lib/metaboxes.php:347
+msgid "Right Sidebar"
+msgstr ""
+
+#: lib/metaboxes.php:348 dist/lib/metaboxes.php:348
+msgid "Left sidebar"
+msgstr ""
+
+#: lib/metaboxes.php:349 dist/lib/metaboxes.php:349
+msgid "Full width, no sidebar"
+msgstr ""
+
+#: lib/metaboxes.php:352 dist/lib/metaboxes.php:352
+msgid "3 columns, Right and Left sidebars"
+msgstr ""
+
+#: lib/metaboxes.php:354 dist/lib/metaboxes.php:354
+msgid "3 columns, 2 Left sidebars"
+msgstr ""
+
+#: lib/metaboxes.php:355 dist/lib/metaboxes.php:355
+msgid "3 columns, 2 Right sidebars"
+msgstr ""
+
+#: lib/metaboxes.php:366 dist/lib/metaboxes.php:366
+msgid "Header content(optional)"
+msgstr ""
+
+#: lib/metaboxes.php:374 dist/lib/metaboxes.php:374
+msgid "Header content"
+msgstr ""
+
+#: lib/metaboxes.php:375 dist/lib/metaboxes.php:375
+msgid "This will be displayed right after the menu. Shortcodes are allowed"
+msgstr ""
+
+#: lib/metaboxes.php:385 dist/lib/metaboxes.php:385
+msgid "Bottom content(optional)"
+msgstr ""
+
+#: lib/metaboxes.php:393 dist/lib/metaboxes.php:393
+msgid "Bottom content"
+msgstr ""
+
+#: lib/metaboxes.php:394 dist/lib/metaboxes.php:394
+msgid ""
+"This will be displayed right after the generated page content ends. "
+"Shortcodes are allowed"
+msgstr ""
+
+#: lib/metaboxes.php:404 dist/lib/metaboxes.php:404
+msgid "Clients - link"
+msgstr ""
+
+#: lib/metaboxes.php:421 dist/lib/metaboxes.php:421
+msgid "Testimonial - Author description"
+msgstr ""
+
+#: lib/metaboxes.php:428 dist/lib/metaboxes.php:428
+msgid "Author description"
+msgstr ""
+
+#: lib/metaboxes.php:446 dist/lib/metaboxes.php:446
+msgid "Main menu options"
+msgstr ""
+
+#: lib/metaboxes.php:454 dist/lib/metaboxes.php:454
 msgid "Header Layout"
 msgstr ""
 
-#: lib/options.php:570
-msgid "Select how you want your header format"
+#: lib/metaboxes.php:472 dist/lib/metaboxes.php:472
+msgid "Primary menu"
 msgstr ""
 
-#: lib/options.php:583
-msgid "Header Banner content"
+#: lib/metaboxes.php:480 dist/lib/metaboxes.php:480
+msgid "Secondary menu"
 msgstr ""
 
-#: lib/options.php:590
-msgid "Main Menu Font size"
+#: lib/metaboxes.php:488 dist/lib/metaboxes.php:488
+msgid "Hide Shop"
 msgstr ""
 
-#: lib/options.php:591
-msgid "Font size in pixels. Default: 12"
+#: lib/metaboxes.php:489 dist/lib/metaboxes.php:489
+msgid "Check to hide the Shop icon in the main menu"
 msgstr ""
 
-#: lib/options.php:597
-msgid "Main Menu Height"
+#: lib/metaboxes.php:495 dist/lib/metaboxes.php:495
+msgid "Hide Search"
 msgstr ""
 
-#: lib/options.php:598
-msgid "Set your header height expressed in pixels. Example: 88"
+#: lib/menu-walker.php:252 dist/lib/menu-walker.php:252
+msgid "Add a menu"
 msgstr ""
 
-#: lib/options.php:604
-msgid "Display top bar"
+#: lib/menu-custom.php:286 dist/lib/menu-custom.php:286
+msgid "Choose icon"
 msgstr ""
 
-#: lib/options.php:605
+#: lib/menu-custom.php:289 dist/lib/menu-custom.php:289
+msgid "Remove icon"
+msgstr ""
+
+#: lib/menu-custom.php:293 dist/lib/menu-custom.php:293
+msgid "Before title"
+msgstr ""
+
+#: lib/menu-custom.php:294 dist/lib/menu-custom.php:294
+msgid "After title"
+msgstr ""
+
+#: lib/menu-custom.php:295 dist/lib/menu-custom.php:295
+msgid "Just the icon"
+msgstr ""
+
+#: lib/menu-custom.php:304 dist/lib/menu-custom.php:304
+msgid "Menu style"
+msgstr ""
+
+#: lib/menu-custom.php:307 dist/lib/menu-custom.php:307
+msgid "Buy button"
+msgstr ""
+
+#: lib/menu-custom.php:308 dist/lib/menu-custom.php:308
+msgid "See through"
+msgstr ""
+
+#: lib/menu-custom.php:309 dist/lib/menu-custom.php:309
+msgid "Highlight"
+msgstr ""
+
+#: lib/menu-custom.php:317 dist/lib/menu-custom.php:317
+#: lib/plugin-menu-items-visibility-control/config.php:40
+#: dist/lib/plugin-menu-items-visibility-control/config.php:40
+msgid "Enable Mega Menu for child items."
+msgstr ""
+
+#: lib/theme-functions.php:225 dist/lib/theme-functions.php:225
+msgid "Permanent Link:"
+msgstr ""
+
+#: lib/theme-functions.php:233 dist/lib/theme-functions.php:233
+#: kleo-framework/lib/function-breadcrumb.php:216
+#: lib/plugin-sensei/config.php:71
+#: dist/kleo-framework/lib/function-breadcrumb.php:216
+#: dist/lib/plugin-sensei/config.php:71
+msgid "Home"
+msgstr ""
+
+#: lib/theme-functions.php:512 dist/lib/theme-functions.php:512
+msgid "Start typing to search..."
+msgstr ""
+
+#: lib/theme-functions.php:620 dist/lib/theme-functions.php:620
+msgid "Sorry, we haven't found anything based on your criteria."
+msgstr ""
+
+#: lib/theme-functions.php:622 dist/lib/theme-functions.php:622
+msgid "Please try searching by different terms."
+msgstr ""
+
+#: lib/theme-functions.php:633 dist/lib/theme-functions.php:633
+msgid "Members"
+msgstr ""
+
+#: lib/theme-functions.php:658 dist/lib/theme-functions.php:658
+msgid "View member results"
+msgstr ""
+
+#: lib/theme-functions.php:666 dist/lib/theme-functions.php:666
+msgid "Groups"
+msgstr ""
+
+#: lib/theme-functions.php:684 dist/lib/theme-functions.php:684
+msgid "View group results"
+msgstr ""
+
+#: lib/theme-functions.php:772 dist/lib/theme-functions.php:772
+msgid "View all results"
+msgstr ""
+
+#: lib/theme-functions.php:778 dist/lib/theme-functions.php:778
+msgid "Forums"
+msgstr ""
+
+#: lib/theme-functions.php:801 dist/lib/theme-functions.php:801
+msgid "View forum results"
+msgstr ""
+
+#: lib/theme-functions.php:1146 dist/lib/theme-functions.php:1146
+msgid "<span id=\"older-nav\">Go to article</span>"
+msgstr ""
+
+#: lib/theme-functions.php:1339 dist/lib/theme-functions.php:1339
+msgid "Top Content"
+msgstr ""
+
+#: lib/theme-functions.php:1344 dist/lib/theme-functions.php:1344
 msgid ""
-"Enable or disable the top bar.<br> See Social icons tab to enable the social "
-"icons inside it.<br> Set a Top menu from  Appearance - Menus "
+"This will be displayed at top of the category page. Shortcodes are allowed."
 msgstr ""
 
-#: lib/options.php:611
-msgid "Top bar - Darker background"
-msgstr ""
-
-#: lib/options.php:613
-msgid ""
-"Make the Top bar background a little darker instead of same header color. "
-"This is based on Styling options - Header."
-msgstr ""
-
-#: lib/options.php:619
-msgid "Show language switch"
-msgstr ""
-
-#: lib/options.php:620
-msgid "Works only when WPML plugin is enabled."
-msgstr ""
-
-#: lib/options.php:626
-msgid "Sticky Main menu"
-msgstr ""
-
-#: lib/options.php:627
-msgid "Enable or disable the sticky menu."
-msgstr ""
-
-#: lib/options.php:634
-msgid "Resize logo on scroll"
-msgstr ""
-
-#: lib/options.php:635
-msgid "Enable or disable logo resizing when scrolling down the page"
-msgstr ""
-
-#: lib/options.php:642
-msgid "Transparent Main Menu"
-msgstr ""
-
-#: lib/options.php:643
-msgid "Enable or disable main menu background transparency"
-msgstr ""
-
-#: lib/options.php:649
-msgid "Ajax Search in menu"
-msgstr ""
-
-#: lib/options.php:651
-msgid "Enable or disable the button for search."
-msgstr ""
-
-#: lib/options.php:659
-msgid "Search context"
-msgstr ""
-
-#: lib/options.php:670
-msgid "Title/Breadcrumb Section"
-msgstr ""
-
-#: lib/options.php:671
-msgid ""
-"Settings for the title/breadcrumb section that comes just after the menu."
-"<br>To <strong>Style this section</strong> go to Styling options - Alternate"
-msgstr ""
-
-#: lib/options.php:677
-#: lib/options.php:1698
-msgid "Show breadcrumb"
-msgstr ""
-
-#: lib/options.php:678
-#: lib/options.php:1699
-msgid "Enable or disable the site path under the page title."
-msgstr ""
-
-#: lib/options.php:684
-#: lib/options.php:1712
-msgid "Main menu info"
-msgstr ""
-
-#: lib/options.php:685
-msgid ""
-"This text displays next to the main menu. To disable it just delete the "
-"whole text."
-msgstr ""
-
-#: lib/options.php:692
-msgid "Title/Breadcrumb layout"
-msgstr ""
-
-#: lib/options.php:693
-msgid "Select the appearance for the title and breadcrumb section"
-msgstr ""
-
-#: lib/options.php:718
-msgid "Padding"
-msgstr ""
-
-#: lib/options.php:719
-msgid "Set a top/bottom padding for the title section"
-msgstr ""
-
-#: lib/options.php:720
-msgid "Defined in px. Enter values without px"
-msgstr ""
-
-#: lib/options.php:744
-msgid "<p class=\"description\">Here you can enable side menu.</p>"
-msgstr ""
-
-#: lib/options.php:750
-msgid "Enable side menu on your site"
-msgstr ""
-
-#: lib/options.php:751
-msgid "This will load the side menu functionality"
-msgstr ""
-
-#: lib/options.php:759
-msgid "Add toggle button on your main menu"
-msgstr ""
-
-#: lib/options.php:760
-msgid "It will appear at the end of your primary menu"
-msgstr ""
-
-#: lib/options.php:768
-msgid "Replace the default Mobile Menu with the Side Menu"
-msgstr ""
-
-#: lib/options.php:769
-msgid ""
-"When you click the menu icon on mobile, the side menu will open instead of "
-"the normal menu"
-msgstr ""
-
-#: lib/options.php:776
-msgid "Side menu position"
-msgstr ""
-
-#: lib/options.php:777
-msgid "Where the side menu will appear"
-msgstr ""
-
-#: lib/options.php:785
-msgid "Side menu type"
-msgstr ""
-
-#: lib/options.php:786
-msgid "Type of side menu appearance"
-msgstr ""
-
-#: lib/options.php:794
-msgid "Before Menu text"
-msgstr ""
-
-#: lib/options.php:802
-msgid "After Menu text"
-msgstr ""
-
-#: lib/options.php:815
-msgid "<p class=\"description\">Settings related to blog</p>"
-msgstr ""
-
-#: lib/options.php:821
-msgid "Blog Page Layout"
-msgstr ""
-
-#: lib/options.php:822
-msgid "Select your blog layout. Choose between 1, 2 or 3 column layout."
-msgstr ""
-
-#: lib/options.php:836
-msgid "Categories/Archives Layout"
-msgstr ""
-
-#: lib/options.php:837
-msgid "Select your blog categories layout. Choose between 1, 2 or 3 column layout."
-msgstr ""
-
-#: lib/options.php:852
-msgid "Single Post page Layout"
-msgstr ""
-
-#: lib/options.php:853
-msgid "Select your Blog post page layout. Choose between 1, 2 or 3 column layout."
-msgstr ""
-
-#: lib/options.php:869
+#: lib/theme-functions.php:2185 dist/lib/theme-functions.php:2185
 msgid "Display type"
 msgstr ""
 
-#: lib/options.php:870
-msgid "How your blog posts will display"
+#: lib/theme-functions.php:2189 dist/lib/theme-functions.php:2189
+msgid "Use default display type"
 msgstr ""
 
-#: lib/options.php:879
-msgid "Posts per row"
-msgstr ""
-
-#: lib/options.php:880
-msgid "How many columns to have in the grid"
-msgstr ""
-
-#: lib/options.php:887
-msgid "Enable Layout Switcher Icons"
-msgstr ""
-
-#: lib/options.php:888
-msgid "Let your visitors switch the layout of the Blog page"
-msgstr ""
-
-#: lib/options.php:895
-msgid "Enabled Layouts"
-msgstr ""
-
-#: lib/options.php:904
-msgid "Featured content display type"
-msgstr ""
-
-#: lib/options.php:912
-msgid "Featured articles per row"
-msgstr ""
-
-#: lib/options.php:921
-msgid "Meta settings"
-msgstr ""
-
-#: lib/options.php:922
-msgid "Enable/disable the display of post meta like author, categories, date"
-msgstr ""
-
-#: lib/options.php:928
-msgid "Display post meta on archive listing"
-msgstr ""
-
-#: lib/options.php:929
+#: lib/theme-functions.php:2195 dist/lib/theme-functions.php:2195
 msgid ""
-"If you want to show meta info in Blog posts listing like Author, Date, "
-"Category"
+"The \"Display type\" will override the default display layout for each "
+"category in part."
 msgstr ""
 
-#: lib/options.php:935
-msgid "Display post meta in Single post page"
+#: lib/theme-functions.php:2293 dist/lib/theme-functions.php:2293
+msgid "Tags: "
 msgstr ""
 
-#: lib/options.php:936
-msgid "If enabled it will show post info like author, categories"
+#: lib/theme-functions.php:2502 dist/lib/theme-functions.php:2502
+#: lib/inc/strings.php:54 dist/lib/inc/strings.php:54
+msgid "Something went wrong. Please reload page."
 msgstr ""
 
-#: lib/options.php:943
-msgid "Display Meta Fields"
+#: lib/theme-functions.php:2537 dist/lib/theme-functions.php:2537
+msgid "Search here.."
 msgstr ""
 
-#: lib/options.php:944
-msgid ""
-"What fields do you want displayed? Link fields will only work if BuddyPress "
-"is active."
+#: lib/theme-functions.php:2589 dist/lib/theme-functions.php:2589
+msgid "Continue reading"
 msgstr ""
 
-#: lib/options.php:951
-msgid "Post meta separator"
+#: vc_templates/vc_tabs.php:110 dist/vc_templates/vc_tabs.php:110
+#: dist/vc_templates/vc_tabs.php:110
+msgid "Previous section"
 msgstr ""
 
-#: lib/options.php:952
-msgid "Customize your post meta separator."
+#: vc_templates/vc_tabs.php:113 dist/vc_templates/vc_tabs.php:113
+#: dist/vc_templates/vc_tabs.php:113
+msgid "Next section"
 msgstr ""
 
-#: lib/options.php:958
-msgid "Post meta style for standard layout"
+#: vc_templates/vc_wp_tagcloud.php:4 dist/vc_templates/vc_wp_tagcloud.php:4
+msgid "Tags"
 msgstr ""
 
-#: lib/options.php:959
-msgid ""
-"How the display meta, left side or under the title. Applies to standard "
-"layout only."
+#: vc_templates/vc_wp_tagcloud.php:37 dist/vc_templates/vc_wp_tagcloud.php:37
+msgid "No tags defined"
 msgstr ""
 
-#: lib/options.php:971
-msgid "Display media on post page"
+#: vc_templates/vc_posts_grid.php:165 dist/vc_templates/vc_posts_grid.php:165
+msgid "Load more"
 msgstr ""
 
-#: lib/options.php:972
-msgid "If you want to show image/gallery/video/audio before the post on single page"
+#: kleo-framework/lib/function-breadcrumb.php:215
+#: dist/kleo-framework/lib/function-breadcrumb.php:215
+msgid "Browse:"
 msgstr ""
 
-#: lib/options.php:978
-msgid "Get Featured image from content"
+#: kleo-framework/lib/function-breadcrumb.php:217
+#: dist/kleo-framework/lib/function-breadcrumb.php:217
+msgid "404 Not Found"
 msgstr ""
 
-#: lib/options.php:979
-msgid ""
-"If you have not set a Featured image allow the system to show the first "
-"image from post content on archive pages"
+#: kleo-framework/lib/function-breadcrumb.php:218
+#: dist/kleo-framework/lib/function-breadcrumb.php:218
+msgid "Archives"
 msgstr ""
 
-#: lib/options.php:987
-msgid "Default Featured Image Placeholder"
+#. Translators: %s is the search query. The HTML entities are opening and closing curly quotes.
+#: kleo-framework/lib/function-breadcrumb.php:220
+#: dist/kleo-framework/lib/function-breadcrumb.php:220
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
 msgstr ""
 
-#: lib/options.php:988
-msgid ""
-"If your post does not have a Featured image set then show a default image on "
-"archive pages."
+#. Translators: Minute archive title. %s is the minute time format.
+#: kleo-framework/lib/function-breadcrumb.php:224
+#: dist/kleo-framework/lib/function-breadcrumb.php:224
+#, php-format
+msgid "Minute %s"
 msgstr ""
 
-#: lib/options.php:993
-msgid "Enable post navigation"
+#. Translators: Weekly archive title. %s is the week date format.
+#: kleo-framework/lib/function-breadcrumb.php:226
+#: dist/kleo-framework/lib/function-breadcrumb.php:226
+#, php-format
+msgid "Week %s"
 msgstr ""
 
-#: lib/options.php:994
-msgid "Display previous and next post navigation"
+#: kleo-framework/lib/function-breadcrumb.php:798
+#: dist/kleo-framework/lib/function-breadcrumb.php:798
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
 msgstr ""
 
-#: lib/options.php:1000
-msgid "Enable related posts"
+#: kleo-framework/lib/function-breadcrumb.php:816
+#: dist/kleo-framework/lib/function-breadcrumb.php:816
+msgctxt "minute archives time format"
+msgid "i"
 msgstr ""
 
-#: lib/options.php:1001
-msgid "Display related posts in single blog entry"
+#: kleo-framework/lib/function-breadcrumb.php:834
+#: dist/kleo-framework/lib/function-breadcrumb.php:834
+msgctxt "hour archives time format"
+msgid "g a"
 msgstr ""
 
-#: lib/options.php:1007
-msgid "Enable custom posts related"
+#: kleo-framework/lib/function-breadcrumb.php:851
+#: kleo-framework/lib/function-breadcrumb.php:880
+#: kleo-framework/lib/function-breadcrumb.php:910
+#: kleo-framework/lib/function-breadcrumb.php:937
+#: kleo-framework/lib/function-breadcrumb.php:1135
+#: dist/kleo-framework/lib/function-breadcrumb.php:851
+#: dist/kleo-framework/lib/function-breadcrumb.php:880
+#: dist/kleo-framework/lib/function-breadcrumb.php:910
+#: dist/kleo-framework/lib/function-breadcrumb.php:937
+#: dist/kleo-framework/lib/function-breadcrumb.php:1135
+msgctxt "yearly archives date format"
+msgid "Y"
 msgstr ""
 
-#: lib/options.php:1008
-msgid "Display related posts in custom post type single entry"
+#: kleo-framework/lib/function-breadcrumb.php:852
+#: kleo-framework/lib/function-breadcrumb.php:911
+#: kleo-framework/lib/function-breadcrumb.php:1138
+#: dist/kleo-framework/lib/function-breadcrumb.php:852
+#: dist/kleo-framework/lib/function-breadcrumb.php:911
+#: dist/kleo-framework/lib/function-breadcrumb.php:1138
+msgctxt "monthly archives date format"
+msgid "F"
 msgstr ""
 
-#: lib/options.php:1017
-msgid "Pages"
+#: kleo-framework/lib/function-breadcrumb.php:853
+#: kleo-framework/lib/function-breadcrumb.php:1141
+#: dist/kleo-framework/lib/function-breadcrumb.php:853
+#: dist/kleo-framework/lib/function-breadcrumb.php:1141
+msgctxt "daily archives date format"
+msgid "j"
 msgstr ""
 
-#: lib/options.php:1018
-msgid "<p class=\"description\">Settings related to Pages</p>"
+#: kleo-framework/lib/function-breadcrumb.php:881
+#: dist/kleo-framework/lib/function-breadcrumb.php:881
+msgctxt "weekly archives date format"
+msgid "W"
 msgstr ""
 
-#: lib/options.php:1023
-msgid "Enable Media on single page"
+#: kleo-framework/lib/function-breadcrumb.php:1255
+#: dist/kleo-framework/lib/function-breadcrumb.php:1255
+msgid "Split"
 msgstr ""
 
-#: lib/options.php:1024
-msgid "Video, Sound or Image Thumbnail will appear before post content"
+#: kleo-framework/lib/function-breadcrumb.php:1258
+#: dist/kleo-framework/lib/function-breadcrumb.php:1258
+msgid "Merge"
 msgstr ""
 
-#: lib/options.php:1030
-msgid "Enable Page comments"
+#: kleo-framework/lib/function-core.php:355
+#: dist/kleo-framework/lib/function-core.php:355
+msgid "Tag Archive for:"
 msgstr ""
 
-#: lib/options.php:1031
-msgid ""
-"If you enable this make sure you have checked also Settings - Discussion - "
-"Allow people to post comments on new articles "
+#: kleo-framework/lib/function-core.php:360
+#: dist/kleo-framework/lib/function-core.php:360
+msgid "Archive for category:"
 msgstr ""
 
-#: lib/options.php:1051
-msgid "Social Share"
+#: kleo-framework/lib/function-core.php:362
+#: dist/kleo-framework/lib/function-core.php:362
+msgid "Archive for date:"
 msgstr ""
 
-#: lib/options.php:1059
-msgid "Enable Social share"
+#: kleo-framework/lib/function-core.php:364
+#: dist/kleo-framework/lib/function-core.php:364
+msgid "Archive for month:"
 msgstr ""
 
-#: lib/options.php:1060
-msgid "Display social share icons after single blog entry."
+#: kleo-framework/lib/function-core.php:366
+#: dist/kleo-framework/lib/function-core.php:366
+msgid "Archive for year:"
 msgstr ""
 
-#: lib/options.php:1068
-msgid "Social share Post types"
+#: kleo-framework/lib/function-core.php:369
+#: dist/kleo-framework/lib/function-core.php:369
+msgid "Author Archive"
 msgstr ""
 
-#: lib/options.php:1079
-msgid "Exclude social share by Post IDs"
+#: kleo-framework/lib/function-core.php:372
+#: dist/kleo-framework/lib/function-core.php:372
+msgid "for:"
 msgstr ""
 
-#: lib/options.php:1080
-msgid "List of Post IDs separated by comma to exclude from showing."
+#: kleo-framework/lib/function-core.php:380
+#: dist/kleo-framework/lib/function-core.php:380
+msgid "search results for:"
 msgstr ""
 
-#: lib/options.php:1087
-msgid "Enable post likes"
+#: kleo-framework/lib/function-core.php:382
+#: dist/kleo-framework/lib/function-core.php:382
+msgid "search result for:"
 msgstr ""
 
-#: lib/options.php:1088
-msgid "Allow people to like your post"
+#: kleo-framework/lib/function-core.php:386
+#: dist/kleo-framework/lib/function-core.php:386
+msgid "Search results for:"
 msgstr ""
 
-#: lib/options.php:1095
-msgid "Exclude IDs"
+#: kleo-framework/lib/function-core.php:388
+#: dist/kleo-framework/lib/function-core.php:388
+msgid "To search the site please enter a valid term"
 msgstr ""
 
-#: lib/options.php:1096
-msgid "List of Post IDs separated by comma to exclude from showing likes"
+#: kleo-framework/lib/function-core.php:399
+#: dist/kleo-framework/lib/function-core.php:399
+msgid "Blog"
 msgstr ""
 
-#: lib/options.php:1103
-msgid "Enable Likes by Ajax"
+#: kleo-framework/lib/function-core.php:403
+#: dist/kleo-framework/lib/function-core.php:403
+msgid "Error 404 - Page not found"
 msgstr ""
 
-#: lib/options.php:1104
-msgid ""
-"Get the likes count by Ajax if you have cached content. <br> NOTE: Not "
-"recommended. This will increase page load DRAMATICALLY."
+#: kleo-framework/lib/function-core.php:409
+#: dist/kleo-framework/lib/function-core.php:409
+msgid "Page"
 msgstr ""
 
-#: lib/options.php:1111
-msgid "0 likes text"
+#: buddypress/members/bps-form-legacy.php:50
+#: buddypress/members/bps-form-inline.php:50
+#: buddypress/members/bps-form-with-labels.php:50
+#: dist/buddypress/members/bps-form-legacy.php:50
+#: dist/buddypress/members/bps-form-inline.php:50
+#: dist/buddypress/members/bps-form-with-labels.php:50
+msgid "Toggle filters"
 msgstr ""
 
-#: lib/options.php:1112
-msgid "Text to show in case the post has no likes"
+#: buddypress/members/bps-form-legacy.php:108
+#: buddypress/members/bps-form-legacy.php:117
+#: buddypress/members/bps-form-legacy.php:126
+#: buddypress/members/bps-form-inline.php:110
+#: buddypress/members/bps-form-inline.php:118
+#: buddypress/members/bps-form-inline.php:126
+#: dist/buddypress/members/bps-form-legacy.php:108
+#: dist/buddypress/members/bps-form-legacy.php:117
+#: dist/buddypress/members/bps-form-legacy.php:126
+#: dist/buddypress/members/bps-form-inline.php:110
+#: dist/buddypress/members/bps-form-inline.php:118
+#: dist/buddypress/members/bps-form-inline.php:126
+msgid "From"
 msgstr ""
 
-#: lib/options.php:1120
-msgid "1 like text"
+#: buddypress/members/bps-form-legacy.php:110
+#: buddypress/members/bps-form-legacy.php:119
+#: buddypress/members/bps-form-legacy.php:128
+#: buddypress/members/bps-form-inline.php:112
+#: buddypress/members/bps-form-inline.php:120
+#: buddypress/members/bps-form-inline.php:128
+#: dist/buddypress/members/bps-form-legacy.php:110
+#: dist/buddypress/members/bps-form-legacy.php:119
+#: dist/buddypress/members/bps-form-legacy.php:128
+#: dist/buddypress/members/bps-form-inline.php:112
+#: dist/buddypress/members/bps-form-inline.php:120
+#: dist/buddypress/members/bps-form-inline.php:128
+msgid "To"
 msgstr ""
 
-#: lib/options.php:1121
-msgid "Text to show in case the post has 1 like"
+#: buddypress/members/index.php:68 dist/buddypress/members/index.php:68
+#, php-format
+msgid "All %s %s"
 msgstr ""
 
-#: lib/options.php:1128
-#: lib/options.php:1136
-msgid "More than 1 like text"
-msgstr ""
-
-#: lib/options.php:1129
-msgid "Text to show in case the post has more than 1 like"
-msgstr ""
-
-#: lib/options.php:1137
-msgid "Text to show in case user has already liked the post"
-msgstr ""
-
-#: lib/options.php:1144
-msgid "Text on icon hover"
-msgstr ""
-
-#: lib/options.php:1145
-msgid "Text that shows when hovering the icon"
-msgstr ""
-
-#: lib/options.php:1198
-msgid "Styling options"
-msgstr ""
-
-#: lib/options.php:1424
-msgid "Fonts"
-msgstr ""
-
-#: lib/options.php:1425
-msgid "<p class=\"description\">Customize font options for body text and headings.</p>"
-msgstr ""
-
-#: lib/options.php:1432
-#: lib/post-types.php:19
-msgid "Portfolio"
-msgstr ""
-
-#: lib/options.php:1434
-msgid ""
-"<p class=\"description\">Portfolio related settings. Please re-save permalinks "
-"when changing slugs or archive page.</p>"
-msgstr ""
-
-#: lib/options.php:1440
-msgid "Custom page for Portfolio Archive"
-msgstr ""
-
-#: lib/options.php:1450
-msgid "Portfolio Page"
-msgstr ""
-
-#: lib/options.php:1458
-msgid "Portfolio name"
-msgstr ""
-
-#: lib/options.php:1466
-msgid "Portfolio link"
-msgstr ""
-
-#: lib/options.php:1474
-msgid "Display style for Portfolio page"
-msgstr ""
-
-#: lib/options.php:1489
-msgid "Title style"
-msgstr ""
-
-#: lib/options.php:1501
-msgid "Show/Hide subtitle"
-msgstr ""
-
-#: lib/options.php:1509
-msgid "Number of items per row"
-msgstr ""
-
-#: lib/options.php:1517
-msgid "Show categories filter on portfolio page"
-msgstr ""
-
-#: lib/options.php:1529
-msgid "Thumbnail image size"
-msgstr ""
-
-#: lib/options.php:1530
-msgid ""
-"Set your portfolio image size in portfolio list. Defined in pixels. If you "
-"are using video items, use a 16:9 size format"
-msgstr ""
-
-#: lib/options.php:1536
-msgid "Portfolio Single Item Page"
-msgstr ""
-
-#: lib/options.php:1537
-msgid "Settings for portfolio item page"
-msgstr ""
-
-#: lib/options.php:1543
-msgid "Display media on single portfolio page"
-msgstr ""
-
-#: lib/options.php:1544
-msgid ""
-"If you want to show image/gallery/video before the content on single "
-"portfolio page"
-msgstr ""
-
-#: lib/options.php:1550
-msgid "Show back to Portfolio icon(bottom of single portfolio item page)"
-msgstr ""
-
-#: lib/options.php:1557
-msgid "Enable comments on portfolio single page"
-msgstr ""
-
-#: lib/options.php:1564
-msgid "Enable portfolio navigation"
-msgstr ""
-
-#: lib/options.php:1579
-msgid "Buddypress"
-msgstr ""
-
-#: lib/options.php:1581
-msgid "<p class=\"description\">Buddypress related settings</p>"
-msgstr ""
-
-#: lib/options.php:1588
-msgid "Default Layout"
-msgstr ""
-
-#: lib/options.php:1589
-msgid "Select your Buddypress pages layout. Choose between 1, 2 or 3 column layout."
-msgstr ""
-
-#: lib/options.php:1604
-msgid "Members Directory Layout"
-msgstr ""
-
-#: lib/options.php:1605
-msgid ""
-"Select your Buddypress Members directory layout. Choose between 1, 2 or 3 "
-"column layout."
-msgstr ""
-
-#: lib/options.php:1621
-msgid "Member Profile Layout"
-msgstr ""
-
-#: lib/options.php:1622
-msgid "Select your Member profile layout. Choose between 1, 2 or 3 column layout."
-msgstr ""
-
-#: lib/options.php:1638
-msgid "Groups Layout"
-msgstr ""
-
-#: lib/options.php:1639
-msgid "Select your Groups pages layout. Choose between 1, 2 or 3 column layout."
-msgstr ""
-
-#: lib/options.php:1655
-msgid "Activity Layout"
-msgstr ""
-
-#: lib/options.php:1656
-msgid "Select your Activity pages layout. Choose between 1, 2 or 3 column layout."
-msgstr ""
-
-#: lib/options.php:1672
-msgid "Register page Layout"
-msgstr ""
-
-#: lib/options.php:1673
-msgid "Select your Register page layout. Choose between 1, 2 or 3 column layout."
-msgstr ""
-
-#: lib/options.php:1705
-msgid "Custom main menu info"
-msgstr ""
-
-#: lib/options.php:1706
-msgid "Add a custom text in the main menu to show only on Buddypress pages."
-msgstr ""
-
-#: lib/options.php:1714
-msgid "This text displays next to the main menu"
-msgstr ""
-
-#: lib/options.php:1721
-msgid "Hide Breadcrumb section for Profile pages"
-msgstr ""
-
-#: lib/options.php:1722
-msgid ""
-"If enabled the breadcrumb section will be hidden. Best used when you enable "
-"full width profile page below"
-msgstr ""
-
-#: lib/options.php:1728
-msgid "Enable Full width Profile Header"
-msgstr ""
-
-#: lib/options.php:1729
-msgid "If enabled it will show the profile Photo in full width"
-msgstr ""
-
-#: lib/options.php:1735
-msgid "Enable Full width Group Header"
-msgstr ""
-
-#: lib/options.php:1736
-msgid "If enabled it will show the Group Photo section in full width"
-msgstr ""
-
-#: lib/options.php:1742
-msgid "Enable online status"
-msgstr ""
-
-#: lib/options.php:1743
-msgid "If enabled it will show a colored dot next to each member avatar"
-msgstr ""
-
-#: lib/options.php:1749
-msgid "Enable member navigation"
-msgstr ""
-
-#: lib/options.php:1750
-msgid "Display previous and next member navigation"
-msgstr ""
-
-#: lib/options.php:1756
-msgid "Live Notifications interval"
-msgstr ""
-
-#: lib/options.php:1763
-msgid "Members per page"
-msgstr ""
-
-#: lib/options.php:1764
-msgid "How many members to show per page in the Members Directory"
-msgstr ""
-
-#: lib/options.php:1770
-msgid "Groups per page"
-msgstr ""
-
-#: lib/options.php:1771
-msgid "How many groups to show per page in the Groups Directory"
-msgstr ""
-
-#: lib/options.php:1785
-msgid "Woocommerce"
-msgstr ""
-
-#: lib/options.php:1793
-msgid "Woocommerce Pages Layout"
-msgstr ""
-
-#: lib/options.php:1794
-msgid "Select the layout to use in Woocommerce pages."
-msgstr ""
-
-#: lib/options.php:1810
-msgid "Woocommerce Category Layout"
-msgstr ""
-
-#: lib/options.php:1811
-msgid "Select the layout to use in Woocommerce product listing pages."
-msgstr ""
-
-#: lib/options.php:1826
-msgid "Menu cart location"
-msgstr ""
-
-#: lib/options.php:1827
-msgid "Shopping Cart in header menu location"
-msgstr ""
-
-#: lib/options.php:1837
-msgid "Mobile menu Cart Icon"
-msgstr ""
-
-#: lib/options.php:1838
-msgid "This will show on mobile menu a shop icon with the number of cart items"
-msgstr ""
-
-#: lib/options.php:1845
-msgid "Product image effect"
-msgstr ""
-
-#: lib/options.php:1846
-msgid "The effect on products listing when hovering an image."
-msgstr ""
-
-#: lib/options.php:1856
-msgid "Enable product listing Appear Animation"
-msgstr ""
-
-#: lib/options.php:1857
-msgid "On product listing the products will have a appear animation."
-msgstr ""
-
-#: lib/options.php:1864
-msgid "Show percentage badge on products list"
-msgstr ""
-
-#: lib/options.php:1865
-msgid "This will replace the \"Sale\" badge with \"SAVE UP TO xx%\""
-msgstr ""
-
-#: lib/options.php:1872
-msgid "Custom Badge color"
-msgstr ""
-
-#: lib/options.php:1880
-msgid "Custom Badge Background"
-msgstr ""
-
-#: lib/options.php:1888
-msgid "Show NEW badge for new products added"
-msgstr ""
-
-#: lib/options.php:1895
-msgid "Show excerpt on product page"
-msgstr ""
-
-#: lib/options.php:1902
-msgid "Enable product navigation"
-msgstr ""
-
-#: lib/options.php:1909
-msgid "Manage account in Buddypress"
-msgstr ""
-
-#: lib/options.php:1910
-msgid "Integrates \"My Account\" into Buddypress profile tabs"
-msgstr ""
-
-#: lib/options.php:1917
-msgid "Number of days to treat a product as new"
-msgstr ""
-
-#: lib/options.php:1918
-msgid "For how many days to show the NEW badge once a product is added to the shop."
-msgstr ""
-
-#: lib/options.php:1925
-msgid "Catalog mode"
-msgstr ""
-
-#: lib/options.php:1926
-msgid ""
-"If you enable catalog mode will disable Add To Cart buttons, Checkout and "
-"Shopping cart."
-msgstr ""
-
-#: lib/options.php:1935
-msgid "Disable prices"
-msgstr ""
-
-#: lib/options.php:1936
-msgid "Disable prices on category pages and product page"
-msgstr ""
-
-#: lib/options.php:1946
-msgid "Shop Products Columns"
-msgstr ""
-
-#: lib/options.php:1947
-msgid "Select the number of columns to use for products display."
-msgstr ""
-
-#: lib/options.php:1959
-msgid "Shop Products per page"
-msgstr ""
-
-#: lib/options.php:1960
-msgid "How many products to show per page"
-msgstr ""
-
-#: lib/options.php:1966
-msgid "Related Products number"
-msgstr ""
-
-#: lib/options.php:1967
-msgid "Select the number of related products to show on product page."
-msgstr ""
-
-#: lib/options.php:1979
-msgid "Upsell Products number"
-msgstr ""
-
-#: lib/options.php:1980
-msgid "Select the number of upsell products to show on product page."
-msgstr ""
-
-#: lib/options.php:1992
-msgid "Cross-sell Products number"
-msgstr ""
-
-#: lib/options.php:1993
-msgid "Select the number of Cross-sell products to show on cart page."
-msgstr ""
-
-#: lib/options.php:2011
-msgid "bbPress"
-msgstr ""
-
-#: lib/options.php:2018
-msgid "bbPress Pages Layout"
-msgstr ""
-
-#: lib/options.php:2019
-msgid "Select the layout to use in bbPress pages."
-msgstr ""
-
-#: lib/options.php:2034
-msgid "Enable @mentions."
-msgstr ""
-
-#: lib/options.php:2035
-msgid "Enable or disable Buddypress @mentions in forum topics."
-msgstr ""
-
-#: lib/options.php:2049
-msgid "Memberships"
-msgstr ""
-
-#: lib/options.php:2051
-msgid ""
-"<p class=\"description\">Settings related to membership. You need to have Paid "
-"Memberships Pro plugin activated</p>"
-msgstr ""
-
-#: lib/options.php:2056
-msgid "Membership settings"
-msgstr ""
-
-#: lib/options.php:2073
-msgid "Miscellaneous"
-msgstr ""
-
-#: lib/options.php:2080
-msgid "Admin toolbar"
-msgstr ""
-
-#: lib/options.php:2081
-msgid "Enable or disable wordpress default top toolbar"
-msgstr ""
-
-#: lib/options.php:2087
-msgid "Login redirect for Popup"
-msgstr ""
-
-#: lib/options.php:2088
-msgid "Select the redirect action taken when members login from the popup window."
-msgstr ""
-
-#: lib/options.php:2090
-msgid "Default WordPress redirect"
-msgstr ""
-
-#: lib/options.php:2091
-msgid "Reload the current page"
-msgstr ""
-
-#: lib/options.php:2092
-msgid "Custom link"
-msgstr ""
-
-#: lib/options.php:2099
-msgid "Custom link redirect"
-msgstr ""
-
-#: lib/options.php:2108
-msgid "Facebook integration"
-msgstr ""
-
-#: lib/options.php:2109
-msgid "Enable or disable Login/Register with Facebook"
-msgstr ""
-
-#: lib/options.php:2115
-msgid "Facebook APP ID"
-msgstr ""
-
-#: lib/options.php:2116
-msgid ""
-"In order to integrate with Facebook you need to enter your Facebook APP "
-"ID<br/>If you don't have one, you can create it from: <a target=\"_blank\" "
-"href=\"https://developers.facebook.com/apps\">HERE</a> "
-msgstr ""
-
-#: lib/options.php:2123
-msgid "Show Facebook avatar"
-msgstr ""
-
-#: lib/options.php:2124
-msgid ""
-"If you enable this, users that registered with Facebook will display "
-"Facebook profile image as avatar."
-msgstr ""
-
-#: lib/options.php:2131
-msgid "Enable Registration via Facebook"
-msgstr ""
-
-#: lib/options.php:2132
-msgid ""
-"If you enable this, users will be able to register a new account using "
-"Facebook. This skips the registration page including required profile fields"
-msgstr ""
-
-#: lib/options.php:2140
-msgid "Let it snow"
-msgstr ""
-
-#: lib/options.php:2141
-msgid "If you enable this, a beautiful snowing effect will cover the whole site"
-msgstr ""
-
-#: lib/options.php:2147
-msgid "Development mode"
-msgstr ""
-
-#: lib/options.php:2148
-msgid "If you enable this, CSS and JS resources will not be loaded minified"
-msgstr ""
-
-#: lib/options.php:2158
-msgid "Social Info"
-msgstr ""
-
-#: lib/options.php:2160
-msgid ""
-"<p class=\"description\">Here you can set your contact info that will display "
-"in the top bar.</p>"
-msgstr ""
-
-#: lib/options.php:2166
-msgid "Display social icons"
-msgstr ""
-
-#: lib/options.php:2167
-msgid "Enable or disable the social icons in top bar."
-msgstr ""
-
-#: lib/options.php:2174
-#: lib/plugin-woocommerce/config.php:673
-msgid "Twitter"
-msgstr ""
-
-#: lib/options.php:2182
-#: lib/plugin-woocommerce/config.php:670
-msgid "Facebook"
-msgstr ""
-
-#: lib/options.php:2190
-msgid "Dribbble"
-msgstr ""
-
-#: lib/options.php:2198
-msgid "Vimeo"
-msgstr ""
-
-#: lib/options.php:2206
-msgid "Tumblr"
-msgstr ""
-
-#: lib/options.php:2214
-msgid "LinkedIn"
-msgstr ""
-
-#: lib/options.php:2222
-msgid "Google+"
-msgstr ""
-
-#: lib/options.php:2230
-msgid "Flickr"
-msgstr ""
-
-#: lib/options.php:2238
-msgid "YouTube"
-msgstr ""
-
-#: lib/options.php:2246
-msgid "Pinterest"
-msgstr ""
-
-#: lib/options.php:2254
-msgid "Foursquare"
-msgstr ""
-
-#: lib/options.php:2262
-msgid "Instagram"
-msgstr ""
-
-#: lib/options.php:2270
-msgid "GitHub"
-msgstr ""
-
-#: lib/options.php:2278
-msgid "Xing"
-msgstr ""
-
-#: lib/options.php:2289
-msgid "Theme update"
-msgstr ""
-
-#: lib/options.php:2291
-msgid ""
-"<p class=\"description\">To automatically get theme updates you need to enter "
-"the username and API KEY from your Themeforest account.<br>Please make a "
-"backup of current files each time you do a theme update.</p>"
-msgstr ""
-
-#: lib/options.php:2296
-msgid "Themeforest Username"
-msgstr ""
-
-#: lib/options.php:2303
-msgid "Themeforest API KEY"
-msgstr ""
-
-#: lib/post-types.php:15
-msgid "Client"
-msgstr ""
-
-#: lib/post-types.php:15
-msgid "Clients"
-msgstr ""
-
-#: lib/post-types.php:16
-msgid "Testimonial"
-msgstr ""
-
-#: lib/post-types.php:16
-msgid "Testimonials"
-msgstr ""
-
-#: lib/post-types.php:19
-msgid "Portfolio item"
-msgstr ""
-
-#: lib/post-types.php:51
-msgctxt "tag label"
-msgid "Client Tags"
-msgstr ""
-
-#: lib/post-types.php:52
-msgctxt "tag singular label"
-msgid "Client Tag"
-msgstr ""
-
-#: lib/post-types.php:91
-msgctxt "tag label"
-msgid "Testimonial Tags"
-msgstr ""
-
-#: lib/post-types.php:92
-msgctxt "tag singular label"
-msgid "Testimonial Tag"
-msgstr ""
-
-#: lib/post-types.php:151
-msgctxt "category label"
-msgid "Portfolio Categories"
-msgstr ""
-
-#: lib/post-types.php:152
-msgctxt "category singular label"
-msgid "Portfolio Category"
-msgstr ""
-
-#: lib/post-types.php:183
+#: lib/inc/strings.php:6 lib/inc/strings.php:99 dist/lib/inc/strings.php:6
+#: dist/lib/inc/strings.php:99
 #, php-format
 msgctxt "post type general name"
 msgid "%s"
 msgstr ""
 
-#: lib/post-types.php:184
+#: lib/inc/strings.php:7 dist/lib/inc/strings.php:7
+msgctxt "tag label"
+msgid "Client Tags"
+msgstr ""
+
+#: lib/inc/strings.php:8 dist/lib/inc/strings.php:8
+msgctxt "tag singular label"
+msgid "Client Tag"
+msgstr ""
+
+#: lib/inc/strings.php:11 dist/lib/inc/strings.php:11
+msgid "You are already logged in."
+msgstr ""
+
+#: lib/inc/strings.php:12 dist/lib/inc/strings.php:12
+msgid "Authentication required."
+msgstr ""
+
+#: lib/inc/strings.php:13 dist/lib/inc/strings.php:13
+msgid "Please connect your facebook account."
+msgstr ""
+
+#: lib/inc/strings.php:14 dist/lib/inc/strings.php:14
+msgid "Registration is not open at this time. Please come back later."
+msgstr ""
+
+#: lib/inc/strings.php:15 dist/lib/inc/strings.php:15
+msgid ""
+"Registration using Facebook is not currently allowed. Please use our "
+"Register page"
+msgstr ""
+
+#: lib/inc/strings.php:16 dist/lib/inc/strings.php:16
+msgid ""
+"Please click again to login with Facebook and allow the application to use "
+"your email address"
+msgstr ""
+
+#: lib/inc/strings.php:17 dist/lib/inc/strings.php:17
+msgid ""
+"We didn't find your name. Please complete your facebook account before "
+"proceeding."
+msgstr ""
+
+#: lib/inc/strings.php:18 lib/inc/strings.php:29 dist/lib/inc/strings.php:18
+#: dist/lib/inc/strings.php:29
+msgid "Login successful, redirecting..."
+msgstr ""
+
+#: lib/inc/strings.php:19 dist/lib/inc/strings.php:19
+msgid ""
+"Thank you for registering. Please make sure to complete your profile fields "
+"below."
+msgstr ""
+
+#: lib/inc/strings.php:20 lib/inc/strings.php:22 lib/inc/strings.php:24
+#: dist/lib/inc/strings.php:20 dist/lib/inc/strings.php:22
+#: dist/lib/inc/strings.php:24
+msgid "Log in with Facebook"
+msgstr ""
+
+#: lib/inc/strings.php:25 dist/lib/inc/strings.php:25
+msgid "Please Try Again"
+msgstr ""
+
+#: lib/inc/strings.php:28 dist/lib/inc/strings.php:28
+#, php-format
+msgid ""
+"You are already logged in. Please <a href=\"#\" onclick=\"%s\">refresh</a> "
+"page"
+msgstr ""
+
+#: lib/inc/strings.php:30 dist/lib/inc/strings.php:30
+msgid "<strong>ERROR</strong>: Invalid username or e-mail."
+msgstr ""
+
+#: lib/inc/strings.php:31 dist/lib/inc/strings.php:31
+msgid "Failure!"
+msgstr ""
+
+#: lib/inc/strings.php:32 dist/lib/inc/strings.php:32
+msgid "Email successfully sent!"
+msgstr ""
+
+#: lib/inc/strings.php:35 dist/lib/inc/strings.php:35
+msgid "Remove Embed"
+msgstr ""
+
+#: lib/inc/strings.php:36 dist/lib/inc/strings.php:36
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: lib/inc/strings.php:39 dist/lib/inc/strings.php:39
+msgid "Displays your most popular posts sorted by most liked"
+msgstr ""
+
+#: lib/inc/strings.php:40 dist/lib/inc/strings.php:40
+msgid "Popular Posts"
+msgstr ""
+
+#: lib/inc/strings.php:41 lib/inc/strings.php:60 dist/lib/inc/strings.php:41
+#: dist/lib/inc/strings.php:60
+msgid "Title:"
+msgstr ""
+
+#: lib/inc/strings.php:42 dist/lib/inc/strings.php:42
+msgid "Description:"
+msgstr ""
+
+#: lib/inc/strings.php:43 dist/lib/inc/strings.php:43
+msgid "Posts:"
+msgstr ""
+
+#: lib/inc/strings.php:44 dist/lib/inc/strings.php:44
+msgid "Display like counts"
+msgstr ""
+
+#: lib/inc/strings.php:46 dist/lib/inc/strings.php:46
+msgid "View Profile"
+msgstr ""
+
+#: lib/inc/strings.php:50 dist/lib/inc/strings.php:50
+msgid "Portfolio item"
+msgstr ""
+
+#: lib/inc/strings.php:51 dist/lib/inc/strings.php:51
+msgid "Portfolio"
+msgstr ""
+
+#: lib/inc/strings.php:52 dist/lib/inc/strings.php:52
+msgctxt "category label"
+msgid "Portfolio Categories"
+msgstr ""
+
+#: lib/inc/strings.php:53 dist/lib/inc/strings.php:53
+msgctxt "category singular label"
+msgid "Portfolio Category"
+msgstr ""
+
+#: lib/inc/strings.php:55 dist/lib/inc/strings.php:55
+msgid "All"
+msgstr ""
+
+#: lib/inc/strings.php:58 dist/lib/inc/strings.php:58
+msgid "Recent posts with thumbnails widget."
+msgstr ""
+
+#: lib/inc/strings.php:59 dist/lib/inc/strings.php:59
+msgid "(Kleo) Recent posts"
+msgstr ""
+
+#: lib/inc/strings.php:61 dist/lib/inc/strings.php:61
+msgid "Limit:"
+msgstr ""
+
+#: lib/inc/strings.php:62 dist/lib/inc/strings.php:62
+msgid "Display excerpt?"
+msgstr ""
+
+#: lib/inc/strings.php:64 dist/lib/inc/strings.php:64
+msgid "Excerpt length(characters):"
+msgstr ""
+
+#: lib/inc/strings.php:65 dist/lib/inc/strings.php:65
+msgid "Display Thumbnail?"
+msgstr ""
+
+#: lib/inc/strings.php:66 dist/lib/inc/strings.php:66
+msgid "Author Image"
+msgstr ""
+
+#: lib/inc/strings.php:67 dist/lib/inc/strings.php:67
+msgid "Featured Image"
+msgstr ""
+
+#: lib/inc/strings.php:68 dist/lib/inc/strings.php:68
+msgid "Show from category: "
+msgstr ""
+
+#: lib/inc/strings.php:69 dist/lib/inc/strings.php:69
+msgid "All categories"
+msgstr ""
+
+#: lib/inc/strings.php:70 dist/lib/inc/strings.php:70
+msgid "Choose the Post Type: "
+msgstr ""
+
+#: lib/inc/strings.php:73 dist/lib/inc/strings.php:73
+msgid "Testimonial"
+msgstr ""
+
+#: lib/inc/strings.php:74 lib/inc/strings.php:75 dist/lib/inc/strings.php:74
+#: dist/lib/inc/strings.php:75
+#: lib/plugin-elementor/templates/testimonials.php:16
+#: dist/lib/plugin-elementor/templates/testimonials.php:16
+msgid "Testimonials"
+msgstr ""
+
+#: lib/inc/strings.php:76 dist/lib/inc/strings.php:76
+msgctxt "tag label"
+msgid "Testimonial Tags"
+msgstr ""
+
+#: lib/inc/strings.php:77 dist/lib/inc/strings.php:77
+msgctxt "tag singular label"
+msgid "Testimonial Tag"
+msgstr ""
+
+#: lib/inc/strings.php:80 dist/lib/inc/strings.php:80
+msgid "Your Name"
+msgstr ""
+
+#: lib/inc/strings.php:81 dist/lib/inc/strings.php:81
+msgid "Your Email"
+msgstr ""
+
+#: lib/inc/strings.php:82 dist/lib/inc/strings.php:82
+msgid "Type your message..."
+msgstr ""
+
+#: lib/inc/strings.php:83 dist/lib/inc/strings.php:83
+msgid "Send"
+msgstr ""
+
+#: lib/inc/strings.php:84 dist/lib/inc/strings.php:84
+msgid "Sending"
+msgstr ""
+
+#: lib/inc/strings.php:85 dist/lib/inc/strings.php:85
+msgid "Please enter your name."
+msgstr ""
+
+#: lib/inc/strings.php:86 dist/lib/inc/strings.php:86
+msgid "Please enter your email address."
+msgstr ""
+
+#: lib/inc/strings.php:87 dist/lib/inc/strings.php:87
+msgid "You entered an invalid email address."
+msgstr ""
+
+#: lib/inc/strings.php:88 dist/lib/inc/strings.php:88
+msgid "Please enter a message."
+msgstr ""
+
+#: lib/inc/strings.php:89 dist/lib/inc/strings.php:89
+msgid "Contact Form Message"
+msgstr ""
+
+#: lib/inc/strings.php:90 dist/lib/inc/strings.php:90
+msgid "You received a new contact form message:"
+msgstr ""
+
+#: lib/inc/strings.php:91 dist/lib/inc/strings.php:91
+msgid "Name: "
+msgstr ""
+
+#: lib/inc/strings.php:92 dist/lib/inc/strings.php:92
+msgid "Email: "
+msgstr ""
+
+#: lib/inc/strings.php:93 dist/lib/inc/strings.php:93
+msgid "Message: "
+msgstr ""
+
+#: lib/inc/strings.php:94 dist/lib/inc/strings.php:94
+msgid "Thank you. Your message has been sent."
+msgstr ""
+
+#: lib/inc/strings.php:95 dist/lib/inc/strings.php:95
+msgid "Mail couldn't be sent. Please try again!"
+msgstr ""
+
+#: lib/inc/strings.php:96 dist/lib/inc/strings.php:96
+msgid "Unknown error occurred. Please try again!"
+msgstr ""
+
+#: lib/inc/strings.php:100 dist/lib/inc/strings.php:100
 #, php-format
 msgctxt "post type singular name"
 msgid "%s"
 msgstr ""
 
-#: lib/post-types.php:186
+#: lib/inc/strings.php:101 lib/inc/strings.php:102 dist/lib/inc/strings.php:101
+#: dist/lib/inc/strings.php:102
 #, php-format
 msgid "Add New %s"
 msgstr ""
 
-#: lib/post-types.php:187
+#: lib/inc/strings.php:103 dist/lib/inc/strings.php:103
 #, php-format
 msgid "Edit %s"
 msgstr ""
 
-#: lib/post-types.php:189
+#: lib/inc/strings.php:104 dist/lib/inc/strings.php:104
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: lib/inc/strings.php:105 dist/lib/inc/strings.php:105
 #, php-format
 msgid "All %s"
 msgstr ""
 
-#: lib/post-types.php:191
+#: lib/inc/strings.php:106 dist/lib/inc/strings.php:106
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: lib/inc/strings.php:107 dist/lib/inc/strings.php:107
 #, php-format
 msgid "Search %s"
 msgstr ""
 
-#: lib/post-types.php:192
+#: lib/inc/strings.php:108 dist/lib/inc/strings.php:108
 #, php-format
 msgid "No %s found"
 msgstr ""
 
-#: lib/post-types.php:193
+#: lib/inc/strings.php:109 dist/lib/inc/strings.php:109
 #, php-format
 msgid "No %s found in Trash"
 msgstr ""
 
-#: lib/post-types.php:195
+#: lib/inc/strings.php:110 dist/lib/inc/strings.php:110
 #, php-format
+msgctxt "post type menu name"
 msgid "%s"
 msgstr ""
 
-#: lib/theme-functions.php:355
-msgid "Permanent Link:"
+#: lib/inc/strings.php:113 dist/lib/inc/strings.php:113
+msgid "Theme options"
 msgstr ""
 
-#: lib/theme-functions.php:603
-msgid "Start typing to search..."
+#: lib/plugin-vc/config.php:32 dist/lib/plugin-vc/config.php:32
+msgid "MailChimp 4 WP Form"
 msgstr ""
 
-#: lib/theme-functions.php:678
-msgid "Sorry, we haven't found anything based on your criteria."
+#: lib/plugin-vc/config.php:35 dist/lib/plugin-vc/config.php:35
+msgid "Content"
 msgstr ""
 
-#: lib/theme-functions.php:680
-msgid "Please try searching by different terms."
+#: lib/plugin-vc/config.php:37 dist/lib/plugin-vc/config.php:37
+msgid "Displays a mailchimp signup form"
 msgstr ""
 
-#: lib/theme-functions.php:711
-msgid "View member results"
+#: lib/plugin-vc/config.php:43 dist/lib/plugin-vc/config.php:43
+msgid "Form"
 msgstr ""
 
-#: lib/theme-functions.php:719
-msgid "Groups"
+#: lib/plugin-vc/config.php:46 dist/lib/plugin-vc/config.php:46
+msgid "What form to show"
 msgstr ""
 
-#: lib/theme-functions.php:731
-msgid "View group results"
+#: lib/plugin-vc/config.php:284 lib/plugin-vc/config.php:293
+#: dist/lib/plugin-vc/config.php:284 dist/lib/plugin-vc/config.php:293
+msgid "1/5 Column"
 msgstr ""
 
-#: lib/theme-functions.php:799
-msgid "View all results"
+#: lib/plugin-vc/config.php:285 lib/plugin-vc/config.php:294
+#: dist/lib/plugin-vc/config.php:285 dist/lib/plugin-vc/config.php:294
+msgid "2/5 Column"
 msgstr ""
 
-#: lib/theme-functions.php:827
-msgid "View forum results"
+#: lib/plugin-vc/config.php:286 lib/plugin-vc/config.php:295
+#: dist/lib/plugin-vc/config.php:286 dist/lib/plugin-vc/config.php:295
+msgid "3/5 Column"
 msgstr ""
 
-#: lib/theme-functions.php:1015
-msgid "Your Name"
+#: lib/plugin-vc/config.php:287 lib/plugin-vc/config.php:296
+#: dist/lib/plugin-vc/config.php:287 dist/lib/plugin-vc/config.php:296
+msgid "4/5 Column"
 msgstr ""
 
-#: lib/theme-functions.php:1016
-msgid "Your Email"
+#: lib/plugin-pmpro/config.php:15 dist/lib/plugin-pmpro/config.php:15
+msgid "Members directory restriction"
 msgstr ""
 
-#: lib/theme-functions.php:1017
-msgid "Type your message..."
+#: lib/plugin-pmpro/config.php:16 dist/lib/plugin-pmpro/config.php:16
+msgid "View members directory"
 msgstr ""
 
-#: lib/theme-functions.php:1019
-msgid "Send"
+#: lib/plugin-pmpro/config.php:20 dist/lib/plugin-pmpro/config.php:20
+msgid "Restrict viewing other profiles"
 msgstr ""
 
-#: lib/theme-functions.php:1020
-msgid "Sending"
+#: lib/plugin-pmpro/config.php:21 dist/lib/plugin-pmpro/config.php:21
+msgid "View members profile"
 msgstr ""
 
-#: lib/theme-functions.php:1045
-msgid "Please enter your name."
+#: lib/plugin-pmpro/config.php:25 dist/lib/plugin-pmpro/config.php:25
+msgid "Groups directory restriction"
 msgstr ""
 
-#: lib/theme-functions.php:1056
-msgid "Please enter your email address."
+#: lib/plugin-pmpro/config.php:26 dist/lib/plugin-pmpro/config.php:26
+msgid "Access group directory"
 msgstr ""
 
-#: lib/theme-functions.php:1061
-msgid "You entered an invalid email address."
+#: lib/plugin-pmpro/config.php:30 dist/lib/plugin-pmpro/config.php:30
+msgid "Group page restriction"
 msgstr ""
 
-#: lib/theme-functions.php:1072
-msgid "Please enter a message."
+#: lib/plugin-pmpro/config.php:31 dist/lib/plugin-pmpro/config.php:31
+msgid "Access to groups"
 msgstr ""
 
-#: lib/theme-functions.php:1090
-msgid "Contact Form Message"
+#: lib/plugin-pmpro/config.php:35 dist/lib/plugin-pmpro/config.php:35
+msgid "Site activity restriction"
 msgstr ""
 
-#: lib/theme-functions.php:1093
-msgid "You received a new contact form message:"
+#: lib/plugin-pmpro/config.php:36 dist/lib/plugin-pmpro/config.php:36
+msgid "View site activity"
 msgstr ""
 
-#: lib/theme-functions.php:1094
-msgid "Name: "
+#: lib/plugin-pmpro/config.php:40 dist/lib/plugin-pmpro/config.php:40
+msgid "Sending private messages restriction"
 msgstr ""
 
-#: lib/theme-functions.php:1095
-msgid "Email: "
+#: lib/plugin-pmpro/config.php:41 dist/lib/plugin-pmpro/config.php:41
+msgid "Send Private messages"
 msgstr ""
 
-#: lib/theme-functions.php:1096
-msgid "Message: "
+#: lib/plugin-pmpro/config.php:45 dist/lib/plugin-pmpro/config.php:45
+msgid "Restrict users from adding media to their profile using rtMedia"
 msgstr ""
 
-#: lib/theme-functions.php:1104
-msgid "Thank you. Your message has been sent."
+#: lib/plugin-pmpro/config.php:46 dist/lib/plugin-pmpro/config.php:46
+msgid "Add media to your profile"
 msgstr ""
 
-#: lib/theme-functions.php:1110
-msgid "Mail couldn't be sent. Please try again!"
+#: lib/plugin-pmpro/config.php:346 dist/lib/plugin-pmpro/config.php:346
+msgid "Upgrade account"
 msgstr ""
 
-#: lib/theme-functions.php:1265
-msgid "<span id=\"older-nav\">Go to article</span>"
+#: lib/plugin-pmpro/config.php:366 dist/lib/plugin-pmpro/config.php:366
+msgid "You aren't allowed to perform this action"
 msgstr ""
 
-#: lib/theme-functions.php:1369
-#: lib/theme-functions.php:1393
-msgid "Log in with Facebook"
+#: lib/plugin-pmpro/config.php:426 dist/lib/plugin-pmpro/config.php:426
+msgid "Not logged in"
 msgstr ""
 
-#: lib/theme-functions.php:1372
-#: lib/theme-functions.php:1396
-#: page-parts/general-popups.php:14
-msgid "or"
+#: lib/plugin-pmpro/config.php:432 dist/lib/plugin-pmpro/config.php:432
+msgid "Not members"
 msgstr ""
 
-#: lib/theme-functions.php:1508
-msgid "Top Content"
+#: lib/plugin-pmpro/config.php:461 dist/lib/plugin-pmpro/config.php:461
+msgid "Show field in memberships table"
 msgstr ""
 
-#: lib/theme-functions.php:1513
-msgid "This will be displayed at top of the category page. Shortcodes are allowed."
+#: lib/plugin-pmpro/config.php:494 dist/lib/plugin-pmpro/config.php:494
+msgid "Popular level"
 msgstr ""
 
-#: lib/featured-content/featured-content.php:408
+#: lib/plugin-pmpro/config.php:514 dist/lib/plugin-pmpro/config.php:514
+msgid "Order in Membership table"
+msgstr ""
+
+#: lib/plugin-pmpro/config.php:529 dist/lib/plugin-pmpro/config.php:529
+msgid "No levels added to apply sorting."
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:316
+#: dist/lib/plugin-woocommerce/config.php:316
+msgid "Shop"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:561
+#: dist/lib/plugin-woocommerce/config.php:561
+msgid "SAVE NOW"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:590
+#: dist/lib/plugin-woocommerce/config.php:590
+msgid "New"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:803 lib/plugin-woocommerce/config.php:808
+#: dist/lib/plugin-woocommerce/config.php:803
+#: dist/lib/plugin-woocommerce/config.php:808
+msgid "Quick View"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:949
+#: dist/lib/plugin-woocommerce/config.php:949
+msgid "<span id=\"older-nav\">Go back</span>"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1068
+#: dist/lib/plugin-woocommerce/config.php:1068
+msgid "in the shopping cart"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1115
+#: dist/lib/plugin-woocommerce/config.php:1115
+msgid "Cart Subtotal"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1135
+#: dist/lib/plugin-woocommerce/config.php:1135
+msgid "Your shopping bag is empty."
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1146
+#: dist/lib/plugin-woocommerce/config.php:1146
+msgid "Go to the shop"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1170
+#: dist/lib/plugin-woocommerce/config.php:1170
+msgid "% items"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1172
+#: dist/lib/plugin-woocommerce/config.php:1172
+msgid "0 items"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1174
+#: dist/lib/plugin-woocommerce/config.php:1174
+msgid "1 item"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1254
+#: dist/lib/plugin-woocommerce/config.php:1254
+msgid "Shopping Cart"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1256
+#: dist/lib/plugin-woocommerce/config.php:1256
+msgid "Checkout details"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1258
+#: dist/lib/plugin-woocommerce/config.php:1258
+msgid "Order Complete"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1651
+#: dist/lib/plugin-woocommerce/config.php:1651
+msgid "My Orders"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1662
+#: dist/lib/plugin-woocommerce/config.php:1662
+msgid "My Downloads"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1783
+#: dist/lib/plugin-woocommerce/config.php:1783
+msgid "Account"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1827
+#: lib/plugin-woocommerce/config.php:1828
+#: lib/plugin-woocommerce/config.php:1837
+#: dist/lib/plugin-woocommerce/config.php:1827
+#: dist/lib/plugin-woocommerce/config.php:1828
+#: dist/lib/plugin-woocommerce/config.php:1837
+msgid "View All Orders"
+msgstr ""
+
+#: lib/plugin-woocommerce/config.php:1838 lib/plugin-buddypress/config.php:50
+#: dist/lib/plugin-woocommerce/config.php:1838
+#: dist/lib/plugin-buddypress/config.php:50
+msgid "My Account"
+msgstr ""
+
+#: lib/plugin-buddypress/config.php:542
+#: dist/lib/plugin-buddypress/config.php:542
+msgid "Change Cover"
+msgstr ""
+
+#: lib/plugin-buddypress/menu-notifications.php:7
+#: dist/lib/plugin-buddypress/menu-notifications.php:7
+msgid "Live Notifications"
+msgstr ""
+
+#: lib/plugin-buddypress/menu-notifications.php:52
+#: dist/lib/plugin-buddypress/menu-notifications.php:52
+msgid "View Notifications"
+msgstr ""
+
+#: lib/plugin-buddypress/menu-notifications.php:127
+#: lib/plugin-buddypress/menu-notifications.php:161
+#: lib/plugin-buddypress/menu-notifications.php:196
+#: dist/lib/plugin-buddypress/menu-notifications.php:127
+#: dist/lib/plugin-buddypress/menu-notifications.php:161
+#: dist/lib/plugin-buddypress/menu-notifications.php:196
+msgid "No new notifications"
+msgstr ""
+
+#: lib/plugin-buddypress/menu-notifications.php:136
+#: dist/lib/plugin-buddypress/menu-notifications.php:136
+msgid "Mark all as read"
+msgstr ""
+
+#: lib/plugin-buddypress/menu-messages.php:8
+#: dist/lib/plugin-buddypress/menu-messages.php:8
+msgid "Live Messages"
+msgstr ""
+
+#: lib/plugin-buddypress/menu-messages.php:52
+#: dist/lib/plugin-buddypress/menu-messages.php:52
+msgid "View Messages"
+msgstr ""
+
+#: lib/plugin-buddypress/menu-messages.php:60
+#: lib/plugin-buddypress/menu-messages.php:61
+#: dist/lib/plugin-buddypress/menu-messages.php:60
+#: dist/lib/plugin-buddypress/menu-messages.php:61
+msgid "Messages"
+msgstr ""
+
+#: lib/plugin-buddypress/menu-messages.php:131
+#: lib/plugin-buddypress/menu-messages.php:164
+#: dist/lib/plugin-buddypress/menu-messages.php:131
+#: dist/lib/plugin-buddypress/menu-messages.php:164
+msgid "There are no new messages."
+msgstr ""
+
+#: lib/plugin-buddypress/menu-messages.php:135
+#: dist/lib/plugin-buddypress/menu-messages.php:135
+msgid "See all"
+msgstr ""
+
+#: lib/featured-content/featured-content.php:415
+#: dist/lib/featured-content/featured-content.php:415
 msgid "Featured Content"
 msgstr ""
 
-#: lib/featured-content/featured-content.php:409
+#: lib/featured-content/featured-content.php:417
+#: dist/lib/featured-content/featured-content.php:417
 #, php-format
 msgid ""
 "Use the <a href=\"%1$s\">\"featured\" tag</a> to feature your posts. You can "
@@ -2418,347 +2043,625 @@ msgid ""
 "href=\"%2$s\">sticky posts</a> will be displayed instead."
 msgstr ""
 
-#: lib/featured-content/featured-content.php:428
+#: lib/featured-content/featured-content.php:439
+#: dist/lib/featured-content/featured-content.php:439
 msgid "Tag Name"
 msgstr ""
 
-#: lib/featured-content/featured-content.php:433
+#: lib/featured-content/featured-content.php:444
+#: dist/lib/featured-content/featured-content.php:444
 msgid "Don&rsquo;t display tag on front end."
 msgstr ""
 
-#: lib/importer/import.php:238
-msgid "Please select data to import."
+#: lib/plugin-geodirectory/config.php:305
+#: dist/lib/plugin-geodirectory/config.php:305
+msgid "Default primary menu for all GeoDirectory pages"
 msgstr ""
 
-#: lib/importer/import.php:249
+#: lib/plugin-geodirectory/config.php:314
+#: dist/lib/plugin-geodirectory/config.php:314
+msgid "Default sidebar for all GeoDirectory pages"
+msgstr ""
+
+#: lib/plugin-geodirectory/config.php:327
+#: dist/lib/plugin-geodirectory/config.php:327
+#, php-format
+msgid "Override primary menu for %s."
+msgstr ""
+
+#: lib/plugin-geodirectory/config.php:336
+#: dist/lib/plugin-geodirectory/config.php:336
+#, php-format
+msgid "Override sidebar for %s."
+msgstr ""
+
+#: lib/plugin-geodirectory/config.php:346
+#: dist/lib/plugin-geodirectory/config.php:346
+msgid "GeoDirectory"
+msgstr ""
+
+#: lib/plugin-geodirectory/config.php:348
+#: dist/lib/plugin-geodirectory/config.php:348
+msgid "GeoDirectory plugin settings"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:89 dist/lib/plugin-elementor/config.php:89
+msgid "Section default colors"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:234 dist/lib/plugin-elementor/config.php:234
+msgid "Kleo Settings"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:243 lib/plugin-elementor/config.php:258
+#: lib/plugin-elementor/config.php:283 lib/plugin-elementor/config.php:298
+#: lib/plugin-elementor/config.php:314 lib/plugin-elementor/config.php:328
+#: dist/lib/plugin-elementor/config.php:243
+#: dist/lib/plugin-elementor/config.php:258
+#: dist/lib/plugin-elementor/config.php:283
+#: dist/lib/plugin-elementor/config.php:298
+#: dist/lib/plugin-elementor/config.php:314
+#: dist/lib/plugin-elementor/config.php:328
+#: lib/plugin-elementor/templates/tabs.php:182
+#: dist/lib/plugin-elementor/templates/tabs.php:182
+msgid "Off"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:244 lib/plugin-elementor/config.php:259
+#: lib/plugin-elementor/config.php:284 lib/plugin-elementor/config.php:299
+#: lib/plugin-elementor/config.php:315 lib/plugin-elementor/config.php:329
+#: dist/lib/plugin-elementor/config.php:244
+#: dist/lib/plugin-elementor/config.php:259
+#: dist/lib/plugin-elementor/config.php:284
+#: dist/lib/plugin-elementor/config.php:299
+#: dist/lib/plugin-elementor/config.php:315
+#: dist/lib/plugin-elementor/config.php:329
+#: lib/plugin-elementor/templates/tabs.php:183
+#: dist/lib/plugin-elementor/templates/tabs.php:183
+msgid "On"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:268 dist/lib/plugin-elementor/config.php:268
+msgid "Transparent Menu Color"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:271 dist/lib/plugin-elementor/config.php:271
+msgid "White text"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:272 dist/lib/plugin-elementor/config.php:272
+msgid "Black text"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:281 dist/lib/plugin-elementor/config.php:281
+msgid "Hide Top Header"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:296 dist/lib/plugin-elementor/config.php:296
+msgid "Hide Title/Breadcrumb section"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:312 dist/lib/plugin-elementor/config.php:312
+msgid "Hide Breadcrumb"
+msgstr ""
+
+#: lib/plugin-elementor/config.php:326 dist/lib/plugin-elementor/config.php:326
+msgid "Hide Extra Info"
+msgstr ""
+
+#: lib/plugin-elementor/templates/tabs.php:44
+#: dist/lib/plugin-elementor/templates/tabs.php:44
+msgid "Tabs (Kleo)"
+msgstr ""
+
+#: lib/plugin-elementor/templates/tabs.php:111
+#: dist/lib/plugin-elementor/templates/tabs.php:111
+msgid "Type"
+msgstr ""
+
+#: lib/plugin-elementor/templates/tabs.php:124
+#: lib/plugin-elementor/templates/tabs.php:142
+#: dist/lib/plugin-elementor/templates/tabs.php:124
+#: dist/lib/plugin-elementor/templates/tabs.php:142
+msgid "Style"
+msgstr ""
+
+#: lib/plugin-elementor/templates/tabs.php:158
+#: dist/lib/plugin-elementor/templates/tabs.php:158
+msgid "Align"
+msgstr ""
+
+#: lib/plugin-elementor/templates/tabs.php:171
+#: dist/lib/plugin-elementor/templates/tabs.php:171
+msgid "Active tab number"
+msgstr ""
+
+#: lib/plugin-elementor/templates/tabs.php:180
+#: dist/lib/plugin-elementor/templates/tabs.php:180
+msgid "Disable tab drop"
+msgstr ""
+
+#: lib/plugin-elementor/templates/divider.php:12
+#: dist/lib/plugin-elementor/templates/divider.php:12
+msgid "Divider"
+msgstr ""
+
+#: lib/plugin-elementor/templates/divider.php:27
+#: lib/plugin-elementor/templates/bp-members-grid.php:41
+#: lib/plugin-elementor/templates/testimonials.php:48
+#: lib/plugin-elementor/templates/bp-members-carousel.php:34
+#: dist/lib/plugin-elementor/templates/divider.php:27
+#: dist/lib/plugin-elementor/templates/bp-members-grid.php:41
+#: dist/lib/plugin-elementor/templates/testimonials.php:48
+#: dist/lib/plugin-elementor/templates/bp-members-carousel.php:34
+msgid "Settings"
+msgstr ""
+
+#: lib/plugin-elementor/templates/bp-members-grid.php:16
+#: dist/lib/plugin-elementor/templates/bp-members-grid.php:16
+msgid "Members Grid"
+msgstr ""
+
+#: lib/plugin-elementor/templates/bp-members-carousel.php:12
+#: dist/lib/plugin-elementor/templates/bp-members-carousel.php:12
+msgid "Members Carousel"
+msgstr ""
+
+#: lib/plugin-elementor/templates/revslider.php:12
+#: dist/lib/plugin-elementor/templates/revslider.php:12
+msgid "Revolution Slider"
+msgstr ""
+
+#: lib/plugin-elementor/templates/revslider.php:35
+#: dist/lib/plugin-elementor/templates/revslider.php:35
+msgid "Select slider"
+msgstr ""
+
+#: lib/plugin-elementor/templates/revslider.php:45
+#: dist/lib/plugin-elementor/templates/revslider.php:45
+msgid "You need to install Revolution Slider plugin first"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:176
+#: kleo-framework/lib/panel/inc/Importer.php:177
+#: dist/kleo-framework/lib/panel/inc/Importer.php:176
+#: dist/kleo-framework/lib/panel/inc/Importer.php:177
+#, php-format
+msgid "%s Demo Data"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:211
+#: dist/kleo-framework/lib/panel/inc/Importer.php:211
+msgid "We&apos;re sorry, something went wrong."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:223
+#: dist/kleo-framework/lib/panel/inc/Importer.php:223
+msgid "Successfully set as homepage!"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:230
+#: dist/kleo-framework/lib/panel/inc/Importer.php:230
+msgid "An error occurred setting the page as home!!!"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:245
+#: dist/kleo-framework/lib/panel/inc/Importer.php:245
+msgid "We&apos;re sorry, the demo failed to import."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:252
+#: dist/kleo-framework/lib/panel/inc/Importer.php:252
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:263
+#: kleo-framework/lib/panel/inc/Importer.php:273
+#: dist/kleo-framework/lib/panel/inc/Importer.php:263
+#: dist/kleo-framework/lib/panel/inc/Importer.php:273
+msgid "Something went wrong with the data sent. Please try again."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:297
+#: dist/kleo-framework/lib/panel/inc/Importer.php:297
+msgid ""
+"There was an error in the import process. Try to do the import once again!"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:539
+#: dist/kleo-framework/lib/panel/inc/Importer.php:539
+msgid "Imported widgets"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:545
+#: dist/kleo-framework/lib/panel/inc/Importer.php:545
+msgid "Imported widgets..."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:558
+#: dist/kleo-framework/lib/panel/inc/Importer.php:558
+msgid "Imported Theme options"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:562
+#: dist/kleo-framework/lib/panel/inc/Importer.php:562
+msgid "Imported Theme Options..."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:585
+#: dist/kleo-framework/lib/panel/inc/Importer.php:585
+#, php-format
+msgid "Imported Revslider %s"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:629
+#: dist/kleo-framework/lib/panel/inc/Importer.php:629
+#, php-format
+msgid "%s complete"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:661
+#: dist/kleo-framework/lib/panel/inc/Importer.php:661
+msgid "Imported BuddyPress profile fields"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:677
+#: dist/kleo-framework/lib/panel/inc/Importer.php:677
+msgid "Imported PMPRO Levels"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:694
+#: dist/kleo-framework/lib/panel/inc/Importer.php:694
+msgid "Awesome. Your import is ready!!!"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:701
+#: dist/kleo-framework/lib/panel/inc/Importer.php:701
+msgid "Set as HomePage"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:704
+#: dist/kleo-framework/lib/panel/inc/Importer.php:704
+msgid "View Page"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:707
+#: dist/kleo-framework/lib/panel/inc/Importer.php:707
+msgid "Edit Page"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:713
+#: dist/kleo-framework/lib/panel/inc/Importer.php:713
+msgid "Your selected page already exists. Please check also Trash!"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:719
+#: dist/kleo-framework/lib/panel/inc/Importer.php:719
+msgid "Imported Pages:"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:725
+#: dist/kleo-framework/lib/panel/inc/Importer.php:725
+msgid "Nothing was selected for import!!!"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:791
+#: dist/kleo-framework/lib/panel/inc/Importer.php:791
+#, php-format
+msgid "Installed %s plugin"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:800
+#: dist/kleo-framework/lib/panel/inc/Importer.php:800
+#, php-format
+msgid "Activated %s plugin"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:820
+#: dist/kleo-framework/lib/panel/inc/Importer.php:820
+msgid "Plugins installed. Starting content import."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:944
+#: dist/kleo-framework/lib/panel/inc/Importer.php:944
+msgid "SQ Import Helper plugin needs to be active. Please try again."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:1503
+#: dist/kleo-framework/lib/panel/inc/Importer.php:1503
+msgid "Reading images for the import"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Importer.php:2070
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2070
 msgid "Import successful. Have fun!"
 msgstr ""
 
-#: lib/plugin-buddypress/config.php:19
-#: lib/plugin-woocommerce/config.php:1612
-#: paid-memberships-pro/pages/account.php:50
-msgid "My Account"
+#: kleo-framework/lib/panel/inc/Importer.php:2099
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2099
+msgid "PREVIEW"
 msgstr ""
 
-#: lib/plugin-buddypress/menu-notifications.php:7
-msgid "Live Notifications"
+#: kleo-framework/lib/panel/inc/Importer.php:2110
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2110
+msgid "Import Page"
 msgstr ""
 
-#: lib/plugin-buddypress/menu-notifications.php:57
-msgid "View Notifications"
+#: kleo-framework/lib/panel/inc/Importer.php:2136
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2136
+msgid "Import Widgets"
 msgstr ""
 
-#: lib/plugin-buddypress/menu-notifications.php:116
-#: lib/plugin-buddypress/menu-notifications.php:149
-#: lib/plugin-buddypress/menu-notifications.php:188
-msgid "No new notifications"
+#: kleo-framework/lib/panel/inc/Importer.php:2143
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2143
+msgid "Import Stax Templates"
 msgstr ""
 
-#: lib/plugin-buddypress/menu-notifications.php:125
-msgid "Mark all as read"
+#: kleo-framework/lib/panel/inc/Importer.php:2150
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2150
+msgid "Import Revolution Slider"
 msgstr ""
 
-#: lib/plugin-pmpro/config.php:15
-msgid "Members directory restriction"
+#: kleo-framework/lib/panel/inc/Importer.php:2157
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2157
+msgid "Import Dummy Profile fields"
 msgstr ""
 
-#: lib/plugin-pmpro/config.php:16
-msgid "View members directory"
+#: kleo-framework/lib/panel/inc/Importer.php:2164
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2164
+msgid "Import Sample Membership Levels"
 msgstr ""
 
-#: lib/plugin-pmpro/config.php:20
-msgid "Restrict viewing other profiles"
+#: kleo-framework/lib/panel/inc/Importer.php:2171
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2171
+msgid "Import Theme options"
 msgstr ""
 
-#: lib/plugin-pmpro/config.php:21
-msgid "View members profile"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:25
-msgid "Groups directory restriction"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:26
-msgid "Access group directory"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:30
-msgid "Group page restriction"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:31
-msgid "Access to groups"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:35
-msgid "Site activity restriction"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:36
-msgid "View site activity"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:40
-msgid "Sending private messages restriction"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:41
-msgid "Send Private messages"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:45
-msgid "Restrict users from adding media to their profile using rtMedia"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:46
-msgid "Add media to your profile"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:278
-msgid "Upgrade account"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:397
-msgid "Not logged in"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:398
-msgid "Not members"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:419
-msgid "Show field in memberships table"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:456
-msgid "Popular level"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:476
-msgid "Order in Membership table"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:292
-msgid "Shop"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:513
-msgid "SAVE NOW"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:541
-msgid "New"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:666
-#: lib/plugin-woocommerce/config.php:740
-msgid "Social share"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:707
-#: lib/plugin-woocommerce/config.php:712
-msgid "Quick View"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:815
-msgid "<span id=\"older-nav\">Go back</span>"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:917
-msgid "in the shopping cart"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:943
-msgid "Cart Subtotal"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:966
-msgid "Your shopping bag is empty."
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:977
-msgid "Go to the shop"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1002
-msgid "% items"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1004
-msgid "0 items"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1006
-msgid "1 item"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1085
-msgid "Shopping Cart"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1087
-msgid "Checkout details"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1089
-msgid "Order Complete"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1454
-msgid "My Orders"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1465
-msgid "My Downloads"
-msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1601
-#: lib/plugin-woocommerce/config.php:1611
-msgid "View All Orders"
-msgstr ""
-
-#: lib/widgets/recent_posts.php:14
-msgid "Recent posts with thumbnails widget."
-msgstr ""
-
-#: lib/widgets/recent_posts.php:16
-msgid "(Kleo) Recent posts"
-msgstr ""
-
-#: lib/widgets/recent_posts.php:164
-msgid "Limit:"
-msgstr ""
-
-#: lib/widgets/recent_posts.php:172
-msgid "Display excerpt?"
-msgstr ""
-
-#: lib/widgets/recent_posts.php:179
-msgid "Excerpt length(characters):"
-msgstr ""
-
-#: lib/widgets/recent_posts.php:184
-msgid "Display Thumbnail?"
-msgstr ""
-
-#: lib/widgets/recent_posts.php:193
-msgid "Show from category: "
-msgstr ""
-
-#: lib/widgets/recent_posts.php:194
-msgid "All categories"
-msgstr ""
-
-#: lib/widgets/recent_posts.php:197
-msgid "Choose the Post Type: "
-msgstr ""
-
-#: page-parts/general-header-section.php:99
-msgid "Toggle navigation"
-msgstr ""
-
-#: page-parts/general-popups.php:9
-msgid "Log in with your credentials"
-msgstr ""
-
-#: page-parts/general-popups.php:14
-msgid "New to Living Sober? JOIN"
-msgstr ""
-
-#: page-parts/general-popups.php:25
-msgid "Sign in"
-msgstr ""
-
-#: page-parts/general-popups.php:27
-msgid "Remember me"
-msgstr ""
-
-#: page-parts/general-popups.php:47
-msgid "Forgot your details?"
-msgstr ""
-
-#: page-parts/general-popups.php:56
-msgid "Reset Password"
-msgstr ""
-
-#: page-parts/general-popups.php:57
-msgid "I remember my details"
-msgstr ""
-
-#: page-parts/post-content-masonry.php:197
-#: page-parts/post-content-small.php:198
-msgid "Read more"
-msgstr ""
-
-#: page-parts/posts-related.php:14
-msgid "Related Articles"
-msgstr ""
-
-#: page-parts/posts-related.php:31
-msgid "Related"
-msgstr ""
-
-#: page-parts/posts-social-share.php:52
-msgid "Share this"
-msgstr ""
-
-#: paid-memberships-pro/pages/levels.php:108
-#, php-format
-msgctxt "Recurring payment in cost text generation. E.g. $5 after 2 months."
-msgid "%s after %d %s."
-msgstr ""
-
-#: paid-memberships-pro/pages/levels.php:114
-#, php-format
-msgctxt "Recurring payment in cost text generation. E.g. $5 every month."
-msgid "%s per %s."
-msgstr ""
-
-#: paid-memberships-pro/pages/levels.php:118
-#, php-format
-msgctxt "Recurring payment in cost text generation. E.g., $5 every 2 months."
-msgid "%s every %d %s."
-msgstr ""
-
-#: paid-memberships-pro/pages/levels.php:202
-#: paid-memberships-pro/pages/levels.php:204
-msgid "Select"
-msgstr ""
-
-#: vc_templates/vc_tabs.php:82
-msgid "Previous section"
-msgstr ""
-
-#: vc_templates/vc_tabs.php:82
-msgid "Next section"
-msgstr ""
-
-#: kleo-framework/lib/function-facebook-login.php:183
-msgid "Authentication required."
-msgstr ""
-
-#: lib/options.php:1054
+#: kleo-framework/lib/panel/inc/Importer.php:2174
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2174
 msgid ""
-"<p class=\"description\">Settings related to Social sharing that appear after "
-"post/page content<br>NOTE: Woocommerce Wishlist share options are configured "
-"from plugin page: WP admin - Woocommerce - Settings - Wishlist</p>"
+"This will change some of your theme options. Make sure to export them first."
 msgstr ""
 
-#: lib/options.php:2101
-msgid ""
-"Set a link like http://yoursite.com/homepage for users to get redirected on "
-"login.<br> For more complex redirect logic please set Login redirect to "
-"Default WordPress and use Peter's redirect plugin or a similar plugin."
+#: kleo-framework/lib/panel/inc/Importer.php:2184
+#: dist/kleo-framework/lib/panel/inc/Importer.php:2184
+msgid "Activate required plugins"
 msgstr ""
 
-#: lib/theme-functions.php:1116
-msgid "Unknown error occurred. Please try again!"
+#: kleo-framework/lib/panel/inc/Plugin.php:44
+#: kleo-framework/lib/panel/inc/Plugin.php:57
+#: dist/kleo-framework/lib/panel/inc/Plugin.php:44
+#: dist/kleo-framework/lib/panel/inc/Plugin.php:57
+msgid "Something went wrong."
 msgstr ""
 
-#: paid-memberships-pro/pages/levels.php:99
+#: kleo-framework/lib/panel/inc/Plugin.php:185
+#: kleo-framework/lib/panel/inc/Plugin.php:186
+#: dist/kleo-framework/lib/panel/inc/Plugin.php:185
+#: dist/kleo-framework/lib/panel/inc/Plugin.php:186
 #, php-format
-msgctxt ""
-"Recurring payment in cost text generation. E.g. $5 every month for 2 more "
-"payments."
-msgid "%s per %s for %d more %s."
+msgid "%s Panel"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Plugin.php:247
+#: dist/kleo-framework/lib/panel/inc/Plugin.php:247
+msgid "License successfully activated. Please refresh page."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Plugin.php:249
+#: dist/kleo-framework/lib/panel/inc/Plugin.php:249
+msgid "Purchase code is not valid. Please check the license provided!"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Plugin.php:254
+#: dist/kleo-framework/lib/panel/inc/Plugin.php:254
+msgid "Please enter your purchase code."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Plugin.php:283
+#: dist/kleo-framework/lib/panel/inc/Plugin.php:283
+#, php-format
+msgid ""
+"Always activate the child theme to safely update %s and for better "
+"customization. <a href=\"%s\" target=\"_blank\">More on Child Themes</a>."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:293
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:324
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:293
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:324
+msgid "Active"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:294
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:294
+msgid "Child theme installed and active"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:298
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:329
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:298
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:329
+msgid "Inactive"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:299
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:299
+msgid "Activate child theme"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:304
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:304
+msgid "Not installed"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:305
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:305
+msgid "Install child theme"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:310
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:310
+msgid "Permissions needed to install child themes. Contact site administrator."
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:319
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:319
+msgid "Needs update"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:320
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:320
+msgid "Update plugin"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:325
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:325
+msgid "Deactivate plugin"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:330
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:330
+msgid "Activate plugin"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:335
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:335
+msgid "Not Installed"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:336
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:336
+msgid "Install plugin"
+msgstr ""
+
+#: kleo-framework/lib/panel/inc/Addons_Manager.php:341
+#: dist/kleo-framework/lib/panel/inc/Addons_Manager.php:341
+msgid ""
+"You don't have permission to install plugins. Contact site administrator."
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:10
+#: dist/kleo-framework/lib/panel/templates/welcome.php:10
+msgid "Version"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:19
+#: dist/kleo-framework/lib/panel/templates/welcome.php:19
+msgid "Dashboard"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:21
+#: dist/kleo-framework/lib/panel/templates/welcome.php:21
+msgid "Import Demo Data"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:23
+#: dist/kleo-framework/lib/panel/templates/welcome.php:23
+msgid "Theme Add-ons"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:25
+#: dist/kleo-framework/lib/panel/templates/welcome.php:25
+msgid "Status/Extras"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:35
+#: dist/kleo-framework/lib/panel/templates/welcome.php:35
+msgid "Welcome to KLEO theme"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:38
+#: dist/kleo-framework/lib/panel/templates/welcome.php:38
+msgid "Initial setup steps"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:44
+#: dist/kleo-framework/lib/panel/templates/welcome.php:44
+msgid "Child theme is active, awesome."
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:47
+#: dist/kleo-framework/lib/panel/templates/welcome.php:47
+msgid "Child theme is inactive. Enable it from Theme Add-ons tab."
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:51
+#: dist/kleo-framework/lib/panel/templates/welcome.php:51
+msgid "It is a good practice to keep main theme files intact."
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:55
+#: dist/kleo-framework/lib/panel/templates/welcome.php:55
+msgid "Import pre-made layouts to get started right away."
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:59
+#: dist/kleo-framework/lib/panel/templates/welcome.php:59
+msgid "Check out useful add-ons that work well with KLEO."
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:66
+#: dist/kleo-framework/lib/panel/templates/welcome.php:66
+msgid "Automatic Updates"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:68
+#: dist/kleo-framework/lib/panel/templates/welcome.php:68
+msgid ""
+"You can receive automatic updates from Themeforest, where our theme is "
+"exclusively sold.\n"
+"\t\t\t\t\t\t\t\t\t\t<br>Just enter your Marketplace token at the link below."
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:71
+#: dist/kleo-framework/lib/panel/templates/welcome.php:71
+msgid "Check updates"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:79
+#: dist/kleo-framework/lib/panel/templates/welcome.php:79
+msgid "Automatic Updates are OFF"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:81
+#: dist/kleo-framework/lib/panel/templates/welcome.php:81
+msgid ""
+"Automatic updates are disabled. Please enable Envato market plugin to "
+"receive automatic updates."
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:82
+#: dist/kleo-framework/lib/panel/templates/welcome.php:82
+msgid "Enable auto updates"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:117
+#: dist/kleo-framework/lib/panel/templates/welcome.php:117
+msgid "Theme License Activation"
+msgstr ""
+
+#: kleo-framework/lib/panel/templates/welcome.php:137
+#: dist/kleo-framework/lib/panel/templates/welcome.php:137
+msgid "Congratulations, theme license is active on your site!"
+msgstr ""
+
+#. Name of the theme
+msgid "Kleo"
+msgstr ""
+
+#. Description of the theme
+msgid "Community Site Builder &amp; Multipurpose WordPress Theme"
+msgstr ""
+
+#. URI of the theme
+msgid "https://seventhqueen.com/themes/kleo"
+msgstr ""
+
+#. Author of the theme
+msgid "SeventhQueen"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://themeforest.net/user/SeventhQueen"
 msgstr ""

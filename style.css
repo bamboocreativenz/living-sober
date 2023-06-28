@@ -1,7 +1,7 @@
 /*
 Theme Name:     Kleo Child
 Theme URI:
-Description:    Child theme for Kleo
+Description:    Child theme for Living Sober V2
 Author:         Daniel Lewis & Bamboo Creative NZ
 Author URI:     makebamboo.com
 Template:       kleo
@@ -187,7 +187,7 @@ padding-left: 5px;
 #header .logo img {
     height: 65% !important;
     margin-top: 6px !important;
-    
+
 }
 
 .kleo-pop-title {
@@ -217,10 +217,10 @@ h1 {margin-bottom: 0px !important;}
     width: 100% !important;
     left: 0px !important;
 }
-    
+
    #ajax_searchform {
     padding: 10px 10px !important;
-    background: 
+    background:
     #EBE0D6 !important;
 }
 }
@@ -287,12 +287,12 @@ body.bp-user .ethosContainer {
 
 #header .fl-builder-content a.fl-button {
   border: none;
-} 
+}
 
 
 #main .fl-builder-content a.fl-button {
   border: none;
-} 
+}
 
 #comments .hr-title abbr {
   top: -20px;
@@ -315,7 +315,7 @@ body.bp-user .ethosContainer {
 }
 /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
 .ls-quote blockquote:before {
-  font-family: Georgia, serif;	
+  font-family: Georgia, serif;
   position: absolute;
   font-size: 6em;
   line-height: 1;
@@ -324,7 +324,7 @@ body.bp-user .ethosContainer {
   content: "\201C";
 }
 .ls-quote blockquote:after {
-  font-family: Georgia, serif;	
+  font-family: Georgia, serif;
   position: absolute;
  /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
   float:right;
@@ -507,5 +507,5 @@ div#latest-update {
     white-space: pre-line;
     overflow: hidden;
     text-overflow: ellipsis;
-  
+
   }

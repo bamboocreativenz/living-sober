@@ -22,21 +22,22 @@ do_action( 'bp_before_profile_loop_content' ); ?>
 
 			<div class="bp-widget <?php bp_the_profile_group_slug(); ?>">
 
-		
+				<!-- DL Comment out the below -->
+				<!-- <div class="hr-title hr-full hr-double"><abbr><?php bp_the_profile_group_name(); ?></abbr></div> -->
 				<div class="gap-10"></div>
 					<?php while ( bp_profile_fields() ) : bp_the_profile_field(); ?>
 
 						<?php if ( bp_field_has_data() ) : ?>
-							
-              
+
+
 			              <dl<?php bp_field_css_class('dl-horizontal'); ?>>
-				              
+
 			                <dt><?php bp_the_profile_field_name(); ?></dt>
-				              
+
 			                <dd><?php bp_the_profile_field_value(); ?></dd>
-				              
+
 			              </dl>
-			              
+
 
 						<?php endif; ?>
 
@@ -51,9 +52,9 @@ do_action( 'bp_before_profile_loop_content' ); ?>
 
 					<?php endwhile; ?>
 
-                        
-                        
-                        
+
+
+
 			</div><!-- end bp-widget -->
 
 			<?php
@@ -76,3 +77,4 @@ do_action( 'bp_before_profile_loop_content' ); ?>
 
 /** This action is documented in bp-templates/bp-legacy/buddypress/members/single/profile/profile-wp.php */
 do_action( 'bp_after_profile_loop_content' ); ?>
+

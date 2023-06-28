@@ -24,7 +24,8 @@ do_action( 'bp_before_member_header' ); ?>
 		<?php bp_displayed_user_avatar( 'type=full' ); ?>
 
 	</a>
-  <?php do_action('bp_member_online_status', bp_displayed_user_id()); ?>
+	<!-- DL Not sure if we need below -->
+	<!-- <?php do_action('bp_member_online_status', bp_displayed_user_id()); ?> -->
 </div><!-- #item-header-avatar -->
 
 <div id="item-header-content">
@@ -54,13 +55,17 @@ do_action( 'bp_before_member_header' ); ?>
 
 			<div id="latest-update">
 
-				<?php 
+				<?php bp_activity_latest_update( bp_displayed_user_id() ); ?>
+
+				<!-- DL not sure if we need below
+				<?php
 					$args = array(
 						'field'     => 2,
 						'user_id'   => bp_displayed_user_id()
 					);
 			  	bp_profile_field_data( $args );
 			  ?>
+			   -->
 
 			</div>
 
