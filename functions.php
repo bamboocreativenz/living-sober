@@ -48,7 +48,7 @@ function ls_kleo_styles() {
     // Create a handle for the jquery-ui-core css.
     $handle = 'jquery-ui';
     // Path to stylesheet, based on the jquery-ui-core version used in core.
-    $src = "http://ajax.googleapis.com/ajax/libs/jqueryui/{$wp_scripts->registered['jquery-ui-core']->ver}/themes/smoothness/{$handle}.css";
+    $src = "https://ajax.googleapis.com/ajax/libs/jqueryui/{$wp_scripts->registered['jquery-ui-core']->ver}/themes/smoothness/{$handle}.css";
     // Required dependencies
     $deps = array();
     // Add stylesheet version.
