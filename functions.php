@@ -19,11 +19,11 @@
  */
 
 // Register and enqueue scripts.
-function sample_theme_scripts() {
+function ls_kleo_scripts() {
     // Your script's handle.
-    $handle = 'sample-theme-slider';
+    $handle = 'livingsober';
     // Path to the script to enqueue.
-    $src = get_theme_file_uri( "js/{$handle}.js" );
+    $src = get_stylesheet_directory_uri() . "/js/{$handle}.js";
     // Required dependencies.
     $deps = array( 'jquery', 'jquery-ui-core', 'jquery-ui-slider' );
     // Your script's version.
@@ -40,7 +40,7 @@ function sample_theme_scripts() {
 }
 
 // Register and enqueue styles.
-function sample_theme_styles() {
+function ls_kleo_styles() {
     // Access the wp_scripts global to get the jquery-ui-core version used.
     global $wp_scripts;
     // Create a handle for the jquery-ui-core css.
@@ -59,12 +59,12 @@ function sample_theme_styles() {
 }
 
 // Enqueue required scripts and styles.
-function sample_theme_enqueue() {
-    sample_theme_scripts();
-    sample_theme_styles();
+function ls_kleo_enqueue() {
+    ls_kleo_scripts();
+    ls_kleo_styles();
 }
 
-add_action( 'wp_enqueue_scripts', 'sample_theme_enqueue' );
+add_action( 'wp_enqueue_scripts', 'ls_kleo_enqueue' );
 
 
 /**
