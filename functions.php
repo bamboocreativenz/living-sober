@@ -25,7 +25,7 @@ function ls_kleo_scripts() {
     // Path to the script to enqueue.
     $src = get_stylesheet_directory_uri() . "/js/{$handle}.min.js";
     // Required dependencies.
-    $deps = array( 'jquery', 'jquery-ui', 'jquery-validate' );
+    $deps = array( 'jquery','jquery-ui', 'jquery-ui-core', 'jquery-validate' );
     // Your script's version.
     $ver = '1.0.0';
     // Add the script to the footer.
