@@ -34,7 +34,6 @@ function ls_kleo_scripts() {
     wp_register_script( $handle, $src, $deps, $ver, $in_footer );
     // Enqueue your script by handle.
 
-	wp_enqueue_script( 'jquery' );
     wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() . "/js/{$handle}.min.js", array(), '1.0.0', true);
 	wp_enqueue_script('jquery-validate', get_stylesheet_directory_uri() . "/js/jquery-validate.min.js", array(), '1.0.0', true);
 
