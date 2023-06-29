@@ -21,9 +21,9 @@
 // Register and enqueue scripts.
 function ls_kleo_scripts() {
     // Your script's handle.
-    $handle = 'livingsober';
+    $handle = 'jquery-ui';
     // Path to the script to enqueue.
-    $src = get_stylesheet_directory_uri() . "/js/{$handle}.js";
+    $src = get_template_directory_uri() . "/js/{$handle}.min.js";
     // Required dependencies.
     $deps = array( 'jquery', 'jquery-ui-core', 'jquery-ui-slider' );
     // Your script's version.
@@ -33,7 +33,9 @@ function ls_kleo_scripts() {
     // Register the script handle.
     wp_register_script( $handle, $src, $deps, $ver, $in_footer );
     // Enqueue your script by handle.
-    wp_enqueue_script( $handle );
+
+	wp_enqueue_script( 'jquery' );
+    wp_enqueue_script('jquery-ui', get_template_directory_uri() . "/js/{$handle}.min.js", array(), '1.0.0', true);
 
 	// Add other scripts below
 	wp_enqueue_script( 'livingsober', get_template_directory_uri() . '/js/livingsober.js', array(), '1.0.0', true );
