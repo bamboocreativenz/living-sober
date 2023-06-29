@@ -25,7 +25,7 @@ function ls_kleo_scripts() {
     // Path to the script to enqueue.
     $src = get_stylesheet_directory_uri() . "/js/{$handle}.min.js";
     // Required dependencies.
-    $deps = array( 'jquery', 'jquery-ui-core', 'jquery-ui-slider' );
+    $deps = array( 'jquery', 'jquery-ui', 'jquery-validate' );
     // Your script's version.
     $ver = '1.0.0';
     // Add the script to the footer.
@@ -36,6 +36,7 @@ function ls_kleo_scripts() {
 
 	wp_enqueue_script( 'jquery' );
     wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() . "/js/{$handle}.min.js", array(), '1.0.0', true);
+	wp_enqueue_script('jquery-validate', get_stylesheet_directory_uri() . "/js/jquery-validate.min.js", array(), '1.0.0', true);
 
 	// Add other scripts below
 	wp_enqueue_script( 'livingsober', get_stylesheet_directory_uri() . '/js/livingsober.js', array(), '1.0.0', true );
