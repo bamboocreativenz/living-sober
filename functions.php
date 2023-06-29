@@ -25,7 +25,7 @@ function ls_kleo_scripts() {
     // Path to the script to enqueue.
     $src = get_stylesheet_directory_uri() . "/js/{$handle}.min.js";
     // Required dependencies.
-    $deps = array( 'jquery-ui-core', 'jquery-validate');
+    $deps = array('jquery', 'jquery-ui-core', 'jquery-validate');
     // Your script's version.
     $ver = '1.0.0';
     // Add the script to the footer.
@@ -34,7 +34,7 @@ function ls_kleo_scripts() {
     wp_register_script( $handle, $src, $deps, $ver, $in_footer );
     // Enqueue your script by handle.
 
-    wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() . "/js/{$handle}.min.js", array(), '1.0.0', true);
+    //wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() . "/js/{$handle}.min.js", array(), '1.0.0', true);
 	wp_enqueue_script('jquery-validate', get_stylesheet_directory_uri() . "/js/jquery-validate.min.js", array(), '1.0.0', true);
 
 	// Add other scripts below
