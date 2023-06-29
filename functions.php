@@ -18,53 +18,53 @@
  * https://developer.wordpress.org/reference/functions/wp_enqueue_style/#comment-340
  */
 
-// Register and enqueue scripts.
-function ls_kleo_scripts() {
-    // Your script's handle.
-    $handle = 'livingsober';
-    // Path to the script to enqueue.
-    $src = get_stylesheet_directory_uri() . "/js/{$handle}.js";
-    // Required dependencies.
-    $deps = array( 'jquery', 'jquery-ui-core', 'jquery-ui-slider' );
-    // Your script's version.
-    $ver = '1.0.0';
-    // Add the script to the footer.
-    $in_footer = true;
-    // Register the script handle.
-    wp_register_script( $handle, $src, $deps, $ver, $in_footer );
-    // Enqueue your script by handle.
-    wp_enqueue_script( $handle );
+// // Register and enqueue scripts.
+// function ls_kleo_scripts() {
+//     // Your script's handle.
+//     $handle = 'livingsober';
+//     // Path to the script to enqueue.
+//     $src = get_stylesheet_directory_uri() . "/js/{$handle}.js";
+//     // Required dependencies.
+//     $deps = array( 'jquery', 'jquery-ui-core', 'jquery-ui-slider' );
+//     // Your script's version.
+//     $ver = '1.0.0';
+//     // Add the script to the footer.
+//     $in_footer = true;
+//     // Register the script handle.
+//     wp_register_script( $handle, $src, $deps, $ver, $in_footer );
+//     // Enqueue your script by handle.
+//     wp_enqueue_script( $handle );
 
-	// Add other scripts below
-	wp_enqueue_script( 'livingsober', get_template_directory_uri() . '/js/livingsober.js', array(), '1.0.0', true );
-}
+// 	// Add other scripts below
+// 	wp_enqueue_script( 'livingsober', get_template_directory_uri() . '/js/livingsober.js', array(), '1.0.0', true );
+// }
 
-// Register and enqueue styles.
-function ls_kleo_styles() {
-    // Access the wp_scripts global to get the jquery-ui-core version used.
-    global $wp_scripts;
-    // Create a handle for the jquery-ui-core css.
-    $handle = 'jquery-ui';
-    // Path to stylesheet, based on the jquery-ui-core version used in core.
-    $src = "http://ajax.googleapis.com/ajax/libs/jqueryui/{$wp_scripts->registered['jquery-ui-core']->ver}/themes/smoothness/{$handle}.css";
-    // Required dependencies
-    $deps = array();
-    // Add stylesheet version.
-    $ver = $wp_scripts->registered['jquery-ui-core']->ver;
-    // Register the stylesheet handle.
-    wp_register_style( $handle, $src, $deps, $ver );
-    // Enqueue the style.
-    wp_enqueue_style( 'jquery-ui' );
-    wp_enqueue_style( 'sample-theme-style', get_stylesheet_uri(), array( 'jquery-ui' ), '1.0.0' );
-}
+// // Register and enqueue styles.
+// function ls_kleo_styles() {
+//     // Access the wp_scripts global to get the jquery-ui-core version used.
+//     global $wp_scripts;
+//     // Create a handle for the jquery-ui-core css.
+//     $handle = 'jquery-ui';
+//     // Path to stylesheet, based on the jquery-ui-core version used in core.
+//     $src = "http://ajax.googleapis.com/ajax/libs/jqueryui/{$wp_scripts->registered['jquery-ui-core']->ver}/themes/smoothness/{$handle}.css";
+//     // Required dependencies
+//     $deps = array();
+//     // Add stylesheet version.
+//     $ver = $wp_scripts->registered['jquery-ui-core']->ver;
+//     // Register the stylesheet handle.
+//     wp_register_style( $handle, $src, $deps, $ver );
+//     // Enqueue the style.
+//     wp_enqueue_style( 'jquery-ui' );
+//     wp_enqueue_style( 'sample-theme-style', get_stylesheet_uri(), array( 'jquery-ui' ), '1.0.0' );
+// }
 
-// Enqueue required scripts and styles.
-function ls_kleo_enqueue() {
-    ls_kleo_scripts();
-    ls_kleo_styles();
-}
+// // Enqueue required scripts and styles.
+// function ls_kleo_enqueue() {
+//     ls_kleo_scripts();
+//     ls_kleo_styles();
+// }
 
-add_action( 'wp_enqueue_scripts', 'ls_kleo_enqueue' );
+// add_action( 'wp_enqueue_scripts', 'ls_kleo_enqueue' );
 
 
 /**
