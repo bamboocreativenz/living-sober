@@ -57,7 +57,7 @@ do_action( 'bp_before_member_header' ); ?>
 
 				<?php bp_activity_latest_update( bp_displayed_user_id() ); ?>
 
-				<!-- DL not sure if we need below
+				<!-- DL: Show the users profile in the header -->
 				<?php
 					$args = array(
 						'field'     => 2,
@@ -65,7 +65,6 @@ do_action( 'bp_before_member_header' ); ?>
 					);
 			  	bp_profile_field_data( $args );
 			  ?>
-			   -->
 
 			</div>
 
