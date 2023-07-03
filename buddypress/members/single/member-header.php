@@ -26,7 +26,8 @@ do_action( 'bp_before_member_header' ); ?>
 	</a>
 	<!-- DL Not sure if we need below -->
 	<!-- <?php do_action('bp_member_online_status', bp_displayed_user_id()); ?> -->
-</div><!-- #item-header-avatar -->
+</div>
+<!-- #item-header-avatar -->
 
 <div id="item-header-content">
 
@@ -54,8 +55,9 @@ do_action( 'bp_before_member_header' ); ?>
 		<?php if ( bp_is_active( 'activity' ) ) : ?>
 
 			<div id="latest-update">
-
-				<?php bp_activity_latest_update( bp_displayed_user_id() ); ?>
+				
+			`	<!-- DL: hide last post - we don't want it-->
+				<!--<?php bp_activity_latest_update( bp_displayed_user_id() ); ?>-->
 
 				<!-- DL: Show the users profile in the header -->
 				<h5>
