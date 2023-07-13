@@ -60,7 +60,7 @@ do_action( 'bp_before_member_header' ); ?>
 				<!--<?php bp_activity_latest_update( bp_displayed_user_id() ); ?>-->
 
 				<!-- DL: Show the users profile in the header -->
-				<h5>
+				<h5 style="margin: -110px;">
 					<?php
 						$args = array(
 							'field'     => 2,
