@@ -5,39 +5,62 @@
 -->
 
 <style>
-	  .resultsWidget {
-	    display: flex;
-	    justify-content: space-around;
-	    min-height: 200px;
-	  }
-	  .resultsWrapper {
-	    width: 48%;
-	  }
-	  .resultsContainer {
-	    height: 100%;
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	  }
-	  #daysSoberResult {
-	    background: url('https://livingsober.flywheelstaging.com/wp-content/uploads/2018/11/LS_calculator_days@2x.png') no-repeat center;
-	    background-size: contain;
-	  }
-	  #moneyResult {
-	    background: url('https://livingsober.flywheelstaging.com/wp-content/uploads/2018/11/LS_calculator_money@2x.png') no-repeat center;
-	    background-size: contain;
-	  }
-	  .formWrapper {
-	    min-height: 150px;
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	  }
-	  .daysSoberAction {
-	    display: none;
-	    align-items: center;
-	    flex-direction: column;
-	  }
+	.resultsWidget {
+		display: flex;
+		justify-content: space-around;
+		min-height: 200px;
+	}
+	.resultsWrapper {
+		width: 48%;
+	}
+	.resultsContainer {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#daysSoberResult {
+		background: url("https://livingsober.flywheelstaging.com/wp-content/uploads/2018/11/LS_calculator_days@2x.png")
+			no-repeat center;
+		background-size: contain;
+	}
+	#moneyResult {
+		background: url("https://livingsober.flywheelstaging.com/wp-content/uploads/2018/11/LS_calculator_money@2x.png")
+			no-repeat center;
+		background-size: contain;
+	}
+	.formWrapper {
+		min-height: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.daysSoberAction {
+		display: none;
+		align-items: center;
+		flex-direction: column;
+	}
+	.calculate-button {
+		font-weight: 400;
+		display: inline-block;
+		margin-bottom: 0;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		box-sizing: border-box;
+		line-height: normal;
+		box-shadow: none;
+		border-radius: 5px;
+		font-size: 14px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 12px;
+		padding-right: 12px;
+		color: #444444;
+		border: none;
+		background-color: #aad3ff;
+		transition: all 0.2s ease-in-out;
+		background-size: 200% 100%;
 	}
 </style>
 
@@ -63,10 +86,10 @@
 			<a
 				href="javascript:;"
 				target="_self"
-				class="recalc fl-button"
+				class="recalc calculate-button"
 				role="button"
 			>
-				<span class="fl-button-text">Recalculate</span>
+				<span class="calculate-button">Recalculate</span>
 			</a>
 		</div>
 
