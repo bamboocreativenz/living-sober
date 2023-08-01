@@ -53,7 +53,15 @@ function ls_kleo_enqueue() {
     ls_kleo_styles();
 }
 
-add_action( 'wp_enqueue_scripts', 'ls_kleo_enqueue' );
+// DL: fix for Kleo theme https://docs.wpbeaverbuilder.com/beaver-builder/troubleshooting/debugging/known-beaver-builder-incompatibilities/#kleo-theme
+function bb_custom_enqueue_scripts(){
+
+	if ( class_exists( 'FLBuilderModel' ) && FLBuilderModel::is_builder_active() ) {
+	  wp_deregister_script( 'app' );
+	}
+  }
+
+add_action( 'wp_enqueue_scripts', 'ls_kleo_enqueue', 'bb_custom_enqueue_scripts', 99 );
 
 
 /**
