@@ -358,7 +358,7 @@ body.bp-user .ethosContainer {
 	font-style: italic;
 	font-size: 22px;
 	color: #161650;
-	line-height: 20px;
+	line-height: 22px;
 }
 #main h2 {
 	font-family: ff-tisa-sans-web-pro, sans-serif;
@@ -397,7 +397,7 @@ body.bp-user .ethosContainer {
 @media (min-width: 576px) {
 	#main h1 {
 		font-size: 24px;
-		line-height: 22px;
+		line-height: 24px;
 	}
 }
 
