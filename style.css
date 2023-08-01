@@ -11,436 +11,492 @@ License URI: license.txt
 */
 
 .mfp-hide {
-    display: none;
+	display: none;
 }
 
 .mfp-bg {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1042;
-    overflow: hidden;
-    position: fixed;
-    background: #0b0b0b;
-    opacity: 0.8 !important;
-    filter: alpha(opacity=80);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1042;
+	overflow: hidden;
+	position: fixed;
+	background: #0b0b0b;
+	opacity: 0.8 !important;
+	filter: alpha(opacity=80);
 	transition: opacity 200ms ease-out 0s;
 }
 
 .mfp-container::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 
 .mfp-wrap .mfp-container {
-    padding: 10px;
+	padding: 10px;
 }
 
 .mfp-container {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    padding: 0 8px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 0 8px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .mfp-wrap {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1043;
-    position: fixed;
-    outline: none !important;
-    -webkit-backface-visibility: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1043;
+	position: fixed;
+	outline: none !important;
+	-webkit-backface-visibility: hidden;
 }
 
 .kleo-mfp-zoom.mfp-ready .mfp-content {
-    opacity: 1;
-    transform: scale(1);
+	opacity: 1;
+	transform: scale(1);
 }
 
 .mfp-auto-cursor .mfp-content {
-    cursor: auto;
+	cursor: auto;
 }
 
-.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
-    width: 100%;
-    cursor: auto;
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+	width: 100%;
+	cursor: auto;
 }
 
 .mfp-container .mfp-content {
-    width: auto;
+	width: auto;
 }
 
 .kleo-mfp-zoom .mfp-content {
-    opacity: 0;
-    transform: scale(0.5);
-    transform-origin: center top 0;
-    transition: all 0.3s ease-in-out 0s;
+	opacity: 0;
+	transform: scale(0.5);
+	transform-origin: center top 0;
+	transition: all 0.3s ease-in-out 0s;
 }
 
 .mfp-content {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
-    text-align: left;
-    z-index: 1045;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 auto;
+	text-align: left;
+	z-index: 1045;
 }
 
-@media(min-width:992px)
-{
-.container {
-    max-width: 1185px;
-padding-right: 5px;
-padding-left: 5px;
-}
+@media (min-width: 992px) {
+	.container {
+		max-width: 1185px;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
 }
 
 #activity-stream iframe {
-    width: 50%;
-    height: 400px;
-    margin-left: 25%;
+	width: 50%;
+	height: 400px;
+	margin-left: 25%;
 }
 
 .activity .fluid-width-video-wrapper {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto !important;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto !important;
 	padding-top: 40% !important;
 }
 
-
-
 .edit-link {
-    display: none;
+	display: none;
 }
 
 .dwqa-question-item.dwqa-status-closed {
-    margin-top: 0px;
+	margin-top: 0px;
 }
 
 .page-template-single-dwqa-question .kleo_framework.breadcrumb::after {
-    content: " > Site Support";
+	content: " > Site Support";
 }
 
 .kleo_framework.breadcrumb {
-    display: block;
+	display: block;
 }
 
 .page-template-single-dwqa-question .kleo_framework.breadcrumb {
-    display: none;
+	display: none;
 }
 
 .dwqa-question-item.dwqa-status-answered {
-    margin-top: 0px !important;
+	margin-top: 0px !important;
 }
 
 .dwqa-question-item.dwqa-status-open {
-    margin-top: 0px !important;
+	margin-top: 0px !important;
 }
 
 .dwqa-question-item.dwqa-status-resolved {
-    margin-top: 0px !important;
+	margin-top: 0px !important;
 }
 
-
 .has-text-align-left a {
-    float: right;
+	float: right;
 }
 
 .page-id-4242 .dwqa-question-filter {
-    margin-bottom: 20px;
-    margin-top: 0px;
+	margin-bottom: 20px;
+	margin-top: 0px;
 }
 
 .dwqa-breadcrumbs {
-    margin-top: -100px;
-    font-size: 12px;
-    padding-left:0px !important;
+	margin-top: -100px;
+	font-size: 12px;
+	padding-left: 0px !important;
 	margin-bottom: 100px;
-    margin-left: -130px !important;
+	margin-left: -130px !important;
 }
 
 .dwqa-question-filter {
-    margin-bottom: 20px;
-    margin-top: 120px;
+	margin-bottom: 20px;
+	margin-top: 120px;
 }
 
 .page-id-4842 #comments {
-    display: none !important;
+	display: none !important;
 }
 
 .home-page #comments {
-    display: none !important;
+	display: none !important;
 }
 
 #header .logo img {
-    height: 65% !important;
-    margin-top: 6px !important;
-
+	height: 65% !important;
+	margin-top: 6px !important;
 }
 
 .kleo-pop-title {
-    display: none;
+	display: none;
 }
 
 .kleo-pop-title-wrap.main-color::before {
-    content: url(https://livingsober.org.nz/wp-content/uploads/2019/12/ls-logo.png);
+	content: url(https://livingsober.org.nz/wp-content/uploads/2019/12/ls-logo.png);
 }
 
 .new-account {
-    display: none;
+	display: none;
 }
 
 template-page.col-sm-12.tpl-no {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
-h1 {margin-bottom: 0px !important;}
+h1 {
+	margin-bottom: 0px !important;
+}
 
 #whats-new-form {
-    margin-top: -40px !important;
+	margin-top: -40px !important;
 }
 
 @media only screen and (max-width: 600px) {
- #ajax_search_container {
-    width: 100% !important;
-    left: 0px !important;
-}
+	#ajax_search_container {
+		width: 100% !important;
+		left: 0px !important;
+	}
 
-   #ajax_searchform {
-    padding: 10px 10px !important;
-    background:
-    #EBE0D6 !important;
-}
+	#ajax_searchform {
+		padding: 10px 10px !important;
+		background: #ebe0d6 !important;
+	}
 }
 
 .user-nicename.hover-tip.click-tip {
-
-    font-size: 36px !important;
-
+	font-size: 36px !important;
 }
 
 .activity .page-title {
-
-    display: none !important;
-
+	display: none !important;
 }
 
 body.bp-user .ethosContainer {
-
-    display: none !important;
-
+	display: none !important;
 }
 
 #public-personal-li {
-
-    display: none !important;
-
+	display: none !important;
 }
 
 .buddypress div#message {
-   margin: 70px 0px !important;
+	margin: 70px 0px !important;
 }
 
 #activity-filter-select {
-    display: none !important;
+	display: none !important;
 }
 
 .dwqa-ask-question {
-    display: none !important;
+	display: none !important;
 }
 
 #main .ethosMessage h2 {
-    font-size: 19px !important;
+	font-size: 19px !important;
 }
 
 .template-page.col-sm-12.tpl-no {
-    padding-top: 10px !important;
+	padding-top: 10px !important;
 }
 
 #whats-new {
-    height: 150px !important;
+	height: 150px !important;
 }
 
-
 #header .logo img {
-  height: 50%;
+	height: 50%;
 }
 
 #main .main-title.breadcrumbs-container {
-  padding-top: 15px;
-  padding-bottom: 5px;
+	padding-top: 15px;
+	padding-bottom: 5px;
 }
 
 /* overide beaver builder default button border */
 
 #header .fl-builder-content a.fl-button {
-  border: none;
+	border: none;
 }
 
-
 #main .fl-builder-content a.fl-button {
-  border: none;
+	border: none;
 }
 
 #comments .hr-title abbr {
-  top: -20px;
+	top: -20px;
 }
 
-#header .kleo-main-header{
-  background-color: #EBE0D6!important;
+#header .kleo-main-header {
+	background-color: #ebe0d6 !important;
 }
 
 .ls-quote blockquote {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 20px;
-  color: #4E4E4E;
-  position: relative;
-  margin: 0.5em;
-  padding: 0.5em 2em 0.5em 3em;
-  border-left: none;
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 20px;
+	color: #4e4e4e;
+	position: relative;
+	margin: 0.5em;
+	padding: 0.5em 2em 0.5em 3em;
+	border-left: none;
 }
 /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
 .ls-quote blockquote:before {
-  font-family: Georgia, serif;
-  position: absolute;
-  font-size: 6em;
-  line-height: 1;
-  top: 0;
-  left: -5px;
-  content: "\201C";
+	font-family: Georgia, serif;
+	position: absolute;
+	font-size: 6em;
+	line-height: 1;
+	top: 0;
+	left: -5px;
+	content: "\201C";
 }
 .ls-quote blockquote:after {
-  font-family: Georgia, serif;
-  position: absolute;
- /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
-  float:right;
-  font-size:6em;
-  line-height: 1;
-  right:0;
-  bottom:-8px;
-  content: "\201D";
+	font-family: Georgia, serif;
+	position: absolute;
+	/* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+	float: right;
+	font-size: 6em;
+	line-height: 1;
+	right: 0;
+	bottom: -8px;
+	content: "\201D";
 }
 .ls-quote blockquote footer {
-  padding: 0 2em 0 0;
-  text-align:right;
+	padding: 0 2em 0 0;
+	text-align: right;
 }
 .ls-quote blockquote cite {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  color: #4E4E4E;
-  text-transform: unset;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #4e4e4e;
+	text-transform: unset;
 }
 .comments-navigation {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .paginated-comments-links {
-  width: 22em;
+	width: 22em;
 }
 
-  .page-numbers {
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
+.page-numbers {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
 }
 
 #main a.fl-button {
-  background: #AAD2FF;
-  font-weight: 700;
+	background: #aad2ff;
+	font-weight: 700;
 }
 
+/* X-Small devices (portrait phones, less than 576px) */
+
 #main h1 {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-style: italic;
-  font-size: 36px;
-  color: #161650
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+	font-style: italic;
+	font-size: 22px;
+	color: #161650;
 }
 #main h2 {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  color: #ff9d00!important;
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #ff9d00 !important;
 }
 #main h3 {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-style: initial;
-  font-weight: 500;
-  font-size: 22px;
-  color: #161650
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+	font-style: initial;
+	font-weight: 500;
+	font-size: 18px;
+	color: #161650;
 }
 #main h4 {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-style: italic;
-  font-size: 20px;
-  color: #161650
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	color: #161650;
 }
 #main h5 {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 20px;
-  color: #4E4E4E
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 16px;
+	color: #4e4e4e;
 }
 #main h6 {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  color: #4E4E4E
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+	font-style: italic;
+	font-size: 12px;
+	color: #4e4e4e;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	#main h1 {
+		font-size: 24px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#main h1 {
+		font-size: 28px;
+	}
+	#main h2 {
+		font-size: 20px;
+	}
+	#main h3 {
+		font-size: 20px;
+	}
+	#main h4 {
+		font-size: 18px;
+	}
+	#main h5 {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	#main h6 {
+		font-size: 14px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	#main h1 {
+		font-size: 32px;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	#main h1 {
+		font-size: 36px;
+	}
+	#main h2 {
+		font-size: 22px;
+	}
+	#main h3 {
+		font-size: 22px;
+	}
+	#main h4 {
+		font-size: 20px;
+	}
+	#main h5 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	#main h6 {
+		font-size: 16px;
+	}
+}
+
 @media (min-width: 991px) {
-  #header .navbar-nav > li > a {
-    font-size: 16px;
-    font-weight: 700;
-  }
+	#header .navbar-nav > li > a {
+		font-size: 16px;
+		font-weight: 700;
+	}
 }
 li {
-  padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 /* Hide the profile name field */
 
 .field_1 {
-  display: none;
+	display: none;
 }
 
 /* Overide buddy press and regular form fields */
 
-#main #search-members-form, #main .member-inner-list, #main #whats-new-textarea{
-  background-color: #f7f7f7;
+#main #search-members-form,
+#main .member-inner-list,
+#main #whats-new-textarea {
+	background-color: #f7f7f7;
 }
 
-#main #comments .comment-respond, #comments-list .comment-respond {
-  margin-left: 0;
+#main #comments .comment-respond,
+#comments-list .comment-respond {
+	margin-left: 0;
 }
 @media (min-width: 991px) {
-  #main #comments .comment-respond, #comments-list .comment-respond, .akismet_comment_form_privacy_notice {
-    margin-left: 90px;
-  }
+	#main #comments .comment-respond,
+	#comments-list .comment-respond,
+	.akismet_comment_form_privacy_notice {
+		margin-left: 90px;
+	}
 }
 
 #main #buddypress div.pagination .pagination-links {
-  display: flex;
+	display: flex;
 }
 
 @media (min-width: 603px) {
-  #main #comments-list ul.children, #main #buddypress div.activity-comments {
-    margin-left: 135px;
-  }
+	#main #comments-list ul.children,
+	#main #buddypress div.activity-comments {
+		margin-left: 135px;
+	}
 }
 
 /* Overide Buddypress favourite icon location */
@@ -467,45 +523,45 @@ li {
 
 /* Style the embedded ethos message at the top of the members page */
 #main .ethosMessage h2 {
-  font-size: 20px;
+	font-size: 20px;
 }
 .ethosButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .ethosButton .fl-button {
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 18px;
-  padding: 12px 24px;
-  text-decoration: none;
-  text-shadow: none;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 18px;
+	padding: 12px 24px;
+	text-decoration: none;
+	text-shadow: none;
 }
 .ethosButton .fl-button-text {
-  color: #333;
+	color: #333;
 }
 @media (min-width: 603px) {
-  .ethosContainer {
-    display: flex;
-  }
-  .ethosMessage, .ethosButton {
-    width: 50%;
-  }
+	.ethosContainer {
+		display: flex;
+	}
+	.ethosMessage,
+	.ethosButton {
+		width: 50%;
+	}
 }
 
 .kleo-go-top.on {
-  bottom: 87px;
+	bottom: 87px;
 }
 
 div#latest-update {
-  height: 200px;
-    white-space: pre-line;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-  }
+	height: 200px;
+	white-space: pre-line;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
