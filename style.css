@@ -570,3 +570,9 @@ div#latest-update {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+
+/* WPBaker has conflicting global styles overide here as required */
+.breadcrumb > .active {
+	color: #999 !important;
+	background-color: #ccc !important;
+}
