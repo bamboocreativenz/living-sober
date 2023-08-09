@@ -574,5 +574,5 @@ div#latest-update {
 /* WPBaker has conflicting global styles overide here as required */
 .breadcrumb > .active {
 	color: #999 !important;
-	background-color: #ccc !important;
+	background-color: transparent !important;
 }
