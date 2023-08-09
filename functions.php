@@ -64,6 +64,16 @@ function bb_custom_enqueue_scripts(){
 add_action( 'wp_enqueue_scripts', 'ls_kleo_enqueue', 'bb_custom_enqueue_scripts', 99 );
 
 
+function redirect_signedin_user()
+{
+    if(is_user_logged_in() && is_page('8250'))
+    {
+        wp_redirect('https://livingsober.org.nz/members-home');
+    }
+}
+
+add_action('template_redirect', 'redirect_signedin_user');
+
 /**
  * Other overides
  */
