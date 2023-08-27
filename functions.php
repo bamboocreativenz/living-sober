@@ -127,5 +127,88 @@ add_filter( 'bp_activity_excerpt_length', 'bpfr_custom_length', 10, 1);
 
 
 // DL remove Archive Title Prefix - doesn't seem to work
-// https://developer.wordpress.org/reference/hooks/get_the_archive_title_prefix/
-add_filter( 'get_the_archive_title_prefix', '__return_false' );
+// https://my.seventhqueen.com/docs/kleo/change-kleo-page-title-for-archives-and-other-wordpress-pages/
+function kleo_title()
+{
+	$output = "";
+
+	if ( is_category() )
+	{
+		$output = __('kleo_framework')." ".single_cat_title('',false);
+	}
+	elseif (is_day())
+	{
+		$output = __('Archive for date:','kleo_framework')." ".get_the_time('F jS, Y');
+	}
+	elseif (is_month())
+	{
+		$output = __('Archive for month:','kleo_framework')." ".get_the_time('F, Y');
+	}
+	elseif (is_year())
+	{
+		$output = __('Archive for year:','kleo_framework')." ".get_the_time('Y');
+	}
+	elseif (is_search())
+	{
+		global $wp_query;
+		if(!empty($wp_query->found_posts))
+		{
+			if($wp_query->found_posts > 1)
+			{
+				$output =  $wp_query->found_posts ." ". __('search results for:','kleo_framework')." ".esc_attr( get_search_query() );
+			}
+			else
+			{
+				$output =  $wp_query->found_posts ." ". __('search result for:','kleo_framework')." ".esc_attr( get_search_query() );
+			}
+		}
+		else
+		{
+			if(!empty($_GET['s']))
+			{
+				$output = __('Search results for:','kleo_framework')." ".esc_attr( get_search_query() );
+			}
+			else
+			{
+				$output = __('To search the site please enter a valid term','kleo_framework');
+			}
+		}
+
+	}
+	elseif (is_author())
+	{
+		$curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+		$output = __('Author Archive','kleo_framework')." ";
+
+		if(isset($curauth->nickname)) $output .= __('for:','kleo_framework')." ".$curauth->nickname;
+
+	}
+	elseif (is_tag())
+	{
+		$output = __('Tag Archive for:','kleo_framework')." ".single_tag_title('',false);
+	}
+	elseif(is_tax())
+	{
+		$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+		$output = __('Archive for:','kleo_framework')." ".$term->name;
+
+	} elseif ( is_front_page() && !is_home() ) {
+					$output = get_the_title(get_option('page_on_front'));
+
+	} elseif ( is_home() && !is_front_page() ) {
+					$output = get_the_title(get_option('page_for_posts'));
+
+	} elseif ( is_404() ) {
+					$output = __('Error 404 - Page not found','kleo_framework');
+	}
+	else {
+		$output = get_the_title();
+	}
+
+	if (isset($_GET['paged']) && !empty($_GET['paged']))
+	{
+		$output .= " (".__('Page','kleo_framework')." ".$_GET['paged'].")";
+	}
+
+	return $output;
+}
