@@ -134,7 +134,7 @@ function kleo_title()
 
 	if ( is_category() )
 	{
-		$output = __('kleo_framework')." ".single_cat_title('',false);
+		$output = "".single_cat_title('',false);
 	}
 	elseif (is_day())
 	{
