@@ -124,3 +124,8 @@ function bpfr_custom_length( $excerpt_length) {
 
 }
 add_filter( 'bp_activity_excerpt_length', 'bpfr_custom_length', 10, 1);
+
+
+// DL remove Archive Title Prefix
+// https://developer.wordpress.org/reference/hooks/get_the_archive_title_prefix/
+add_filter( 'get_the_archive_title_prefix', '__return_false' );
