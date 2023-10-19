@@ -54,20 +54,20 @@ do_action( 'bp_before_member_header' ); ?>
 
 		<?php if ( bp_is_active( 'activity' ) ) : ?>
 
-			<div id="latest-update">
-				
+			<div id="latest-update" class="container">
+
 			`	<!-- DL: hide last post - we don't want it-->
 				<!--<?php bp_activity_latest_update( bp_displayed_user_id() ); ?>-->
 
 				<!-- DL: Show the users profile in the header -->
-				<h5 style="margin: -110px;">
+				<h5 style="margin-top: -110px;">
 					<?php
 						$args = array(
 							'field'     => 2,
 								'user_id'   => bp_displayed_user_id()
 						);
 				  	    bp_profile_field_data( $args );
-				    ?>	
+				    ?>
 				</h5>
 
 			</div>

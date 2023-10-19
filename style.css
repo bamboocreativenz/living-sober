@@ -565,7 +565,7 @@ li {
 }
 
 div#latest-update {
-	height: 200px;
+	min-height: 200px;
 	white-space: pre-line;
 	overflow: hidden;
 	text-overflow: ellipsis;
