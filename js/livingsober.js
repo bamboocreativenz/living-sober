@@ -115,7 +115,7 @@ jQuery(document).ready(function() {
      */
 
 	let dateToday = new Date();
-	let datePicker = document.getElementById('daysSoberDatepicker');
+    let datePicker = $("input#daysSoberDatepicker");
 	let daysSoberMoney = document.getElementById('daysSoberMoney');
 	let daysSoberForm = document.getElementById('daysSoberPre');
 	let daysSoberResult = document.getElementById('daysSoberResult');
@@ -123,14 +123,12 @@ jQuery(document).ready(function() {
 	let recalcButton = document.getElementById('recalcButton');
 	
 	let cookieSettings = { path: '/', expires: 365 * 10 };
-	
-	datePicker.addEventListener('change', function() {
-	  let selectedDate = new Date(datePicker.value);
-	  if (selectedDate > dateToday) {
-	    datePicker.value = '';
-	    return;
-	  }
-	});
+
+	// Set up the datepicker field.
+    datePicker.datepicker({
+        maxDate: dateToday,
+        dateFormat: "dd/mm/yy"
+    });
 	
 	if (document.cookie.includes('daysSinceCookie')) {
 	  daysSoberForm.style.display = 'none';
