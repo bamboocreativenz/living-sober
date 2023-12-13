@@ -73,6 +73,28 @@ jQuery(document).ready(function() {
     }, 250);
   }
 
+
+   /**
+ 	* DL Overide the url of the notification icon
+    */
+	// Define the string to look for and remove
+	var slug = 'BP_NOTIFICATIONS_SLUG';
+	
+	// Define the string to append
+	var appendStr = '/notifications';
+	
+	// Select all a tags
+	var aTags = document.querySelectorAll('a');
+	
+	// Iterate over all a tags
+	for (var i = 0; i < aTags.length; i++) {
+	    // If the href attribute contains the slug
+	    if (aTags[i].href.includes(slug)) {
+	        // Replace the slug with an empty string and append the new string
+	        aTags[i].href = aTags[i].href.replace(slug, '') + appendStr;
+	    }
+	}
+
   /**
    * On page load, and on key press inside the username field on the registration
    * page we want to ensure the profile name field (which is hidden) is copied
