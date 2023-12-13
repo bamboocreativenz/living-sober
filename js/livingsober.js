@@ -114,120 +114,110 @@ jQuery(document).ready(function() {
      * Living Sober Calculator
      */
 
-    dateToday = new Date();
-    datePicker = $("input#daysSoberDatepicker");
-    daysSoberMoney = $("#daysSoberMoney");
-    daysSoberForm = $("#daysSoberPre");
-    daysSoberResult = $("#daysSoberResult");
-    moneyResult = $("#moneyResult");
-    recalcButton = $("#recalcButton")
-    
-    // Cookie settings are here as they need to be the same for create/deleting of the cookie
-    cookieSettings = { path: '/', expires: 365 * 10 };
-    
-    // Set up the datepicker field.
-    datePicker.datepicker({
-        maxDate: dateToday,
-        dateFormat: "dd/mm/yy"
-    });
-    
-    
-    // On page load, if there is a session length cookie for the last drink, show it
-    if (typeof $.cookie("daysSinceCookie") !== "undefined") {
-        daysSoberForm.hide();
-        var daysSince = daydiff(parseDate($.cookie("daysSinceCookie")), dateToday);
-        $(".result", daysSoberResult).text(daysSince + ' days');
+	let dateToday = new Date();
+	let datePicker = document.getElementById('daysSoberDatepicker');
+	let daysSoberMoney = document.getElementById('daysSoberMoney');
+	let daysSoberForm = document.getElementById('daysSoberPre');
+	let daysSoberResult = document.getElementById('daysSoberResult');
+	let moneyResult = document.getElementById('moneyResult');
+	let recalcButton = document.getElementById('recalcButton');
+	
+	let cookieSettings = { path: '/', expires: 365 * 10 };
+	
+	datePicker.addEventListener('change', function() {
+	  let selectedDate = new Date(datePicker.value);
+	  if (selectedDate > dateToday) {
+	    datePicker.value = '';
+	    return;
+	  }
+	});
+	
+	if (document.cookie.includes('daysSinceCookie')) {
+	  daysSoberForm.style.display = 'none';
+	  let daysSince = daydiff(parseDate(getCookie('daysSinceCookie')), dateToday);
+	  daysSoberResult.querySelector('.result').textContent = daysSince + ' days';
+	  datePicker.value = getCookie('daysSinceCookie');
+	  daysSoberResult.style.display = 'block';
+	
+	  if (document.cookie.includes('moneySavedCookie') && getCookie('moneySavedCookie') > 0) {
+	    let moneySaved = getCookie('moneySavedCookie') / 7 * daysSince;
+	    moneyResult.querySelector('.savings').textContent = '$' + moneySaved.toFixed(2);
+	    document.querySelector('.daysSoberAction').style.display = 'none';
+	    daysSoberMoney.value = getCookie('moneySavedCookie');
+	  } else {
+	    document.querySelector('.saved').style.display = 'none';
+	  }
+	}
+	
+	document.getElementById('daysSoberForm').addEventListener('submit', function(e) {
+	  e.preventDefault();
+	  daysSoberResult.querySelector('.result').textContent = '';
+	  moneyResult.querySelector('.savings').textContent = '';
+	
+	  if (datePicker.value === '') {
+	    return false;
+	  }
+	
+	  let daysSince = daydiff(parseDate(datePicker.value), dateToday);
+	  let moneySaved = daysSoberMoney.value / 7 * daysSince;
+	  if (daysSince === 0) {
+	    moneySaved = daysSoberMoney.value / 7;
+	  }
+	
+	  daysSoberForm.style.display = 'none';
+	  daysSoberResult.querySelector('.result').textContent = daysSince + ' days';
+	
+	  if (moneySaved) {
+	    moneyResult.querySelector('.savings').textContent = '$' + moneySaved.toFixed(2);
+	    document.querySelector('.saved').style.display = 'block';
+	    document.querySelector('.daysSoberAction').style.display = 'none';
+	  } else {
+	    document.querySelector('.saved').style.display = 'none';
+	    document.querySelector('.daysSoberAction').style.display = 'flex';
+	  }
+	
+	  daysSoberResult.style.display = 'block';
+	  recalcButton.style.display = 'block';
+	
+	  document.cookie = `daysSinceCookie=${datePicker.value}; ${serializeCookieSettings(cookieSettings)}`;
+	  document.cookie = `moneySavedCookie=${daysSoberMoney.value}; ${serializeCookieSettings(cookieSettings)}`;
+	});
+	
+	document.querySelector('a.recalc').addEventListener('click', function(e) {
+	  e.preventDefault();
+	  recalcButton.style.display = 'none';
+	  document.querySelector('.daysSoberAction').style.display = 'flex';
+	  daysSoberForm.style.display = 'block';
+	  datePicker.value = '';
+	  daysSoberMoney.value = '';
+	});
+	
+	document.getElementById('cancel').addEventListener('click', function(e) {
+	  e.preventDefault();
+	  daysSoberForm.style.display = 'none';
+	  document.querySelector('.daysSoberAction').style.display = 'none';
+	  recalcButton.style.display = 'block';
+	});
+	
+	function getCookie(name) {
+	  let matches = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([.$?*|{}()[]\\\/+^])/g, '\\$1') + '=([^;]*)'));
+	  return matches ? decodeURIComponent(matches[1]) : undefined;
+	}
+	
+	function serializeCookieSettings(settings) {
+	  return Object.entries(settings).map(([key, value]) => `${key}=${value}`).join('; ');
+	}
+	
+	function parseDate(dateString) {
+	  let [day, month, year] = dateString.split('/');
+	  return new Date(year, month - 1, day);
+	}
+	
+	function daydiff(first, second) {
+	  return Math.round((second - first) / (1000 * 60 * 60 * 24));
+	}
 
-        datePicker.val($.cookie("draysSinceCookie"));
-        
-        daysSoberResult.show();
 
-        if (typeof $.cookie("moneySavedCookie") !== "undefined" && $.cookie("moneySavedCookie") > 0) {
-            var moneySaved = $.cookie("moneySavedCookie") / 7 * daysSince;
-            $(".savings", moneyResult).text('$' + moneySaved.toFixed(2));
-            $(".daysSoberAction").css('display', 'none');
-            
-            daysSoberMoney.val($.cookie("moneySavedCookie"));
-        } else {
-            $(".saved").css('display', 'none');
-        }
-
-    }
-    
-
-    // Say sober calculator form
-    $('#daysSoberForm').submit(function(e) {
-        e.preventDefault();
-        
-        // Clear the previous result (if there is one)
-        $(".result", daysSoberResult).text("");
-        $(".savings", moneyResult).text("");
-
-        // No date entered. Show an error
-        if (datePicker.val() === "") {
-            return false;
-        }
-
-        // Calculate the number of days since the users last drink
-        var daysSince = daydiff(parseDate(datePicker.val()), dateToday);
-        var moneySaved = daysSoberMoney.val() / 7 * daysSince;
-        if(daysSince == 0) {
-            moneySaved = daysSoberMoney.val() / 7;
-        }
-        
-        // Update and display the days sober result
-        daysSoberForm.fadeOut(300, function() {
-            $(".result", daysSoberResult).text(daysSince + ' days');
-
-            if(moneySaved) {
-                $(".savings", moneyResult).text('$' + moneySaved.toFixed(2));
-                
-                // $(".saved").css('display', 'block');
-                $(".saved").fadeIn(300);
-                $(".daysSoberAction").css('display', 'none');
-            } else {
-                $(".saved").css('display', 'none');
-                $(".daysSoberAction").css('display', 'flex');
-            }
-
-            daysSoberResult.fadeIn(300);
-            recalcButton.fadeIn(300);
-        });
-        
-        // Store the result in a session length cookie
-        $.cookie("daysSinceCookie", datePicker.val(), cookieSettings);
-        $.cookie("moneySavedCookie", daysSoberMoney.val(), cookieSettings);
-        
-    });
-
-
-    /**
-     * Clear the calculator result and start again.
-     */
-    $("a.recalc").click(function(e) {
-        e.preventDefault();
-        
-        // Clear the result cookie
-        // $.removeCookie("daysSinceCookie", cookieSettings);
-        // $.removeCookie("moneySavedCookie", cookieSettings);
-        
-        // Clear any user entered or calculated text
-        recalcButton.fadeOut(300, function() {
-            $(".daysSoberAction").css('display', 'flex');
-            daysSoberForm.fadeIn(300);
-            //$(".result", daysSoberResult).text("");
-            //$(".savings", moneyResult).text("");
-            datePicker.val("");
-            daysSoberMoney.val("");
-        });
-    }); 
-    $("#cancel").click(function(e) {
-        e.preventDefault();
-        daysSoberForm.fadeOut(300, function() {
-            $(".daysSoberAction").css('display', 'none');
-            recalcButton.fadeIn(300);
-        });
-    });
 });
 
 /**
