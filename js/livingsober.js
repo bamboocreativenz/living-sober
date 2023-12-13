@@ -135,7 +135,10 @@ jQuery(document).ready(function () {
 	});
 
 	// On page load, if there is a session length cookie for the last drink, show it
-	if (document.cookie.includes("daysSinceCookie")) {
+	if (
+		document.cookie.includes("daysSinceCookie") &&
+		getCookie("daysSinceCookie") !== "undefined"
+	) {
 		daysSoberForm.hide();
 		let daysSince = daydiff(
 			parseDate(getCookie("daysSinceCookie")),
