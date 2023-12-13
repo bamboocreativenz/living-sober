@@ -136,27 +136,25 @@ jQuery(document).ready(function () {
 
 	// On page load, if there is a session length cookie for the last drink, show it
 	if (document.cookie.includes("daysSinceCookie")) {
-		daysSoberForm.style.display = "none";
+		daysSoberForm.hide();
 		let daysSince = daydiff(
 			parseDate(getCookie("daysSinceCookie")),
 			dateToday
 		);
-		daysSoberResult.querySelector(".result").textContent =
-			daysSince + " days";
-		datePicker.value = getCookie("daysSinceCookie");
-		daysSoberResult.style.display = "block";
+		$(".result", daysSoberResult).text(daysSince + " days");
+		datePicker.val(getCookie("daysSinceCookie"));
+		daysSoberResult.show();
 
 		if (
 			document.cookie.includes("moneySavedCookie") &&
 			getCookie("moneySavedCookie") > 0
 		) {
 			let moneySaved = (getCookie("moneySavedCookie") / 7) * daysSince;
-			moneyResult.querySelector(".savings").textContent =
-				"$" + moneySaved.toFixed(2);
-			document.querySelector(".daysSoberAction").style.display = "none";
-			daysSoberMoney.value = getCookie("moneySavedCookie");
+			$(".savings", moneyResult).text("$" + moneySaved.toFixed(2));
+			$(".daysSoberAction").css("display", "none");
+			daysSoberMoney.val(getCookie("moneySavedCookie"));
 		} else {
-			document.querySelector(".saved").style.display = "none";
+			$(".saved").css("display", "none");
 		}
 	}
 
