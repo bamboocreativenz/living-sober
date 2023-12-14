@@ -230,10 +230,10 @@ jQuery(document).ready(function () {
 		// Store the result in a session length cookie
 		// DL NEW Way
 		document.cookie = `daysSinceCookie=${
-			datePicker.value
+			datePicker.val()
 		}; ${serializeCookieSettings(cookieSettings)}`;
 		document.cookie = `moneySavedCookie=${
-			daysSoberMoney.value
+			daysSoberMoney.val()
 		}; ${serializeCookieSettings(cookieSettings)}`;
 
 		// DL OLD Way with jquery
